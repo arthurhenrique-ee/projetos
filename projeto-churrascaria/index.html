@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Churrascaria</title>
+    <script src="https://kit.fontawesome.com/5791c24aab.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="estilo/style.css">
+</head>
+<body>
+    <!-- CABEÇALHO -->
+    <header>
+        <!-- LOGO -->
+        <a href="index.html"><img src="imagens/logo.png" alt="Logo"></a>
+
+        <!-- MENU -->
+        <ul>
+            <li><a href="#inicio">Início</a></li>
+            <li><a href="#cardapio">Cardápio</a></li>
+            <li><a href="#galeria">Galeria de Fotos</a></li>
+            <li><a href="#contato">Contato</a></li>     
+        </ul>
+    </header>
+
+    <!-- CONTEÚDO -->
+    <main>
+        <!-- INÍCIO -->
+        <section id="inicio">
+            <div class="texto">
+                <h1 id="titulo-principal">Churrasco</h1>
+                <h2>Carne de Qualidade</h2>
+            </div>
+        </section>
+
+        <!-- CARDÁPIO -->
+        <section id="cardapio">
+            <h1><i class="fa-sharp fa-solid fa-utensils"></i> Cardápio</h1>
+
+            <div class="container-divs">
+                <div class="caixa-cardapio">
+                    <div class="img" id="carnes"></div>
+
+                    <div class="texto-cardapio">
+                        <h1>Carnes</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+                    </div>
+                </div>
+
+                <div class="caixa-cardapio">
+                    <div class="img" id="sobremesas"></div>
+
+                    <div class="texto-cardapio">
+                        <h1>Sobremesas</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+                    </div>
+                </div>
+
+                <div class="caixa-cardapio">
+                    <div class="img" id="bebidas"></div>
+
+                    <div class="texto-cardapio">
+                        <h1>Bebidas</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- GALERIA DE FOTOS -->
+        <section id="galeria">
+            <h1><i class="fa-regular fa-image"></i> Galeria de Fotos</h1>
+
+            <div class="container-imgs">
+                <img src="imagens/1.jpg" alt="Imagem 1" class="img-galeria">
+                <img src="imagens/2.jpg" alt="Imagem 2" class="img-galeria">
+                <img src="imagens/3.jpg" alt="Imagem 3" class="img-galeria">
+                <img src="imagens/4.jpg" alt="Imagem 4" class="img-galeria"><br>
+                <img src="imagens/5.jpg" alt="Imagem 5" class="img-galeria">
+                <img src="imagens/6.jpg" alt="Imagem 6" class="img-galeria">
+                <img src="imagens/7.jpg" alt="Imagem 7" class="img-galeria">
+                <img src="imagens/8.jpg" alt="Imagem 8" class="img-galeria">
+            </div>
+        </section>
+
+        <!-- FALE CONOSCO -->
+        <section id="contato">
+            <h1><i class="fa-regular fa-envelope"></i> Fale Conosco</h1>
+            
+            <div class="container-divs-contato">
+                <div id="formulario">
+                    <form action="" method="get" autocomplete="off" autocapitalize="on">
+                        <input type="text" name="nome" id="nome" placeholder="Nome"><br>
+                        <input type="email" name="email" id="email" placeholder="E-mail"><br>
+                        <input type="text" name="assunto" id="assunto" placeholder="Assunto"><br>
+                        <input type="text" name="msg" id="msg" placeholder="Deixe sua mensagem"><br>
+
+                        <input type="submit" value="Enviar" id="submit">
+                    </form>
+                </div>
+
+                <div id="info">
+                    <ul>
+                        <li>contato@seusite.com</li>
+                        <li>31 0000-0000</li>
+                        <li>31 90000-0000</li>
+                        <li>Local: Av. Rio de Janeiro</li>
+                        <li>Atendimento: Segunda a Sexta</li>
+                        <li>09:00 às 18:00</li>
+                    </ul>
+
+                    <div id="icones">
+                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-pinterest-p"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- RODAPÉ -->
+        <footer>
+            <p><strong>Copyright © Tema Churrascaria</strong> - 2022, Todos os Direitos Reservados.</p>
+            <p>Design: <a href="https://www.loopnerd.com.br/">Loop Nerd</a></p>
+        </footer>
+    </main>
+</body>
+</html>

@@ -1,0 +1,277 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+:root {
+    /* CORES */
+    --verde-claro: #8CC53E;
+    --verde-escuro: #119140;
+    --cinza-escuro: #676767;
+    --fundo-servicos: #E9ECF0;
+    --fundo-galeria: white;
+    --fundo-agenda: #EFEFEF;
+    --fundo-contato: white;
+    --fundo-rodape1: #8DC53F;
+    --fundo-rodape2: #7BB130;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: "Lato", sans-serif;
+    background-color: lightgray;
+}
+
+h1 {
+    text-transform: uppercase;
+    text-align: center;
+    color: var(--verde-claro);
+    font-size: 32px;
+}
+
+#titulo-principal {
+    text-transform: capitalize;
+    font-size: 88px;
+    letter-spacing: 13px;
+    text-shadow: 2px 1px 5px #535353;
+    color: white;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    width: 100vw;
+    padding: 3px;
+    background-color: white;
+}
+
+header img {
+    width: 196px;
+    height: 95px;
+}
+
+header ul {
+    display: flex;
+    list-style: none;
+}
+
+header ul li a {
+    margin-right: 5px;
+    padding: 36px 15px;
+    text-decoration: none;
+    color: var(--cinza-escuro);
+}
+
+header ul li a:hover {
+    color: var(--verde-claro);
+    border-bottom: 5px solid var(--verde-claro);
+}
+
+section#inicio {
+    background: white url('../imagens/banner-home.jpg') center center local;
+    background-size: cover;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 100vh;
+}
+
+section#inicio h2 {
+    color: white;
+    font-size: 17px;
+    font-weight: 500;
+    letter-spacing: 13px;
+}
+
+section#servicos {
+    background-color: var(--fundo-servicos);
+    padding: 4rem;
+}
+
+section#galeria {
+    padding: 4rem;
+    background-color: var(--fundo-galeria);
+    text-align: center;
+}
+
+#container-galeria {
+    margin-top: 30px;
+}
+
+section#galeria img {
+    border-radius: 5px;
+    margin: 10px;
+    width: 282px;
+    height: 188px;
+}
+
+section#agenda {
+    background-color: var(--fundo-agenda);
+    padding: 4rem;
+}
+
+#container-agenda {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 60px;
+}
+
+.divs-agenda {
+    text-align: center;
+    margin-right: 40px;
+    color: var(--cinza-escuro);
+}
+
+.divs-agenda h2 {
+    margin-bottom: 20px;
+    color: var(--verde-escuro);
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.divs-agenda svg {
+    margin-bottom: 20px;
+}
+
+section#contato {
+    padding: 4rem;
+    background-color: var(--fundo-contato);
+}
+
+#container-contato {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 10px;
+}
+
+form {
+    margin-top: 50px;
+}
+
+form input {
+    border-radius: 10px;
+    margin-bottom: 15px;
+    padding: 1rem;
+    width: 500px;
+    color: var(--cinza-escuro);
+    font-size: 18px;
+    border: 1px solid rgba(0, 0, 0, 0.188);
+}
+
+form input:focus {
+    border: 1px solid var(--verde-escuro);
+    color: var(--verde-escuro);
+    outline: none;
+}
+
+form input#submit {
+    width: auto;
+    margin-top: 15px;
+    padding: 0.9rem 2.8rem;
+    background-color: var(--verde-claro);
+    color: white;
+    font-size: 22px;
+    border: none;
+}
+
+form input#submit:hover {
+    background-color: var(--verde-escuro);
+    cursor: pointer;
+    transition: 0.5s all;
+}
+
+#info {
+    width: 40vw;
+    color: var(--cinza-escuro);
+}
+
+#info p {
+    margin-bottom: 15px;
+    font-size: 17px;
+}
+
+#info ul {
+    list-style: none;
+}
+
+#info ul li {
+    margin-bottom: 5px;
+    font-size: 17px;
+}
+
+section#rodape1 {
+    padding: 4rem;
+    background-color: var(--fundo-rodape1);
+    color: white;
+}
+
+#container-rodape1 {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+}
+
+section#rodape1 h1 {
+    margin-bottom: 5px;
+    text-align: left;
+    color: white;
+    font-size: 20px;
+    text-transform: capitalize;
+}
+
+section#rodape1 hr {
+    margin-bottom: 10px;
+    width: 300px;
+    border: 1px solid #9AD04E;
+}
+
+section#rodape1 .caixa-rodape {
+    margin-right: 120px;
+}
+
+.caixa-rodape a, 
+.caixa-rodape p, 
+.caixa-rodape li {
+    display: block;
+    margin-bottom: 5px;
+    text-decoration: none;
+    font-size: 16px;
+    color: white;
+}
+
+.caixa-rodape a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    padding: 1.5rem;
+    text-align: center;
+    color: #E1E0DA;
+    background-color: var(--fundo-rodape2);
+}
+
+footer p {
+    margin-bottom: 5px;
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}

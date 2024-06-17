@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chromos | Portal do Aluno</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <header>
+        <h1>CHROMOS</h1>
+    </header>
+
+    <nav>
+        <a href="../menu/inicio.html" class="pag-inicial" id="sair">❮ Sair</a>
+    </nav>
+
+    <div class="menu-horizontal">
+        <h1>Portal do Aluno</h1>
+        <ul>
+            <a href="dados-pessoais.html"><li class="selecionada">Dados Pessoais</li></a>
+            <a href="horarios-aula.html"><li>Horários de Aula</li></a>
+            <a href="boletim.html"><li>Boletim</li></a>
+            <a href="faltas.html"><li>Faltas</li></a>
+            <a href="atividades-extrac.html"><li>Atividades Extracurriculares</li></a>
+            <a href="comunicados.html"><li>Comunicados</li></a>
+        </ul>
+    </div>
+
+    <div class="caixa-principal">
+        <h1>Dados Pessoais</h1>
+        <form action="" id="form-dados">
+            <div class="wrapper">
+                <label for="inputs">Nome completo:</label>
+                <input type="text" value="Arthur Henrique Gunes Marciano" class="inputs">
+            </div>
+
+            <div class="wrapper">
+                <label for="inputs">Data de Nascimento:</label>
+                <input type="date" value="2009-06-09" class="inputs">
+            </div>
+
+            <div class="wrapper">
+                <label for="inputs">Telefone:</label>
+                <input type="tel" value="(31) 99638-6653" class="inputs">
+            </div>
+
+            <div class="wrapper">
+                <label for="inputs">E-mail:</label>
+                <input type="email" value="arthurhenrique@gmail.com" class="inputs">
+            </div>
+
+            <div class="wrapper">
+                <label for="inputs">Nome do Responsável:</label>
+                <input type="text" value="Luciléia Gunes Coelho" class="inputs">
+            </div>
+
+            <div class="wrapper">
+                <label for="inputs">Gênero:</label>
+                <select class="inputs">
+                    <option value="Maculino">Masculino</option>
+                    <option value="Feminino">Feminino</option>
+                    <option value="Outro">Outro</option>
+                </select>
+            </div>
+
+            <div class="wrapper">
+                <label for="inputs">CPF:</label>
+                <input type="text" class="inputs" value="155.915.266-40" placeholder="000.000.000-00">
+            </div>
+
+            <div class="wrapper">
+                <label for="inputs">Nacionalidade:</label>
+                <select name="Nacionalidade" class="inputs">
+                    <option value="brasil" selected>Brasil</option>
+                    <option value="portugal">Portugal</option>
+                    <option value="estados-unidos">Estados Unidos</option>
+                    <option value="outro">Outro</option>
+                </select>
+            </div>
+            <input type="submit" value="Salvar" id="salvar">
+            <p id="matricula">Matrícula: 910928</p>
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,805 @@
+/* 
+
+CORES
+Azul escuro: #033E8C
+Azul claro: #044D8C
+Laranja escuro: #F27329
+Laranja claro: #F2811D
+Cinza: #F2F2F2
+
+*/
+
+@charset "UTF-8";
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 300;
+    src: url('fonte/OpenSans-VariableFont_wdth\,wght.ttf');
+  }
+  
+  @font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    src: url('fonte/OpenSans-VariableFont_wdth\,wght.ttf');
+  }
+  
+  @font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    src: url('fonte/OpenSans-VariableFont_wdth\,wght.ttf');
+  }
+  
+  @font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 800;
+    src: url('fonte/OpenSans-VariableFont_wdth\,wght.ttf');
+  }
+
+body {
+    margin: 0;
+
+    background-color: #F2F2F2;
+    font-family: "Open Sans", sans-serif;
+}
+
+header {
+    padding: 30px;
+
+    background-color: #F2F2F2;
+    text-align: center;
+}
+
+header h1 {
+    display: inline;
+    color: #033E8C;
+    text-transform: uppercase;
+    font-size: 30px;
+    border-bottom: 4px solid #f2801ddc;
+}
+
+nav {
+    padding: 10px 80px;
+    background-color: #044d8c;
+}
+
+nav a {
+    margin-right: 5px;
+    padding: 10px 15px;
+
+    text-decoration: none;
+    color: white;
+}
+
+nav a:hover {
+    background-color: #f2801ddc;
+}
+
+#marcada {
+    background-color: #f2801ddc;
+}
+
+.area {
+    display: inline-block;
+
+    padding: 0;
+    margin-left: 54em;
+
+    text-transform: uppercase;
+    font-size: 12px;
+}
+
+.area a:hover {
+    background-color: #044d8c;
+    color: #f2801ddc;
+    font-weight: bold;
+}
+
+main {
+    height: auto;
+    width: 650px;
+    margin: auto;
+    margin-top: 20px;
+    border-radius: 10px;
+    padding: 25px 60px;
+
+    background-color: white;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.254);
+}
+
+main h1 {
+    display: inline-block;
+
+    padding-bottom: 2px;
+    margin-bottom: 30px;
+
+    font-family: "Open Sans", sans-serif;
+    font-weight: 800;
+
+    border-bottom: 1px solid #044d8c;
+    text-transform: uppercase;
+    font-size: 26px;
+    color: #F27329;
+}
+
+main h2 {
+    margin-top: 50px;
+
+    font-family: "Open Sans", sans-serif;
+    font-weight: 700;
+
+    text-transform: uppercase;
+    font-size: 22px;
+    color: #F27329;
+}
+
+main h3 {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 500;
+    margin-top: 20px;
+
+    text-transform: uppercase;
+    font-size: 18px;
+    color: #F27329;
+}
+
+main p {
+    margin-top: -10px;
+    margin-bottom: 40px;
+
+    text-align: justify;
+}
+
+footer {
+    margin-top: 20px;
+    padding: 10px 80px;
+
+    background-color: #044d8c;
+    text-align: center;
+    color: white;
+}
+
+#nivel-one {
+    margin-bottom: 8px;
+
+    font-size: 15px;
+}
+
+#nivel-two {
+    margin-top: 0;
+
+    font-size: 12px;
+}
+
+#nivel-two a {
+    text-decoration: none;
+    color: white;
+}
+
+#nivel-two a:hover {
+    text-decoration: underline;
+}
+
+.body-login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.caixa-login {
+    width: 350px;
+    height: auto;
+    padding: 50px 30px;
+    border-radius: 15px;
+
+    background-color: white;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.254);
+    text-align: center;
+}
+
+.caixa-login h1{
+    display: inline-block;
+
+    padding-bottom: 2px;
+    margin: 0;
+
+    font-family: "Open Sans", sans-serif;
+    font-weight: 800;
+
+    text-align: center;
+    border-bottom: 2px solid #F27329;
+    text-transform: uppercase;
+    font-size: 28px;
+    color: #044d8c;
+}
+
+.caixa-login h2 {
+    margin-top: 40px;
+
+    font-family: "Open Sans", sans-serif;
+    font-weight: 300;
+
+    text-transform: uppercase;
+    font-size: 20px;
+    color: #044d8c;
+}
+
+.caixa-login form {
+    margin-top: -10px;
+}
+
+.caixa-login form input {
+    width: 50%;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+
+    border: 1px solid #ccc;
+}
+
+.caixa-login form input:hover {
+    border: 1px solid #033E8C;
+}
+
+.caixa-login form input:focus {
+    outline: none;
+    border: 1px solid #033E8C;
+}
+
+.caixa-login form input#submit {
+    font-family: "Open Sans" sans-serif;
+    font-weight: 300;
+    
+    margin-top: 15px;
+    border-radius: 30px;
+    padding: 10px 20px;
+
+    background-color: #044d8c;
+    text-transform: uppercase;
+    font-size: 12px;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.caixa-login form input#submit:hover {
+    background-color: #F27329;
+    transition: background-color 0.3s;
+}
+
+.menu-horizontal {
+    display: inline-block;
+    position: absolute;
+
+    width: 180px;
+    height: 100%;
+    padding: 30px;
+    
+    background-color: white;
+}
+
+.menu-horizontal h1 {
+    display: inline-block;
+
+    margin: 0px 5px;
+
+    font-family: "Open Sans", sans-serif;
+    font-weight: bold;
+
+    color: #044d8c;
+    border-bottom: 1px solid #F27329;
+    font-size: 17px;
+    text-transform: uppercase;
+}
+
+.menu-horizontal ul {
+    padding: 0;
+    margin-top: 30px;
+
+    list-style-type: none;
+}
+
+.menu-horizontal ul li {
+    margin: 10px 0px;
+    padding-bottom: 10px;
+
+    border-bottom: 1px solid #00000010;
+}
+
+.menu-horizontal ul a {
+    text-decoration: none;
+    color: black;
+}
+
+.menu-horizontal ul a:hover {
+    color: #F27329;
+    font-weight: bold;
+}
+
+.selecionada {
+    font-weight: bold;
+    color: #F27329;
+}
+
+.pag-inicial {
+    margin-left: 15em;
+    padding-top: 12px;
+    padding-bottom: 11px;
+
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+#sair:hover {
+    background-color: #043a6ab0;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.caixa-principal {
+    width: 800px;
+    height: 450px;
+    padding: 40px;
+    margin: 40px auto;
+    border-radius: 10px;
+
+    background-color: white;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.254);
+}
+
+.caixa-principal h1 {
+    display: inline-block;
+
+    font-family: "Open Sans", sans-serif;
+    font-weight: bold;
+    
+    padding-left: 10px;
+    margin: 0;
+    
+    color: black;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+#form-dados {
+    margin: 10px 10px;
+}
+
+label {
+    display: block;
+
+    margin-top: 25px;
+    margin-bottom: 8px;
+
+    font-family: "Open Sans", sans-serif;
+    font-weight: 600;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+.inputs {
+    padding: 0px 12px;
+    width: 250px;
+    height: 30px;
+    border-radius: 5px;
+
+    font-family: "Open Sans", sans-serif;
+    font-size: 12px;
+    font-weight: 300;
+
+    border: 1px solid black;
+    text-transform: uppercase;
+}
+
+.wrapper {
+    display: inline-block;
+    margin-right: 50px;
+}
+
+#matricula {
+    display: block;
+
+    margin: 0;
+    padding-bottom: 30px;
+
+    text-align: right;
+    text-transform: uppercase;
+}
+
+#salvar {
+    display: block;
+
+    margin-top: 50px;
+    padding: 10px 20px;
+    border-radius: 15px;
+
+    text-transform: uppercase;
+    border: none;
+    background-color: darkgreen;
+    color: white;
+    font-size: 13px;
+}
+
+#salvar:hover {
+    background-color: rgba(0, 100, 0, 0.766);
+    cursor: pointer;
+    transition: background-color 0.3s ease; 
+}
+
+#caixa-dias {
+    margin-top: 35px;
+    margin-left: 10px;
+
+    text-align: center;
+}
+
+.dia-da-semana {
+    display: inline-block;
+
+    margin-right: 10px;
+    margin-bottom: 20px;
+}
+
+.dia-da-semana a {
+    border-radius: 5px;
+    padding: 5px 20px;
+    
+    text-decoration: none;
+    font-weight: 600;
+    color: black;
+    border: 1px solid rgba(0, 0, 0, 0.567);
+    font-size: 13px;
+    text-transform: uppercase;
+}
+
+.dia-da-semana a:hover {
+    background-color: #033E8C;
+    color: white;
+}
+
+.dia-da-semana a.clicado {
+    background-color: #033E8C;
+    color: white;
+}
+
+.caixa-horarios {
+    margin: 30px;
+    padding: 10px 40px;
+    border-radius: 0px 10px 10px 10px;
+
+    border: 1px solid black;
+}
+
+.caixa-horarios h2 {
+    text-transform: uppercase;
+    font-size: 17px;
+}
+
+.caixa-horarios ul {
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+.caixa-horarios ul li {
+    margin-bottom: 8px;
+}
+
+#info {
+    margin-top: 130px;
+
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.turma {
+    margin-top: 190px;
+    text-transform: uppercase;
+    text-align: right;
+}
+
+.turma-2 {
+    margin-top: 50px;
+    text-transform: uppercase;
+    text-align: right;
+}
+
+.navegaçao-boletim {
+    margin: 60px 10px 0px 10px;
+    text-align: center;
+}
+
+.navegaçao-boletim a {
+    display: inline-block;
+
+    margin-bottom: 30px;
+    padding: 6px 10px;
+    margin-right: 30px;
+    border-radius: 15px;
+    width: 140px;
+    height: 65px;
+
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.673);
+    background-color: #033e8cf4;
+    font-size: 13px;
+}
+
+.navegaçao-boletim a:hover {
+    background-color: #033e8cc4;
+    color: white;
+}
+
+.navegaçao-boletim a:hover img {
+    color: white;
+}
+
+.icone {
+    margin-top: 5px;
+    margin-bottom: 2px;
+    width: 30px;
+    height: 30px;
+
+    filter: invert(100%);
+}
+
+.aluno {
+    margin-top: 105px;
+
+    text-transform: uppercase;
+}
+
+.caixa-boletim {
+    text-align: center;
+}
+
+.trimestre {
+    display: inline-block;
+
+    margin: 20px 20px;
+    padding: 10px 30px;
+    border-radius: 10px;
+    width: 150px;
+
+    text-align: center;
+    border: 2px solid rgba(0, 0, 0, 0.124);
+}
+
+.caixa-boletim h2 {
+    display: inline-block;
+
+    margin: 30px 10px 10px 10px;
+
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: #033E8C;
+    font-weight: 600;
+}
+
+.trimestre h3 {
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.trimestre h4 {
+    margin-bottom: -10px;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.trimestre p {
+    font-size: 14px;
+}
+
+.trimestre:hover {
+    cursor: context-menu;
+    border: 2px solid #033E8C;
+}
+
+.caixa-extrac {
+    display: inline-block;
+    width: 210px;
+    height: auto;
+    margin: 30px 5px;
+    border: 1px solid rgba(0, 0, 0, 0.31);
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.caixa-extrac h1 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 0;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.caixa-extrac p {
+    margin: 0;
+    text-align: justify;
+}
+
+.caixa-extrac img {
+    width: 220px;
+    height: 120px;
+    border-radius: 20px;
+}
+
+.caixa-extrac button {
+    margin-top: 15px;
+    padding: 5px 15px;
+    background-color: #F27329;
+    color: white;
+    border-radius: 10px;
+    border: none;
+    text-transform: uppercase;
+}
+
+.caixa-extrac button a {
+    text-decoration: none;
+    color: white;
+}
+
+.caixa-extrac button:hover {
+    background-color: #f27329ca;
+    cursor: pointer;
+}
+
+.caixa-curso {
+    margin: 30px auto;
+    padding: 30px 30px;
+    border-radius: 10px;
+    width: 700px;
+
+    border: 1px solid rgba(0, 0, 0, 0.322);
+}
+
+.caixa-curso h2 {
+    margin: 0;
+
+    text-transform: uppercase;
+    color: #F27329;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.caixa-curso h3 {
+    margin-top: 20px;
+
+    text-transform: uppercase;
+    font-size: 15px;
+}
+
+.caixa-curso p {
+    margin-top: -5px;
+    margin-bottom: 30px;
+
+    text-align: justify;
+}
+
+.caixa-curso ul {
+    margin-top: -5px;
+    margin-bottom: 25px;
+}
+
+.caixa-curso p#valor {
+    margin-top: -10px;
+
+    color: darkgreen;
+    font-weight: 600;
+}
+
+.caixa-curso button {
+    padding: 10px 15px;
+    border-radius: 10px;
+    margin-top: -10px;
+
+    background-color: white;
+    border: 1px solid rgba(0, 0, 0, 0.322);
+    background: #033E8C;
+    color: white;
+}
+
+.caixa-curso button a {
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+
+.caixa-curso button:hover {
+    background-color: #033e8cdd;
+    cursor: pointer;
+}
+
+#caixa-principal-especial {
+    height: 500px;
+}
+
+#form-dados h2 {
+    margin: 0;
+    margin-top: -5px;
+    font-size: 18px;
+    font-weight: 300;
+    color: #F27329;
+    text-transform: uppercase;
+}
+
+
+/* FALTAS */
+#overflow {
+    overflow: auto;
+}
+
+.timeline {
+    margin: 20px 10px;
+    padding: 0px 30px;
+    border-radius: 10px;
+    height: 330px;
+}
+
+.timeline h3 {
+    margin: 0;
+
+    text-transform: uppercase;
+}
+
+.timeline h4 {
+    margin: 0;
+    margin-top: 2px;
+
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: 600;
+    color: black;
+}
+
+.timeline-container {
+    display: inline-block;
+    margin: 15px;
+    padding: 30px 40px;
+    border-radius: 15px;
+    width: 230px;
+
+    color: black;
+    border: 1px solid #033E8C;
+}
+
+.timeline-container ul {
+    list-style: none;
+    text-transform: uppercase;
+    margin: 20px 0px;
+    padding: 0;
+
+    font-size: 14px;
+}
+
+.timeline-container li {
+    margin: 0;
+}
+
+.timeline-container button {
+    padding: 5px 15px;
+    border-radius: 15px;
+
+    background-color: #033E8C;
+    text-transform: uppercase;
+    color: white;
+    border: none;
+    font-size: 13px;
+}
+
+.timeline-container button:hover {
+    background-color: #033e8cd1;
+    cursor: pointer;
+    transition: background-color 0.5s;
+}
+
