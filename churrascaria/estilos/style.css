@@ -41,6 +41,17 @@ header {
         background-color: #3C3B3B;
         color: #FFF;
     }
+
+    #icone-menu {
+        font-size: 2em;
+        color: #3C3B3B;
+        display: none;
+        cursor: pointer;
+    }
+
+    .menu-mobile {
+        display: none;
+    }
 }
 
 
@@ -51,7 +62,7 @@ section#home {
     color: #FFF;
 
     div.banner img {
-        width: 100vw;
+        width: 100%;
         height: 100%;
     }
 
@@ -86,6 +97,7 @@ section#menu {
     .container {
         display: flex;
         margin-top: 50px;
+        text-align: center;
     }
 
     .box {
@@ -94,30 +106,9 @@ section#menu {
         div.imagem {
             border-radius: 50%;
             margin-bottom: 15px;
-            overflow: hidden;
-            position: relative;
 
             img {
                 border-radius: 50%;
-            }
-
-            .overlay {
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                position: absolute;
-                top: 0;
-                left: 0;
-                width: 100%;
-                height: 99%;
-                border-radius: 50%;
-                background-color: #ff84007c;
-                opacity: 0;
-                transition: .5s;
-            }
-
-            .overlay:hover {
-                opacity: 1;
             }
         }
 
@@ -141,11 +132,12 @@ section#menu {
 section#photos {
     .container {
         margin-top: 50px;
+        text-align: center;
     }
 
     img {
-        width: 296px;
-        height: 197px;
+        width: 20%;
+        height: 10%;
         margin: 8px;
         border-radius: 5px;
     }
