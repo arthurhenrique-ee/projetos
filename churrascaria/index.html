@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Churrascaria</title>
 
+    <!-- FAVICON -->
+     <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
+
     <!-- ICONS INSTALL -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 
@@ -33,6 +36,9 @@
     <main>
         <!-- INÍCIO -->
         <section id="home">
+            <div class="banner">
+                <img src="imagens/banner-home.jpg" alt="">
+            </div> 
             <div class="txt">
                 <h1 id="titulo-principal">Churrasco</h1>
                 <p>Carne de Qualidade</p>
@@ -41,37 +47,40 @@
 
         <!-- CARDÁPIO -->
         <section id="menu">
-            <h1>Cardápio</h1>
+            <h1><i class="bi bi-journal-text"></i> Cardápio</h1>
 
             <div class="container">
                 <div class="box">
                     <div class="imagem">
                         <img src="imagens/img-circle-carnes.jpg" alt="Carnes">
+                        <div class="overlay"></div>
                     </div>
                     <div class="txt">
                         <h2>Carnes</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi cum eveniet deserunt incidunt alias adipisci repudiandae quia voluptas quo! Ex omnis sapiente cupiditate deserunt alias hic iusto consequatur nam atque!</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
                     </div>
                 </div>
 
                 <div class="box">
                     <div class="imagem">
                         <img src="imagens/img-circle-sobremesas.jpg" alt="Sobremesas">
+                        <div class="overlay"></div>
                     </div>
                     <div class="txt">
                         <h2>Sobremesas</h2>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minima error necessitatibus sint repudiandae temporibus. Ad ut, fugit expedita error at corporis nihil tempora molestiae, animi qui amet earum voluptatem veritatis.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
                     </div>
                 </div>
 
                 <div class="box">
                     <div class="imagem">
                         <img src="imagens/img-circle-bebidas.jpg" alt="Bebidas">
+                        <div class="overlay"></div>
                     </div>
 
                     <div class="txt">
                         <h2>Bebidas</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem voluptatem esse, nam totam illo dolores soluta exercitationem, doloremque aut, consequatur laborum doloribus at reprehenderit quibusdam vero. Minima quidem nobis enim?</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
                     </div>
                 </div>
             </div>
@@ -79,12 +88,12 @@
 
         <!-- GALERIA DE FOTOS -->
         <section id="photos">
-            <h1>Galeria de Fotos</h1>
+            <h1><i class="bi bi-image"></i> Galeria de Fotos</h1>
             <div class="container">
                 <img src="imagens/1.jpg" alt="1" class="photo">
                 <img src="imagens/2.jpg" alt="2" class="photo">
                 <img src="imagens/3.jpg" alt="3" class="photo">
-                <img src="imagens/4.jpg" alt="4" class="photo">
+                <img src="imagens/4.jpg" alt="4" class="photo"><br>
                 <img src="imagens/5.jpg" alt="5" class="photo">
                 <img src="imagens/6.jpg" alt="6" class="photo">
                 <img src="imagens/7.jpg" alt="7" class="photo">
@@ -94,11 +103,17 @@
 
         <!-- FALE CONOSCO -->
         <section id="contact">
-            <h1>Fale Conosco</h1>
+            <h1><i class="bi bi-envelope-fill"></i> Fale Conosco</h1>
 
             <div class="container">
                 <div class="formulario">
-
+                    <form action="#" method="get">
+                        <input type="text" name="nome" id="nome" placeholder="Nome" required>
+                        <input type="email" name="email" id="email" placeholder="E-mail" required>
+                        <input type="text" name="assunto" id="assunto" placeholder="Assunto" required>
+                        <textarea name="msg" id="msg" placeholder="Deixe sua mensagem" required></textarea>
+                        <input type="submit" value="Enviar">
+                    </form>
                 </div>
 
                 <div class="info">
@@ -114,10 +129,10 @@
                     </div>
 
                     <div class="social">
-                        <button class="btn-social"><a href="#"><i class="bi bi-facebook"></i></a></button>
-                        <button class="btn-social"><a href="#"><i class="bi bi-twitter-x"></i></a></button>
-                        <button class="btn-social"><a href="#"><i class="bi bi-instagram"></i></a></button>
-                        <button class="btn-social"><a href="#"><i class="bi bi-pinterest"></i></a></button>
+                        <button class="btn-social"><i class="bi bi-facebook"></i></button>
+                        <button class="btn-social"><i class="bi bi-twitter-x"></i></button>
+                        <button class="btn-social"><i class="bi bi-instagram"></i></button>
+                        <button class="btn-social"><i class="bi bi-pinterest"></i></button>
                     </div>
                 </div>
             </div>
