@@ -50,15 +50,16 @@ header {
     }
 
     .menu-mobile {
-        position: absolute;
+        position: fixed;
         top: 0;
-        left: 0;
+        left: -200px;
         background-color: #3c3b3bfa;
         z-index: 1;
         border-radius: 0px 0px 5px 0px;
-        width: 0;
+        width: 200px;
         height: 100%;
         overflow: hidden;
+        transition: left .4s ease;
 
         a {
             display: block;

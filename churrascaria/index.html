@@ -25,18 +25,18 @@
 
         <!-- MENU -->
         <nav class="menu-desktop">
-            <a href="#">Início</a>
-            <a href="#">Cardápio</a>
-            <a href="#">Galeria de Fotos</a>
-            <a href="#">Contato</a>
+            <a href="#home">Início</a>
+            <a href="#menu">Cardápio</a>
+            <a href="#photos">Galeria de Fotos</a>
+            <a href="#contact">Contato</a>
         </nav>
 
-        <i id="icone-menu" class="bi bi-list"></i>
+        <i id="icone-menu" class="bi bi-list" onclick="clickMenu()"></i>
         <nav class="menu-mobile">
-            <a href="#">Início</a>
-            <a href="#">Cardápio</a>
-            <a href="#">Galeria de Fotos</a>
-            <a href="#">Contato</a>
+            <a href="#home" onclick="clicou()">Início</a>
+            <a href="#menu" onclick="clicou()">Cardápio</a>
+            <a href="#photos" onclick="clicou()">Galeria de Fotos</a>
+            <a href="#contact" onclick="clicou()">Contato</a>
         </nav>
     </header>
 
@@ -154,5 +154,21 @@
             </div>
         </footer>
     </main>
+
+    <script>
+        function clickMenu() {
+            let menu = document.querySelector('.menu-mobile')
+            if (menu.style.left == '-200px') {
+                menu.style.left = '0'
+            } else {
+                menu.style.left = '-200px'
+            }
+        }
+
+        function clicou() {
+            let menu = document.querySelector('.menu-mobile')
+            menu.style.left = '-200px'
+        }
+    </script>
 </body>
 </html>
