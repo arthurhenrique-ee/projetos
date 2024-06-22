@@ -135,72 +135,114 @@ section#sobre .txt {
     margin-top: 35px;
 }
 
+section#sobre .txt p {
+    text-align: justify;
+}
+
 /* SERVIÇOS */
-
-section#servicos .container {
-    margin-top: 40px;
-    width: 100%;
+section#servicos .flex {
+    flex-direction: column;
 }
 
-section#servicos .container .line {
-    display: flex;
+section#servicos .box {
+    margin: 50px 0px;
 }
 
-.container article {
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: 140%;
-
+section#servicos .box .imagem {
     position: relative;
-    display: flex;
-    align-items: center;
-    padding: 20px;
-    width: 50%;
-    height: 30vh;
-    background-color: var(--branco);
-    cursor: pointer;
-    transition: .3s;
-    overflow: hidden;
-}
-
-.container article:hover {
-    background-color: #7a6756b4;
-}
-
-.container article .txt {
-    z-index: 999;
-}
-
-.container article .txt h2 {
-    font-family: "Source Sans", sans-serif;
-    font-size: 1.3em;
-    line-height: 15px;
-    letter-spacing: 0;
-    color: var(--branco);
-    border-bottom: 2px solid var(--branco);
-    padding-bottom: 15px;
-    text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
-}
-
-.container article .txt p {
-    font-family: "Source Sans", sans-serif;
-    margin-top: 15px;
-    color: var(--branco);
-    text-transform: uppercase;
-    font-size: 0.7em;
-    text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
-}
-
-.container article .overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 120%;
     width: 100%;
-    opacity: 0.8;
+    height: 300px;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 10px;
+    cursor: pointer;
     transition: all .5s;
 }
 
-.container article:hover .overlay {
-    opacity: 0.3;
+section#servicos .box .imagem .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0;
+    transition: all .5s;
+}
+
+section#servicos .box:hover .imagem .overlay {
+    opacity: 0.5;
+}
+
+section#servicos .box:hover .imagem {
+    background-size: 140%;
+}
+
+section#servicos .box .txt {
+    padding: 0px 20px;
+}
+
+section#servicos .box .txt h2 {
+    letter-spacing: -1px;
+}
+
+/* CONTATO */
+section#contato .flex {
+    margin-top: 50px;
+    flex-direction: column;
+    text-align: center;
+}
+
+section#contato .informacoes {
+    border-bottom: 1px solid #a6636367;
+}
+
+section#contato .informacoes ul {
+    list-style: none;
+}
+
+section#contato .informacoes ul li {
+    margin-bottom: 50px;
+    font-size: 1.1em;
+}
+
+section#contato .informacoes ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+section#contato .informacoes ul li a:hover {
+    text-decoration: underline;
+}
+
+section#contato .social {
+    margin-top: 50px;
+}
+
+/* RODAPÉ */
+footer {
+    background-color: #A66363;
+    color: white;
+}
+
+footer .interface {
+    padding: 20px 10%;
+}
+
+footer p {
+    text-align: center;
+    font-size: 0.8em;
+    margin: 5px;
+}
+
+footer p a {
+    text-decoration: none;
+    color: white;
+}
+
+footer p a:hover {
+    text-decoration: underline;
 }
