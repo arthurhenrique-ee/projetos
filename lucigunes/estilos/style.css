@@ -1,0 +1,114 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+:root {
+    --verde: #5A7348;
+    --branco: #EBE6E4;
+    --marrom: #7A6756;
+    --rosa: #A66363;
+}
+
+/* ESTILIZAÇÃO GERAL */
+* {
+    font-family: "Space Mono", monospace;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: var(--branco);
+}
+
+.interface {
+    max-width: 500px;
+    padding: 70px 10%;
+}
+
+h1 {
+    font-size: 30px;
+    text-align: center;
+}
+
+h1 span.destaque {
+    color: var(--rosa);
+}
+
+
+/* CABEÇALHO */
+header {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100vw;
+    background-color: #ebe6e4a4;
+}
+
+header nav.menu-desktop {
+    display: none;
+}
+
+header nav.menu-mobile {
+    display: none;
+}
+
+header nav.menu-mobile a {
+    text-decoration: none;
+    color: black;
+}
+
+
+/* INÍCIO */
+section#inicio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100vh;
+}
+
+section#inicio .txt h1 {
+    line-height: 35px;
+}
+
+section#inicio .curriculo {
+    margin: 60px 0px;
+}
+
+.btn-curriculo {
+    padding: 10px 15px;
+    border-radius: 10px;
+    font-size: 0.8em;
+    border: 1px solid var(--rosa);
+    background-color: var(--branco);
+    cursor: pointer;
+    transition: all .3s;
+}
+
+.btn-curriculo:hover {
+    background-color: var(--rosa);
+}
+
+.btn-curriculo a {
+    text-decoration: none;
+    color: black;
+}
+
+.social .btn-social {
+    padding: 10px 15px;
+    border: none;
+    background-color: var(--branco);
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+.social .btn-social:hover a {
+    color: var(--rosa);
+}
+
+.social .btn-social a {
+    text-decoration: none;
+    color: black;
+    transition: all .3s;
+}
