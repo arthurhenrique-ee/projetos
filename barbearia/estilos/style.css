@@ -254,3 +254,94 @@ section#photos {
         border-radius: 5px;
     }
 }
+
+/* FALE CONOSCO */
+section#contact {
+    background-color: #F9F9F9;
+
+    .flex {
+        margin-top: 40px;
+        justify-content: space-evenly;
+    }
+
+    .formulario form input, textarea {
+        display: block;
+        margin: 15px;
+        padding: 10px;
+        width: 450px;
+        outline: none;
+        font-size: 1em;
+        transition: all .5s;
+    }
+
+    .formulario form input:focus-within, textarea:focus-within {
+        outline: 1px solid #366891;
+        color: #366891;
+    }
+
+    .formulario form input#submit {
+        width: 100px;
+        border: 1px solid rgba(0, 0, 0, 0.514);
+        background-color: white;
+        cursor: pointer;
+        transition: all .3s;
+    }
+
+    .formulario form input#submit:hover {
+        background-color: #366891;
+        color: white;
+    }
+
+    .info {
+        .list-info ul {
+            list-style: none;
+            font-weight: lighter;
+            color: gray;
+        }
+
+        .list-info ul li {
+            margin: 5px;
+        }
+
+        .social {
+            margin-top: 20px;
+        }
+
+        .social .btn-social {
+            padding: 10px 15px;
+            border-radius: 5px;
+            font-size: 1em;
+            background-color: white;
+            border: 1px solid #0E2A34;
+            cursor: pointer;
+            transition: all .3s;
+        }
+
+        .social .btn-social:hover {
+            background-color: #366891;
+            color: white;
+        }
+    }
+}
+
+/* RODAPÉ */
+footer {
+    padding: 20px 5%;
+    background-color: #0E2A34;
+    color: white;
+
+    .flex {
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .flex p a {
+        text-decoration: none;
+        color: white;
+    }
+
+    .flex p a:hover {
+        text-decoration: underline;
+        color: #4A688E;
+    }
+}
