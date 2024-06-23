@@ -25,12 +25,25 @@
 
         <!-- MENU MOBILE -->
         <nav class="menu-mobile">
-            <a href="#">Início</a>
-            <a href="#">Sobre</a>
-            <a href="#">Serviços</a>
-            <a href="#">Contato</a>
+            <a href="#inicio" onclick="clicou()">Início</a>
+            <a href="#sobre" onclick="clicou()">Sobre</a>
+            <a href="#servicos" onclick="clicou()">Serviços</a>
+            <a href="#contato" onclick="clicou()">Contato</a>
+
+            <!-- REDES SOCIAIS -->
+            <div class="social">
+                <button class="btn-social">
+                    <a href="#"><i class="bi bi-whatsapp"></i></a>
+                </button>
+                <button class="btn-social">
+                    <a href="#"><i class="bi bi-linkedin"></i></a>
+                </button>
+                <button class="btn-social">
+                    <a href="#"><i class="bi bi-instagram"></i></a>
+                </button>
+            </div>
         </nav>
-        <i class="bi bi-list" id="icone-menu"></i>
+        <i class="bi bi-list" id="icone-menu" onclick="clickMenu()"></i>
     </header>
 
     <!-- CONTEÚDO -->
@@ -39,7 +52,7 @@
             <div class="interface">
                 <!-- TÍTULO PRINCIPAL -->
                 <div class="txt">
-                    <h1>Luciléia Gunes <span class="destaque">Consultora Financeira</span></h1>
+                    <h1>Luciléia Gunes<br><span class="destaque">Consultora Financeira</span></h1>
                 </div>
 
                 <!-- CURRÍCULO -->
@@ -104,8 +117,11 @@
                 <div class="flex">
                     <div class="txt">
                         <p>Sou formada em Gestão Financeira pela Unicesumar e acumulo dois anos de experiência sólida na área financeira. Minha especialização principal é em gestão de investimentos, e tive a oportunidade de trabalhar em empresas como Supermercado EPA, Mastermaq Softwares e Perfiltech Net.</p>
-                        <p>Na Mastermaq Softwares, destaco-me por ter triplicado as metas de vendas, demonstrando minha capacidade em alcançar resultados significativos. Considero a comunicação uma das minhas principais competências, permitindo-me explicar de forma clara e eficaz estratégias financeias complexas.<p>                            
-                        <p>Tenho um compromisso firme com a excelência e trago uma abordagem dinâmica para a gestão financeira, sempre focada em resultados tangíveis. Minha habilidade em liderar equipes e projetos com eficiência é complementada por uma forte ética de trabalho e determinação em enfrentar desafios.</p>
+                        <div class="escondido">
+                            <p>Na Mastermaq Softwares, destaco-me por ter triplicado as metas de vendas, demonstrando minha capacidade em alcançar resultados significativos. Considero a comunicação uma das minhas principais competências, permitindo-me explicar de forma clara e eficaz estratégias financeias complexas.<p>
+                            <p>Tenho um compromisso firme com a excelência e trago uma abordagem dinâmica para a gestão financeira, sempre focada em resultados tangíveis. Minha habilidade em liderar equipes e projetos com eficiência é complementada por uma forte ética de trabalho e determinação em enfrentar desafios.</p>
+                        </div>
+                        <button class="btn-ler" onclick="lerMais()">Ler mais</button>
                     </div>
 
                     <div class="imagem">
@@ -195,5 +211,7 @@
             </div>
         </footer>
     </main>
+
+    <script src="script.js"></script>
 </body>
 </html>
