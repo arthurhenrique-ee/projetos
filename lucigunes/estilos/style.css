@@ -48,6 +48,13 @@ h1 span.destaque, h2 span.destaque, h3 span.destaque {
     cursor: pointer;
 }
 
+a {
+    outline: none;
+    -webkit-tap-highlight-color: transparent;
+    user-select: none;
+    touch-action: manipulation;
+}
+
 
 /* CABEÇALHO */
 header {
