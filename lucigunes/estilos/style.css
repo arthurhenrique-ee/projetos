@@ -1,6 +1,7 @@
 @charset "UTF-8";
 @import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 :root {
     --verde: #5A7348;
@@ -11,7 +12,7 @@
 
 /* ESTILIZAÇÃO GERAL */
 * {
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: "Montserrat", sans-serif;
     box-sizing: border-box;
     padding: 0;
     margin: 0;
@@ -32,12 +33,30 @@ body {
 }
 
 h1 {
-    font-size: 30px;
+    position: relative;
     text-align: center;
+    font-size: 25px;
+    padding-bottom: 30px;
+    z-index: -1;
+}
+
+h1::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 2px;
+    background-color: var(--rosa);
 }
 
 h1 span.destaque, h2 span.destaque, h3 span.destaque {
     color: var(--rosa);
+}
+
+h1#titulo-principal::after {
+    all: initial;
 }
 
 .social .btn-social {
@@ -119,6 +138,7 @@ section#inicio {
 }
 
 section#inicio .txt h1 {
+    padding-bottom: 0px;
     font-size: 2.1em;
     line-height: 35px;
 }
@@ -141,23 +161,23 @@ section#inicio .botao {
     font-size: 0.8em;
     text-transform: uppercase;
     border: 1px solid var(--rosa);
-    background-color: var(--branco);
+    background-color: var(--rosa);
     cursor: pointer;
     transition: all .3s;
 }
 
 .btn-contato:hover {
-    background-color: var(--rosa);
-}
-
-.btn-contato:hover a {
-    color: white;
+    background-color: var(--branco);
 }
 
 .btn-contato a {
     text-decoration: none;
-    color: black;
+    color: white;
     transition: all .3s;
+}
+
+.btn-contato:hover a {
+    color: black;
 }
 
 #inicio .social .btn-social {
@@ -179,59 +199,65 @@ section#inicio .botao {
     transition: all .3s;
 }
 
-/* VANTAGENS */
-#vantagens {
-    padding: 50px 0;
-}
-
-#vantagens .interface {
-    display: flex;
+/* SERVIÇOS */
+section#servicos .flex {
+    margin-top: 60px;
     flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: stretch;
 }
 
-#vantagens .itens-container {
+#servicos .box {
     display: flex;
     align-items: center;
-    text-align: center;
-    width: 45%;
-    height: 250px;
-    margin: 15px 0;
-    padding: 35px;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    background-color: #ffffff4f;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-#vantagens .itens-container:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
-}
-
-#vantagens .txt h3 {
-    font-size: 1em;
-    color: #333333;
     margin-bottom: 15px;
+    width: 100%;
+    height: 400px;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    transition: box-shadow .5s ease;
+}
+
+#servicos .box:hover {
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+#servicos .box .icone i {
+    font-size: 3em;
+    color: var(--rosa);
+}
+
+#servicos .box .txt {
+    margin: 30px 0px;
+}
+
+#servicos .box .txt h2 {
+    margin-bottom: 20px;
+    font-size: 1.2em;
+}
+
+#servicos .box .btn {
+    padding: 10px 15px;
+    border-radius: 5px;
     text-transform: uppercase;
+    background-color: var(--rosa);
+    border: 2px solid var(--rosa);
+    cursor: pointer;
+    transition: all .3s;
 }
 
-#vantagens .txt h3 .destaque {
-    color: #A66363;
+#servicos .box .btn:hover {
+    background-color: var(--branco);
+    transform: scale(1.05);
 }
 
-#vantagens .txt p {
-    margin: auto;
-    font-size: 15px;
-    color: #666666;
-    line-height: 1.5;
+#servicos .box .btn a {
+    text-decoration: none;
+    color: white;
+    transition: color .3s;
 }
 
-@media (max-width: 768px) {
-    #vantagens .itens-container {
-        width: 100%;
-    }
+#servicos .box .btn:hover a {
+    color: black;
 }
 
 /* SOBRE */
@@ -267,51 +293,22 @@ section#sobre .txt p {
 
 .btn-ler {
     border: 1px solid #A66363;
-    border-radius: 20px;
+    border-radius: 60px;
     padding: 5px 10px;
-    background-color: #EBE6E4;
+    background-color: var(--rosa);
+    color: white;
     cursor: pointer;
     transition: all .3s;
 }
 
 .btn-ler:hover {
-    background-color: #A66363;
-    color: white;
+    background-color: var(--branco);
+    color: black;
 }
 
 .escondido {
     display: none;
 }
-
-/* SERVIÇOS */
-section#servicos .flex {
-    flex-direction: column;
-}
-
-#servicos .box {
-    border: 2px solid #ccbebe;
-    border-radius: 15px;
-    margin: 50px auto 0px auto;
-    padding: 40px;
-    width: 350px;
-    height: 350px;
-}
-
-#servicos .box .icon {
-    text-align: center;
-}
-
-#servicos .box .icon i {
-    font-size: 5em;
-    color: #ccbebe;
-}
-
-#servicos .box .txt h2 {
-    line-height: 25px;
-    font-size: 1.3em;
-    margin-bottom: 10px;
-}
-
 
 /* CONTATO */
 section#contato {
