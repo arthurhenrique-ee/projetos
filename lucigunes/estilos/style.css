@@ -78,11 +78,9 @@ a {
 /* CABEÇALHO */
 header {
     position: fixed;
-    display: flex;
-    align-items: center;
-    justify-content: end;
     width: 100vw;
-    padding: 10px 50px;
+    padding: 10px;
+    text-align: right;
 }
 
 header nav.menu-desktop {
@@ -99,7 +97,7 @@ header nav.menu-mobile {
     top: 0;
     left: -200px;
     width: 200px;
-    height: 100vh;
+    height: 100%;
     text-align: center;
     padding-top: 40px;
     background-color: rgba(255, 255, 255, 0.95);
@@ -125,7 +123,7 @@ header nav.menu-mobile .social {
 
 header nav.menu-mobile .btn-social {
     background-color: transparent;
-    padding: 10px 5px;
+    padding: 10px;
 }
 
 /* INÍCIO */
@@ -144,11 +142,14 @@ section#inicio .txt h1 {
 }
 
 section#inicio .txt p {
+    margin: auto;
     margin-top: 15px;
-    font-size: 0.68em;
-    letter-spacing: 2px;
-    text-transform: uppercase;
+    width: 400px;
+    font-size: 0.8em;
+    letter-spacing: 1px;
+    line-height: 1.5;
     font-weight: 500;
+    text-transform: uppercase;
 }
 
 section#inicio .botao {
@@ -260,6 +261,184 @@ section#servicos .flex {
     color: black;
 }
 
+/* CONSULTORIA FINANCEIRA */
+section#consultoria-financeira h2 {
+    margin-top: 15px;
+    font-size: 1em;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+section#consultoria-financeira h2 i {
+    font-size: 1.4em;
+}
+
+#consultoria-financeira .flex {
+    margin-top: 60px;
+    margin-bottom: 40px;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+#consultoria-financeira .flex .box {
+    margin-bottom: 50px;
+}
+
+#consultoria-financeira .flex .box .txt i {
+    font-size: 2.5em;
+    color: var(--rosa);
+}
+
+#consultoria-financeira .flex .box .txt h3 {
+    margin: 10px 0px;
+    letter-spacing: 1px;
+}
+
+/* CONSULTORIA ONLINE */
+section#consultoria-online h2 {
+    margin-top: 80px;
+    font-size: 1em;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+#consultoria-online p.intro {
+    margin-top: 30px;
+    line-height: 1.5;
+    text-align: center;
+}
+
+/* BENEFÍCIOS */
+#consultoria-online ul {
+    margin: auto;
+    list-style: none;
+}
+
+#consultoria-online ul li {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin: 40px 0px;
+    padding-bottom: 40px;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.199);
+}
+
+#consultoria-online ul li i {
+    font-size: 2.5em;
+}
+
+#consultoria-online ul li h3 {
+    font-size: 1em;
+    margin-bottom: 5px;
+}
+
+/* COMO FUNCIONA */
+#consultoria-online .flex {
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+#consultoria-online .flex .box {
+    display: flex;
+    align-items: center;
+    margin: 10px auto;
+    padding: 30px;
+    width: 250px;
+    height: 250px;
+    border-radius: 10px;
+    text-align: center;
+    transition: all .3s;
+}
+
+#consultoria-online .flex .box:hover {
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.4);
+    transform: scale(1.05);
+}
+
+#consultoria-online .flex .box i {
+    font-size: 3em;
+}
+
+#consultoria-online .flex .box h3 {
+    margin: 10px 0px;
+    font-size: 1em;
+}
+
+/* MENTORIA ONLINE */
+section#mentoria p.intro {
+    margin-top: 30px;
+    line-height: 1.5;
+    text-align: center;
+}
+
+#mentoria h2 {
+    margin-top: 80px;
+    font-size: 1em;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+#mentoria ul {
+    margin: auto;
+    list-style: none;
+}
+
+#mentoria ul li {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin: 40px 0px;
+    padding-bottom: 40px;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.199);
+}
+
+#mentoria ul li i {
+    font-size: 2em;
+}
+
+#mentoria ul li h3 {
+    font-size: 1em;
+    margin-bottom: 5px;
+}
+
+#mentoria .orientacao {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 250px;
+    padding: 30px;
+    text-align: center;
+    background-color: #ccbebe;
+}
+
+#mentoria .orientacao h3 {
+    font-size: 1.3em;
+    text-transform: uppercase;
+}
+
+#mentoria .orientacao p {
+    margin: 15px 0px;
+}
+
+#mentoria .orientacao button {
+    padding: 10px 15px;
+    border-radius: 10px;
+    background-color: #A66363;
+    border: none;
+    cursor: pointer;
+}
+
+#mentoria .orientacao button:hover {
+    opacity: 0.8;
+}
+
+#mentoria .orientacao button a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+}
+
 /* SOBRE */
 section#sobre .flex {
     margin-top: 30px;
@@ -267,19 +446,23 @@ section#sobre .flex {
     text-align: center;
 }
 
-section#sobre .imagem {
-    margin: auto;
-    max-width: 350px;
-    height: 350px;
-    border-radius: 10px;
+section#sobre .imagem img {
+    margin-bottom: 15px;
+    width: 250px;
+    border-radius: 50%;
     filter: brightness(0.7);
-    overflow: hidden;
-    z-index: -1;
 }
 
-section#sobre .imagem img {
-    max-width: 400px;
-    height: 400px;
+section#sobre .imagem h2 {
+    font-size: 1.3em;
+}
+
+section#sobre .imagem h3 {
+    margin-top: 5px;
+    font-size: 0.9em;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: var(--rosa);
 }
 
 section#sobre .txt {
@@ -345,8 +528,12 @@ section#contato .informacoes ul li a:hover {
     text-decoration: underline;
 }
 
-section#contato .social {
+section#contato p {
     margin-top: 50px;
+}
+
+section#contato .social {
+    margin-top: 15px;
 }
 
 /* RODAPÉ */
