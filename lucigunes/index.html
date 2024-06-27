@@ -14,7 +14,7 @@
 </head>
 <body>
     <!-- CABEÇALHO -->
-    <header>
+    <header id="header">
         <!-- MENU DESKTOP -->
         <nav class="menu-desktop">
             <a href="#">Início</a>
@@ -49,18 +49,16 @@
     <!-- CONTEÚDO -->
     <main>
         <section id="inicio">
-            <div class="interface">
+            <div class="container">
                 <!-- TÍTULO PRINCIPAL -->
                 <div class="txt">
                     <h1 id="titulo-principal">Luciléia Gunes<br><span class="destaque">Consultora Financeira</span></h1>
                     <p>Transforme sua visão financeira com orientação especializada e personalizada.</p>
                 </div>
-
                 <!-- CURRÍCULO -->
                 <div class="botao">
                     <button class="btn-contato"><a href="#">Contato</a></button>
                 </div>
-
                 <!-- REDES SOCIAIS -->
                 <div class="social">
                     <button class="btn-social">
@@ -321,6 +319,73 @@
                     <p>Explore uma orientação especializada para desenvolver suas habilidades e fortalecer seu futuro financeiro.</p>
                     <button><a href="https://wa.me/5531989285119">Contato</a></button>
                 </div>
+            </div>
+        </section>
+        
+        <!-- PERGUNTAS FREQUENTES -->
+        <section id="faq">
+            <div class="interface">
+                <img src="imagens/img-faq.png">
+                <h1>Dúvidas Frequentes</h1>
+
+                <ul>
+                    <li>
+                        <div class="question">
+                            <h2 onclick="toggleAnswer(this)">Quais serviços de consultoria financeira são oferecidos?</h2>
+                        </div>
+                        <div class="answer">
+                            <p>Os serviços oferecidos incluem planejamento financeiro, gestão de investimentos, redução de dívidas, planejamento de aposentadoria, educação financeira e outros para pessoas físicas. Para empresas, oferecemos equilíbrio financeiro, redução de custos, maximização de lucros, gestão de riscos, compliance, entre outros. Para mais informações, visite a seção <a href="#servicos">Serviços</a> do site.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="question">
+                            <h2 onclick="toggleAnswer(this)">Como agendar uma consulta?</h2>
+                        </div>
+                        <div class="answer">
+                            <p>As consultas podem ser agendadas através da seção <a href="#contato">Contato</a> do site, onde você encontrará opções para entrar em contato via WhatsApp, e-mail ou telefone.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="question">
+                            <h2 onclick="toggleAnswer(this)">Qual é o processo de consultoria financeira?</h2>
+                        </div>
+                        <div class="answer">
+                            <p>O processo inclui uma análise detalhada da situação financeira do cliente, desenvolvimento de um plano personalizado e orientação contínua para alcançar objetivos financeiros.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="question">
+                            <h2 onclick="toggleAnswer(this)">Quais são as qualificações e experiência do consultor?</h2>
+                        </div>
+                        <div class="answer">
+                            <p>A consultora é formada em Gestão Financeira pela Unicesumar e possui dois anos de experiência sólida na área financeira. Sua especialização principal é em gestão de investimentos, com experiência em empresas como Balneário Rio de Pedras, Mastermaq Softwares e Perfiltecnet.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="question">
+                            <h2 onclick="toggleAnswer(this)">Os serviços são oferecidos para pessoas e empresas?</h2>
+                        </div>
+                        <div class="answer">
+                            <p>Sim, oferecemos serviços de consultoria financeira tanto para pessoas físicas quanto para empresas, adaptados às necessidades específicas de cada cliente.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="question">
+                            <h2 onclick="toggleAnswer(this)">É possível obter orientação específica sobre investimentos?</h2>
+                        </div>
+                        <div class="answer">
+                            <p>Sim, oferece-se consultoria especializada para ajudar a selecionar as melhores opções de investimento conforme o perfil e objetivos do cliente.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="question">
+                            <h2 onclick="toggleAnswer(this)">Onde encontrar recursos educativos sobre educação financeira?</h2>
+                        </div>
+                        <div class="answer">
+                            <p>Visite a seção <a href="#">Blog</a> do site, onde você encontrará vídeos do YouTube da consultora e artigos relacionados ao tema de educação financeira.</p>
+                        </div>
+                    </li>
+                </ul>
             </div>
         </section>
 

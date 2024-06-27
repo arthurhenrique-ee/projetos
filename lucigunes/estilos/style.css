@@ -67,7 +67,7 @@ h1#titulo-principal::after {
     cursor: pointer;
 }
 
-a {
+a, button {
     outline: none;
     -webkit-tap-highlight-color: transparent;
     user-select: none;
@@ -78,9 +78,16 @@ a {
 /* CABEÇALHO */
 header {
     position: fixed;
-    width: 100vw;
-    padding: 10px;
+    width: 100%;
+    padding: 10px 20px;
     text-align: right;
+    background-color: transparent;
+    z-index: 999;
+    transition: all .5s;
+}
+
+header.scrolled {
+   background-color: rgba(255, 255, 255, 0.9);
 }
 
 header nav.menu-desktop {
@@ -99,8 +106,8 @@ header nav.menu-mobile {
     width: 200px;
     height: 100%;
     text-align: center;
-    padding-top: 40px;
-    background-color: rgba(255, 255, 255, 0.95);
+    padding-top: 50px;
+    background-color: rgba(255, 255, 255, 0.9);
     overflow: hidden;
     transition: all .5s;
 }
@@ -128,24 +135,29 @@ header nav.menu-mobile .btn-social {
 
 /* INÍCIO */
 section#inicio {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    position: relative;
     text-align: center;
     height: 100vh;
 }
 
+section#inicio .container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
 section#inicio .txt h1 {
     padding-bottom: 0px;
-    font-size: 2.1em;
+    font-size: 1.8em;
     line-height: 35px;
 }
 
 section#inicio .txt p {
     margin: auto;
     margin-top: 15px;
-    width: 400px;
-    font-size: 0.8em;
+    width: 380px;
+    font-size: 0.7em;
     letter-spacing: 1px;
     line-height: 1.5;
     font-weight: 500;
@@ -437,6 +449,60 @@ section#mentoria p.intro {
     text-decoration: none;
     text-transform: uppercase;
     color: white;
+}
+
+/* PERGUNTAS FREQUENTES */
+section#faq img {
+    width: 100%;
+}
+
+#faq h1 {
+    margin: 30px 0px;
+}
+
+#faq ul {
+    margin-top: 50px;
+    list-style: none;
+}
+
+#faq ul li {
+    margin: 20px 0px;
+}
+
+#faq ul li .question {
+    border-bottom: 2px solid #7a67562f;
+    cursor: pointer;
+}
+
+#faq ul li .question h2 {
+    margin-bottom: 20px;
+    font-size: 1em;
+    text-transform: uppercase;
+    transition: all .3s;
+}
+
+#faq ul li:hover h2 {
+    color: #A66363;
+}
+
+#faq ul li .answer {
+    height: 0;
+    overflow: hidden;
+    transition: height .3s ease;
+}
+
+#faq ul li .answer p {
+    margin-top: 10px;
+    font-size: 0.9em;
+}
+
+#faq ul li .answer p a {
+    color: #A66363;
+    font-weight: bolder;
+}
+
+#faq ul li .answer p a:hover {
+    text-decoration: none;
 }
 
 /* SOBRE */
