@@ -5,20 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lucigunes</title>
 
-    <!-- ICONS INSTALL -->
+    <!-- ÍCONES -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 
-    <!-- LINKS CSS -->
+    <!-- ESTILOS -->
     <link rel="stylesheet" href="estilos/style.css">
     <link rel="stylesheet" href="estilos/media-queries.css">
-
-    <!-- SCROLL REVEAL -->
-    <script src="https://unpkg.com/scrollreveal"></script>
 </head>
+
 <body>
     <!-- CABEÇALHO -->
     <header id="header">
-        <!-- MENU DESKTOP -->
+        <!-- logo -->
+        <a href="#inicio" style="text-decoration: none; color: black;">
+            <p class="logo">Luci<span>gunes</span></p>
+        </a>
+
+        <!-- menu desktop -->
         <nav class="menu-desktop">
             <a href="#inicio">Início</a>
             <a href="#servicos">Serviços</a>
@@ -28,21 +31,16 @@
             <a href="#contato">Contato</a>
         </nav>
 
-        <a href="#inicio" style="text-decoration: none; color: black;">
-            <p class="logo">Luci<span>gunes</span></p>
-        </a>
-
-        <!-- MENU MOBILE -->
+        <!-- menu mobile -->
         <nav class="menu-mobile">
-            <a href="#inicio" onclick="clicou()">Início</a>
-            <a href="#servicos" onclick="clicou()">Serviços</a>
-            <a href="#faq" onclick="clicou()">FAQ</a>
-            <a href="#sobre" onclick="clicou()">Sobre</a>
-            <a href="#blog" onclick="clicou()">Blog</a>
-            <a href="#contato" onclick="clicou()">Contato</a>
+            <a href="#inicio" onclick="clickLink()">Início</a>
+            <a href="#servicos" onclick="clickLink()">Serviços</a>
+            <a href="#faq" onclick="clickLink()">FAQ</a>
+            <a href="#sobre" onclick="clickLink()">Sobre</a>
+            <a href="#blog" onclick="clickLink()">Blog</a>
+            <a href="#contato" onclick="clickLink()">Contato</a>
 
-            <!-- REDES SOCIAIS -->
-            <div class="social">
+            <div class="box-social">
                 <button class="btn-social">
                     <a href="https://wa.me/5531989285119" target="_blank"><i class="bi bi-whatsapp"></i></a>
                 </button>
@@ -54,43 +52,47 @@
                 </button>
             </div>
         </nav>
-        <i class="bi bi-list" id="icone-menu" onclick="clickMenu()"></i>
+
+        <!-- ícone menu -->
+        <i class="bi bi-list icone-menu" onclick="openMenu()"></i>
     </header>
 
     <!-- CONTEÚDO -->
     <main>
+        <!-- SEÇÃO INÍCIO -->
         <section id="inicio">
             <div class="container">
-                <!-- TÍTULO PRINCIPAL -->
+                <!-- titulo principal -->
                 <div class="txt efeito-titulo">
-                    <h1 id="titulo-principal">Luciléia Gunes<br><span class="destaque">Consultora Financeira</span></h1>
-                    <p>Transforme sua visão financeira com orientação especializada e personalizada.</p>
+                    <h1 class="main-title">Luciléia Gunes<br><span>Consultora Financeira</span></h1>
+                    <p class="slogan">Transforme sua visão financeira com orientação especializada e personalizada.</p>
                 </div>
-                <!-- CURRÍCULO -->
-                <div class="botao efeito-btn">
-                    <button class="btn-contato"><a href="https://wa.me/5531989285119" target="_blank">Contato</a></button>
-                </div>
-                <!-- REDES SOCIAIS -->
-                <div class="social">
+
+                <!-- botao -->
+                <button class="btn-contato"><a href="https://wa.me/5531989285119" target="_blank">Contato</a></button>
+
+                <!-- redes sociais -->
+                <div class="box-social">
                     <button class="btn-social">
-                        <a href="#"><i class="bi bi-whatsapp"></i></a>
+                        <a href="https://wa.me/5531989285119"><i class="bi bi-whatsapp"></i></a>
                     </button>
                     <button class="btn-social">
                         <a href="#"><i class="bi bi-linkedin"></i></a>
                     </button>
                     <button class="btn-social">
-                        <a href="#"><i class="bi bi-instagram"></i></a>
+                        <a href="https://instagram.com/lucigunes"><i class="bi bi-instagram"></i></a>
                     </button>
                 </div>
             </div>
         </section>
 
-        <!-- SERVIÇOS -->
+        <!-- SEÇÃO SERVIÇOS -->
         <section id="servicos">
             <div class="interface">
-                <h1>Meus Serviços</h1>
-
+                <h1 class="title">Meus Serviços</h1>
                 <div class="flex">
+
+                    <!-- box 1 -->
                     <div class="box efeito-box">
                         <div class="container">
                             <div class="icone"><i class="bi bi-coin"></i></div>
@@ -101,6 +103,8 @@
                             <button class="btn"><a href="#consultoria-financeira">Saiba Mais</a></button>
                         </div>
                     </div>
+
+                    <!-- box 2 -->
                     <div class="box efeito-box">
                         <div class="container">
                             <div class="icone"><i class="bi bi-laptop"></i></div>
@@ -111,6 +115,8 @@
                             <button class="btn"><a href="#consultoria-online">Saiba Mais</a></button>
                         </div>
                     </div>
+
+                    <!-- box 3 -->
                     <div class="box efeito-box">
                         <div class="container">
                             <div class="icone"><i class="bi bi-chat-fill"></i></div>
@@ -125,15 +131,16 @@
             </div>
         </section>
 
-        <!-- CONSULTORIA FINANCEIRA -->
-        <section id="consultoria-financeira">
+        <!-- SEÇÃO CONSULTORIA FINANCEIRA -->
+        <section id="financas">
             <div class="interface">
+                <h1 class="title">Consultoria Financeira</h1>
 
-                <!-- PESSOAL -->
-                <h1>Consultoria Financeira</h1>
-                <h2><i class="bi bi-person-fill"></i> Pessoal</h2>
-
+                <!-- pessoal -->
+                <h2 class="subtitle"><i class="bi bi-person-fill"></i> Pessoal</h2>
                 <div class="flex">
+
+                    <!-- box -->
                     <div class="box efeito-boxflash">
                         <div class="txt">
                             <i class="bi bi-check-circle"></i>
@@ -141,6 +148,8 @@
                             <p>Desenvolva um plano financeiro detalhado que abrange metas de curto, médio e longo prazo, garantindo uma vida financeira mais segura e estável.</p>
                         </div>
                     </div>
+
+                    <!-- box -->
                     <div class="box efeito-boxflash">
                         <div class="txt">
                             <i class="bi bi-check-circle"></i>
@@ -148,6 +157,8 @@
                             <p>Obtenha orientação especializada na escolha e gestão de investimentos, maximizando os retornos e minimizando os riscos.</p>
                         </div>
                     </div>
+
+                    <!-- box -->
                     <div class="box efeito-boxflash">
                         <div class="txt">
                             <i class="bi bi-check-circle"></i>
@@ -155,6 +166,8 @@
                             <p>Crie estratégias eficazes para quitar dívidas, reduzindo os encargos financeiros e melhorando a saúde financeira.</p>
                         </div>
                     </div>
+
+                    <!-- box -->
                     <div class="box efeito-boxflash">
                         <div class="txt">
                             <i class="bi bi-check-circle"></i>
@@ -162,6 +175,8 @@
                             <p>Planeje e acumule recursos suficientes para garantir uma aposentadoria confortável e segura.</p>
                         </div>
                     </div>
+
+                    <!-- box -->
                     <div class="box efeito-boxflash">
                         <div class="txt">
                             <i class="bi bi-check-circle"></i>
@@ -171,8 +186,11 @@
                     </div>
                 </div>
 
-                <h2><i class="bi bi-buildings-fill"></i> Para Empresas</h2>
+                <!-- para empresas -->
+                <h2 class="subtitle"><i class="bi bi-buildings-fill"></i> Para Empresas</h2>
                 <div class="flex">
+
+                    <!-- box -->
                     <div class="box efeito-boxflash">
                         <div class="txt">
                             <i class="bi bi-check-circle"></i>
@@ -180,6 +198,8 @@
                             <p>Melhore a gestão do fluxo de caixa, garantindo que a empresa tenha sempre recursos disponíveis para operar eficientemente.</p>
                         </div>
                     </div>
+
+                    <!-- box -->
                     <div class="box efeito-boxflash">
                         <div class="txt">
                             <i class="bi bi-check-circle"></i>
@@ -187,6 +207,8 @@
                             <p>Identifique e elimine desperdícios, otimizando recursos e aumentando a lucratividade da empresa.</p>
                         </div>
                     </div>
+
+                    <!-- box -->
                     <div class="box efeito-boxflash">
                         <div class="txt">
                             <i class="bi bi-check-circle"></i>
@@ -194,6 +216,8 @@
                             <p>Desenvolva estratégias para aumentar a margem de lucro através de uma gestão financeira eficiente e investimento em áreas estratégicas.</p>
                         </div>
                     </div>
+
+                    <!-- box -->
                     <div class="box efeito-boxflash">
                         <div class="txt">
                             <i class="bi bi-check-circle"></i>
@@ -201,6 +225,8 @@
                             <p>Identifique, avalie e gerencie os riscos financeiros, protegendo a empresa contra potenciais perdas.</p>
                         </div>
                     </div>
+
+                    <!-- box -->
                     <div class="box efeito-boxflash">
                         <div class="txt">
                             <i class="bi bi-check-circle"></i>
@@ -212,30 +238,38 @@
             </div>
         </section>
 
-        <!-- CONSULTORIA ONLINE -->
-         <section id="consultoria-online">
+        <!-- SEÇÃO CONSULTORIA ONLINE -->
+         <section id="consultoria">
             <div class="interface">
-                <h1>Consultoria Online</h1>
+                <h1 class="title">Consultoria Online</h1>
+
+                <!-- introdução -->
                 <p class="intro">Obtenha orientação financeira especializada de forma prática e acessível, sem sair de casa. Nossos serviços incluem planejamento financeiro, gestão de dívidas, consultoria de investimentos e mais, tudo adaptado às suas necessidades específicas. Agende suas sessões em horários convenientes e transforme sua vida financeira com segurança e eficiência.</p>
                 
-                <!-- BENEFÍCIOS -->
-                <h2>Benefícios</h2>
+                <!-- benefícios -->
+                <h2 class="subtitle">Benefícios</h2>
                 <ul>
-                    <li class="efeito-li">
+
+                    <!-- item lista -->
+                    <li class="item-list efeito-li">
                         <i class="bi bi-clock-fill"></i>
                         <div class="txt">
                             <h3>Flexibilidade de Horários</h3>
                             <p>Agende sessões de consultoria financeira em horários convenientes para você, sem interferir em sua rotina diária.</p>
                         </div>
                     </li>
-                    <li class="efeito-li">
+
+                    <!-- item lista -->
+                    <li class="item-list efeito-li">
                         <i class="bi bi-laptop-fill"></i>
                         <div class="txt">
                             <h3>Acessibilidade</h3>
                             <p>Receba orientação financeira de qualquer lugar, usando seu computador, tablet ou smartphone.</p>
                         </div>
                     </li>
-                    <li class="efeito-li">
+
+                    <!-- item lista -->
+                    <li class="item-list efeito-li">
                         <i class="bi bi-cash-coin"></i>
                         <div class="txt">
                             <h3>Economia de Tempo e Custos</h3>
@@ -244,9 +278,11 @@
                     </li>
                 </ul>
 
-                <!-- COMO FUNCIONA -->
-                <h2>Como Funciona?</h2>
+                <!-- como funciona -->
+                <h2 class="subtitle">Como Funciona?</h2>
                 <div class="flex">
+
+                    <!-- box 1 -->
                     <div class="box efeito-box">
                         <div class="txt">
                             <i class="bi bi-calendar-check"></i>
@@ -254,6 +290,8 @@
                             <p>Escolha o melhor horário pelo site ou aplicativo.</p>
                         </div>
                     </div>
+
+                    <!-- box 2 -->
                     <div class="box efeito-box">
                         <div class="txt">
                             <i class="bi bi-camera-video"></i>
@@ -261,6 +299,8 @@
                             <p>Participe da sessão via videoconferência segura.</p>
                         </div>
                     </div>
+
+                    <!-- box 3 -->
                     <div class="box efeito-box">
                         <div class="txt">
                             <i class="bi bi-chat-square-text"></i>
@@ -268,6 +308,8 @@
                             <p>Obtenha orientação financeira personalizada.</p>
                         </div>
                     </div>
+
+                    <!-- box 4 -->
                     <div class="box efeito-box">
                         <div class="txt">
                             <i class="bi bi-bar-chart"></i>
@@ -279,34 +321,47 @@
             </div>
          </section>
 
+        <!-- SEÇÃO MENTORIA -->
         <section id="mentoria">
             <div class="interface">
-                <h1>Mentoria Online</h1>
+                <h1 class="title">Mentoria Online</h1>
+
+                <!-- introdução -->
                 <p class="intro">Explore nossos pacotes de encontros online para mentoria financeira, onde você pode receber orientação personalizada e estratégica para suas finanças. Diferente da consultoria, que foca em soluções técnicas específicas, a mentoria visa o desenvolvimento pessoal e profissional, proporcionando uma abordagem holística para melhorar sua gestão financeira e alcançar seus objetivos.</p>
-                <h2>Como Funciona?</h2>
+
+                <!-- como funciona -->
+                <h2 class="subtitle">Como Funciona?</h2>
                 <ul>
-                    <li class="efeito-li">
+
+                    <!-- item lista -->
+                    <li class="item-list efeito-li">
                         <i class="bi bi-chat-dots-fill"></i>
                         <div class="txt">
                             <h3>Consulta Inicial</h3>
                             <p>Agendamos uma consulta inicial gratuita para discutir suas metas financeiras e entender suas necessidades específicas.</p>
                         </div>
                     </li>
-                    <li class="efeito-li">
+
+                    <!-- item lista -->
+                    <li class="item-list efeito-li">
                         <i class="bi bi-ui-checks"></i>
                         <div class="txt">
                             <h3>Planejamento</h3>
                             <p>Desenvolvemos um plano de mentoria personalizado com base nas suas metas e desafios financeiros.</p>
                         </div>
                     </li>
-                    <li class="efeito-li">
+
+                    <!-- item lista -->
+                    <li class="item-list efeito-li">
                         <i class="bi bi-clock-history"></i>
                         <div class="txt">
                             <h3>Sessões de Mentoria</h3>
                             <p>Realizamos sessões regulares de mentoria, onde discutimos estratégias, oferecemos feedback e monitoramos seu progresso.</p>
                         </div>
                     </li>
-                    <li class="efeito-li">
+
+                    <!-- item lista -->
+                    <li class="item-list efeito-li">
                         <i class="bi bi-card-checklist"></i>
                         <div class="txt">
                             <h3>Acompanhamento</h3>
@@ -314,7 +369,9 @@
                             </p>
                         </div>
                     </li>
-                    <li class="efeito-li">
+
+                    <!-- item lista -->
+                    <li class="item-list efeito-li">
                         <i class="bi bi-star-fill"></i>
                         <div class="txt">
                             <h3>Avaliação e Ajustes</h3>
@@ -323,75 +380,105 @@
                     </li>
                 </ul>
             </div>
+        </section>
 
-            <div class="orientacao">
-                <div class="container">
-                    <h3>Precisando melhorar sua gestão financeira?</h3>
-                    <p>Explore uma orientação especializada para desenvolver suas habilidades e fortalecer seu futuro financeiro.</p>
-                    <button><a href="https://wa.me/5531989285119" target="_blank">Contato</a></button>
-                </div>
+        <section id="poster">
+            <div class="container">
+                <h3>Precisando melhorar sua gestão financeira?</h3>
+                <p>Explore uma orientação especializada para desenvolver suas habilidades e fortalecer seu futuro financeiro.</p>
+                <button class="btn-contato"><a href="https://wa.me/5531989285119" target="_blank">Contato</a></button>
             </div>
         </section>
         
-        <!-- PERGUNTAS FREQUENTES -->
+        <!-- SEÇÃO PERGUNTAS FREQUENTES -->
         <section id="faq">
             <div class="interface">
-                <img src="imagens/img-faq.png">
-                <h1>Dúvidas Frequentes</h1>
 
+                <!-- imagem -->
+                <img src="imagens/img-faq.png">
+
+                <h1 class="title">Dúvidas Frequentes</h1>
                 <ul>
+
+                    <!-- item lista -->
                     <li>
+                        <!-- pergunta -->
                         <div class="question">
                             <h2 onclick="toggleAnswer(this)">Quais serviços de consultoria financeira são oferecidos?</h2>
                         </div>
+                        <!-- resposta -->
                         <div class="answer">
                             <p>Os serviços oferecidos incluem planejamento financeiro, gestão de investimentos, redução de dívidas, planejamento de aposentadoria, educação financeira e outros para pessoas físicas. Para empresas, oferecemos equilíbrio financeiro, redução de custos, maximização de lucros, gestão de riscos, compliance, entre outros. Para mais informações, visite a seção <a href="#servicos">Serviços</a> do site.</p>
                         </div>
                     </li>
+
+                    <!-- item lista -->
                     <li>
+                        <!-- pergunta -->
                         <div class="question">
                             <h2 onclick="toggleAnswer(this)">Como agendar uma consulta?</h2>
                         </div>
+                        <!-- resposta -->
                         <div class="answer">
                             <p>As consultas podem ser agendadas através da seção <a href="#contato">Contato</a> do site, onde você encontrará opções para entrar em contato via WhatsApp, e-mail ou telefone.</p>
                         </div>
                     </li>
+
+                    <!-- item lista -->
                     <li>
+                        <!-- pergunta -->
                         <div class="question">
                             <h2 onclick="toggleAnswer(this)">Qual é o processo de consultoria financeira?</h2>
                         </div>
+                        <!-- resposta -->
                         <div class="answer">
                             <p>O processo inclui uma análise detalhada da situação financeira do cliente, desenvolvimento de um plano personalizado e orientação contínua para alcançar objetivos financeiros.</p>
                         </div>
                     </li>
+
+                    <!-- item lista -->
                     <li>
+                        <!-- pergunta -->
                         <div class="question">
                             <h2 onclick="toggleAnswer(this)">Quais são as qualificações e experiência do consultor?</h2>
                         </div>
+                        <!-- resposta -->
                         <div class="answer">
                             <p>A consultora é formada em Gestão Financeira pela Unicesumar e possui dois anos de experiência sólida na área financeira. Sua especialização principal é em gestão de investimentos, com experiência em empresas como Balneário Rio de Pedras, Mastermaq Softwares e Perfiltecnet.</p>
                         </div>
                     </li>
+
+                    <!-- item lista -->
                     <li>
+                        <!-- pergunta -->
                         <div class="question">
                             <h2 onclick="toggleAnswer(this)">Os serviços são oferecidos para pessoas e empresas?</h2>
                         </div>
+                        <!-- resposta -->
                         <div class="answer">
                             <p>Sim, oferecemos serviços de consultoria financeira tanto para pessoas físicas quanto para empresas, adaptados às necessidades específicas de cada cliente.</p>
                         </div>
                     </li>
+
+                    <!-- item lista -->
                     <li>
+                        <!-- pergunta -->
                         <div class="question">
                             <h2 onclick="toggleAnswer(this)">É possível obter orientação específica sobre investimentos?</h2>
                         </div>
+                        <!-- resposta -->
                         <div class="answer">
                             <p>Sim, oferece-se consultoria especializada para ajudar a selecionar as melhores opções de investimento conforme o perfil e objetivos do cliente.</p>
                         </div>
                     </li>
+
+                    <!-- item lista -->
                     <li>
+                        <!-- pergunta -->
                         <div class="question">
                             <h2 onclick="toggleAnswer(this)">Onde encontrar recursos educativos sobre educação financeira?</h2>
                         </div>
+                        <!-- resposta -->
                         <div class="answer">
                             <p>Visite a seção <a href="#">Blog</a> do site, onde você encontrará vídeos do YouTube da consultora e artigos relacionados ao tema de educação financeira.</p>
                         </div>
@@ -400,21 +487,25 @@
             </div>
         </section>
 
-        <!-- SOBRE -->
+        <!-- SEÇÃO SOBRE -->
         <section id="sobre">
             <div class="interface">
-                <h1>Sobre Mim</h1>
-
+                <h1 class="title">Sobre Mim</h1>
                 <div class="flex">
+
+                    <!-- texto -->
                     <div class="txt">
                         <p>Sou formada em Gestão Financeira pela Unicesumar e acumulo dois anos de experiência sólida na área financeira. Minha especialização principal é em gestão de investimentos, e tive a oportunidade de trabalhar em empresas como Supermercado EPA, Mastermaq Softwares e Perfiltecnet.</p>
-                        <div class="escondido">
+                        <div class="txt-hidden">
                             <p>Na Mastermaq Softwares, destaco-me por ter triplicado as metas de vendas, demonstrando minha capacidade em alcançar resultados significativos. Considero a comunicação uma das minhas principais competências, permitindo-me explicar de forma clara e eficaz estratégias financeias complexas.<p>
                             <p>Tenho um compromisso firme com a excelência e trago uma abordagem dinâmica para a gestão financeira, sempre focada em resultados tangíveis. Minha habilidade em liderar equipes e projetos com eficiência é complementada por uma forte ética de trabalho e determinação em enfrentar desafios.</p>
                         </div>
-                        <button class="btn-ler" onclick="lerMais()">Ler mais</button>
+
+                        <!-- ler mais -->
+                        <button class="btn-show" onclick="showText()">Ler mais</button>
                     </div>
 
+                    <!-- imagem -->
                     <div class="imagem efeito-img">
                         <img src="imagens/img-about.jpg" alt="Luciléia Gunes Coelho">
                         <h2>Luciléia Gunes Coelho</h2>
@@ -424,66 +515,71 @@
             </div>
         </section>
 
+        <!-- SEÇÃO BLOG -->
         <section id="blog">
             <div class="interface">
-                <h1>Blog</h1>
-                <h2>Artigos</h2>
-            </div>
-
-            <div class="content">
-                <div class="slides">
-                    <input type="radio" name="radio" id="radio1" checked>
-                    <input type="radio" name="radio" id="radio2">
-                    <input type="radio" name="radio" id="radio3">
-                    <input type="radio" name="radio" id="radio4">
-                    <input type="radio" name="radio" id="radio5">
-
-                    <div class="slide s1">
-                        <a href="artigos/artigo01.html">
-                            <img src="imagens/consultoria.jpg" alt="Consultoria">
-                            <h3>Guia Completo de Planejamento Financeiro Pessoal</h3>
-                        </a>
-                    </div>
-                    <div class="slide s2">
-                        <img src="imagens/inovacao.jpg" alt="Inovação">
-                        <h3>Como Começar a Investir com Segurança?</h3>
-                    </div>
-                    <div class="slide s3">
-                        <img src="imagens/investimentos.jpeg" alt="Investimentos">
-                        <h3>Redução de Dívidas e Liberdade Financeira</h3>
-                    </div>
-                    <div class="slide s4">
-                        <img src="imagens/riscos.jpg" alt="Riscos">
-                        <h3>Planejamento de Aposentadoria: Construindo um Futuro Seguro</h3>
-                    </div>
-                    <div class="slide s5">
-                        <img src="imagens/tributário.jpg" alt="Tributário">
-                        <h3>Gestão Financeira para Pequenas Empresas</h3>
+                <h1 class="title">Blog</h1>
+                <!-- artigos -->
+                <h2 class="subtitle">Artigos</h2>
+                <div class="content">
+                    <div class="artigos">
+                        <!-- radios -->
+                        <input type="radio" name="radio" id="radio1" checked>
+                        <input type="radio" name="radio" id="radio2">
+                        <input type="radio" name="radio" id="radio3">
+                        <input type="radio" name="radio" id="radio4">
+                        <input type="radio" name="radio" id="radio5">
+                        <!-- artigo 1 -->
+                        <div class="artigo a1">
+                            <a href="artigos/artigo01.html">
+                                <img src="imagens/consultoria.jpg" alt="Consultoria">
+                                <h3>Guia Completo de Planejamento Financeiro Pessoal</h3>
+                            </a>
+                        </div>
+                        <!-- artigo 2 -->
+                        <div class="artigo a2">
+                            <img src="imagens/inovacao.jpg" alt="Inovação">
+                            <h3>Como Começar a Investir com Segurança?</h3>
+                        </div>
+                        <!-- artigo 3 -->
+                        <div class="artigo a3">
+                            <img src="imagens/investimentos.jpeg" alt="Investimentos">
+                            <h3>Redução de Dívidas e Liberdade Financeira</h3>
+                        </div>
+                        <!-- artigo 4 -->
+                        <div class="artigo a4">
+                            <img src="imagens/riscos.jpg" alt="Riscos">
+                            <h3>Planejamento de Aposentadoria: Construindo um Futuro Seguro</h3>
+                        </div>
+                        <!-- artigo 5 -->
+                        <div class="artigo a5">
+                            <img src="imagens/tributário.jpg" alt="Tributário">
+                            <h3>Gestão Financeira para Pequenas Empresas</h3>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="navigation">
-                <label for="radio1" class="bar"></label>
-                <label for="radio2" class="bar"></label>
-                <label for="radio3" class="bar"></label>
-                <label for="radio4" class="bar"></label>
-                <label for="radio5" class="bar"></label>
-            </div>
-
-            <div class="interface">
-                <h2>Youtube</h2>
-            </div>
-            <div class="content-video">
-                <iframe class="video-yt" width="560" height="315" src="https://www.youtube.com/embed/x4GjlfW0foY?si=-I2LdUGWVFAI_Xe1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <!-- navegação dos artigos -->
+                <div class="navigation">
+                    <label for="radio1" class="bar"></label>
+                    <label for="radio2" class="bar"></label>
+                    <label for="radio3" class="bar"></label>
+                    <label for="radio4" class="bar"></label>
+                    <label for="radio5" class="bar"></label>
+                </div>
+                <!-- youtube -->
+                <h2 class="subtitle">Youtube</h2>
+                <div class="content-video">
+                    <iframe class="video-yt" width="560" height="315" src="https://www.youtube.com/embed/x4GjlfW0foY?si=-I2LdUGWVFAI_Xe1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
             </div>
         </section>
 
-        <!-- CONTATO -->
+        <!-- SEÇÃO CONTATO -->
         <section id="contato">
             <div class="interface">
-                <h1>Contato</h1>
-
+                <h1 class="title">Contato</h1>
                 <div class="flex">
+                    <!-- informações -->
                     <div class="informacoes">
                         <ul>
                             <li><i class="bi bi-envelope"></i> E-mail: <a href="mailto:lu123.coelho@gmail.com">lu123.coelho@gmail.com</a></li>
@@ -492,8 +588,9 @@
                         </ul>
                     </div>
 
+                    <!-- redes sociais -->
                     <p>Ou você pode me seguir aqui</p>
-                    <div class="social">
+                    <div class="box-social">
                         <button class="btn-social"><a href="https://wa.me/5531989285119" target="_blank"><i class="bi bi-whatsapp"></i></a></button>
                         <button class="btn-social"><a href="#"><i class="bi bi-linkedin"></i></a></button>
                         <button class="btn-social"><a href="https://instagram.com/lucigunes" target="_blank"><i class="bi bi-instagram"></i></a></button>
@@ -511,7 +608,11 @@
         </footer>
     </main>
 
-    <script src="reveal.js"></script>
-    <script src="script.js"></script>
+
+
+    <!-- SCRIPTS -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="scripts/reveal.js"></script>
+    <script src="scripts/script.js"></script>
 </body>
 </html>

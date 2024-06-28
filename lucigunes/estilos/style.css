@@ -1,12 +1,8 @@
 @charset "UTF-8";
-@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 :root {
-    --verde: #5A7348;
     --branco: #EBE6E4;
-    --marrom: #7A6756;
     --rosa: #A66363;
 }
 
@@ -36,7 +32,12 @@ body {
     display: flex;
 }
 
-h1 {
+.logo {
+    font-size: 1.2em;
+    font-family: cursive;
+}
+
+.title {
     position: relative;
     text-align: center;
     font-size: 25px;
@@ -44,7 +45,7 @@ h1 {
     z-index: -1;
 }
 
-h1::after {
+.title::after {
     content: '';
     position: absolute;
     left: 50%;
@@ -55,23 +56,56 @@ h1::after {
     background-color: var(--rosa);
 }
 
-h1 span.destaque, h2 span.destaque, h3 span.destaque {
+.subtitle {
+    margin-top: 80px;
+    font-size: 1em;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+h1 span, p span {
     color: var(--rosa);
 }
 
-h1#titulo-principal::after {
-    all: initial;
+.box-social {
+    margin-top: 40px;
 }
 
-.social .btn-social {
-    padding: 10px 15px;
+.box-social .btn-social {
+    padding: 10px;
     border: none;
-    background-color: var(--branco);
-    font-size: 1.5em;
+    background-color: transparent;
+    font-size: 1.2em;
     cursor: pointer;
 }
 
-a, button, i {
+.btn-contato {
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 0.8em;
+    text-transform: uppercase;
+    border: 2px solid var(--rosa);
+    background-color: var(--rosa);
+    cursor: pointer;
+    transition: all .3s;
+}
+
+.btn-contato:hover {
+    background-color: transparent;
+    transform: scale(1.05);
+}
+
+.btn-contato a {
+    text-decoration: none;
+    color: white;
+    transition: all .3s;
+}
+
+.btn-contato:hover a {
+    color: black;
+}
+
+a, i, button {
     outline: none;
     -webkit-tap-highlight-color: transparent;
     user-select: none;
@@ -87,6 +121,8 @@ a, button, i {
     visibility: hidden;
 }
 
+
+
 /* CABEÇALHO */
 header {
     position: fixed;
@@ -95,8 +131,6 @@ header {
     justify-content: space-between;
     width: 100%;
     padding: 15px 30px;
-    text-align: right;
-    background-color: transparent;
     z-index: 999;
     transition: all .5s;
 }
@@ -105,140 +139,102 @@ header.scrolled {
    background-color: white;
 }
 
-header nav.menu-desktop {
+header .menu-desktop {
     display: none;
 }
 
-header p.logo {
-    font-size: 1.2em;
-    font-family: cursive;
-}
-
-header p.logo span {
-    color: #A66363;
-}
-
-header #icone-menu {
+header .icone-menu {
     font-size: 2em;
     cursor: pointer;
 }
 
-header nav.menu-mobile {
+header .menu-mobile {
     position: fixed;
     top: 69px;
     left: -200px;
     width: 200px;
     height: 100%;
-    text-align: center;
     padding-top: 20px;
+    text-align: center;
     background-color: white;
     overflow: hidden;
     transition: all .5s;
 }
 
-header nav.menu-mobile a {
+header .menu-mobile a {
     display: block;
     margin-bottom: 20px;
-    font-size: 1.1em;
+    font-size: 1.2em;
     text-decoration: none;
     color: black;
-    transition: .3s;
+    transition: all .3s;
 }
 
-header nav.menu-mobile a:hover, .menu-mobile a:focus-within {
+header .menu-mobile a:hover {
     color: #A66363;
 }
 
-header nav.menu-mobile .social {
-    margin-top: 30px;
-}
 
-header nav.menu-mobile .btn-social {
-    background-color: transparent;
-    padding: 10px;
-}
 
 /* INÍCIO */
-section#inicio {
+#inicio {
     position: relative;
-    text-align: center;
     height: 100vh;
+    text-align: center;
 }
 
-section#inicio .container {
+#inicio .container {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
 
-section#inicio .txt h1 {
-    padding-bottom: 0px;
-    font-size: 1.8em;
-    line-height: 35px;
+#inicio .txt .main-title {
+    font-size: 2em;
 }
 
-section#inicio .txt p {
+#inicio .txt .slogan {
     margin: auto;
-    margin-top: 15px;
-    width: 380px;
-    font-size: 0.7em;
+    margin: 15px 0px;
+    width: 400px;
+    font-size: 0.8em;
     letter-spacing: 1px;
     line-height: 1.5;
     font-weight: 500;
     text-transform: uppercase;
 }
 
-section#inicio .botao {
-    margin: 60px 0px;
+#inicio .btn-contato {
+    margin: 40px 0px;
 }
 
-.btn-contato {
-    padding: 10px 15px;
-    border-radius: 10px;
-    font-size: 0.8em;
-    text-transform: uppercase;
-    border: 1px solid var(--rosa);
-    background-color: var(--rosa);
-    cursor: pointer;
-    transition: all .3s;
-}
-
-.btn-contato:hover {
-    background-color: var(--branco);
-}
-
-.btn-contato a {
-    text-decoration: none;
-    color: white;
-    transition: all .3s;
-}
-
-.btn-contato:hover a {
-    color: black;
-}
-
-#inicio .social .btn-social {
+#inicio .box-social {
     display: none;
+}
+
+#inicio .box-social .btn-social {
     padding: 10px 15px;
     border: none;
-    background-color: var(--branco);
+    background-color: transparent;
     font-size: 1.5em;
     cursor: pointer;
 }
 
-.social .btn-social:hover a {
-    color: var(--rosa);
-}
-
-.social .btn-social a {
+#inicio .box-social .btn-social a {
     text-decoration: none;
     color: black;
     transition: all .3s;
 }
 
+#inicio .box-social .btn-social:hover a {
+    color: var(--rosa);
+}
+
+
+
 /* SERVIÇOS */
-section#servicos .flex {
+#servicos .flex {
     margin-top: 60px;
     flex-wrap: wrap;
 }
@@ -298,84 +294,74 @@ section#servicos .flex {
     color: black;
 }
 
-/* CONSULTORIA FINANCEIRA */
-section#consultoria-financeira h2 {
-    margin-top: 15px;
-    font-size: 1em;
-    text-transform: uppercase;
-    text-align: center;
-}
 
-section#consultoria-financeira h2 i {
+
+/* CONSULTORIA FINANCEIRA */
+#financas h2 i {
     font-size: 1.4em;
 }
 
-#consultoria-financeira .flex {
+#financas .flex {
     margin-top: 60px;
     margin-bottom: 40px;
     flex-wrap: wrap;
     text-align: center;
 }
 
-#consultoria-financeira .flex .box {
+#financas .box {
     margin-bottom: 50px;
 }
 
-#consultoria-financeira .flex .box .txt i {
+#financas .box .txt i {
     font-size: 2.5em;
     color: var(--rosa);
 }
 
-#consultoria-financeira .flex .box .txt h3 {
+#financas .box .txt h3 {
     margin: 10px 0px;
     letter-spacing: 1px;
 }
 
-/* CONSULTORIA ONLINE */
-section#consultoria-online h2 {
-    margin-top: 80px;
-    font-size: 1em;
-    text-transform: uppercase;
-    text-align: center;
-}
 
-#consultoria-online p.intro {
+
+/* CONSULTORIA ONLINE */
+.intro {
     margin-top: 30px;
     line-height: 1.5;
     text-align: center;
 }
 
-/* BENEFÍCIOS */
-#consultoria-online ul {
+/* benefícios */
+#consultoria ul {
     margin: auto;
     list-style: none;
 }
 
-#consultoria-online ul li {
+.item-list {
     display: flex;
     align-items: center;
     gap: 30px;
     margin: 40px 0px;
     padding-bottom: 40px;
-    border-bottom: 2px solid rgba(0, 0, 0, 0.199);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.199);
 }
 
-#consultoria-online ul li i {
+.item-list i {
     font-size: 2.5em;
 }
 
-#consultoria-online ul li h3 {
+.item-list h3 {
     font-size: 1em;
     margin-bottom: 5px;
 }
 
-/* COMO FUNCIONA */
-#consultoria-online .flex {
+/* como funciona */
+#consultoria .flex {
     flex-direction: column;
     margin-top: 20px;
 }
 
-#consultoria-online .flex .box {
+#consultoria .box {
     display: flex;
     align-items: center;
     margin: 10px auto;
@@ -387,97 +373,55 @@ section#consultoria-online h2 {
     transition: all .3s;
 }
 
-#consultoria-online .flex .box:hover {
+#consultoria .box:hover {
     box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.4);
     transform: scale(1.05);
 }
 
-#consultoria-online .flex .box i {
+#consultoria .box i {
     font-size: 3em;
 }
 
-#consultoria-online .flex .box h3 {
+#consultoria .box h3 {
     margin: 10px 0px;
     font-size: 1em;
 }
 
+
+
 /* MENTORIA ONLINE */
-section#mentoria p.intro {
-    margin-top: 30px;
-    line-height: 1.5;
-    text-align: center;
-}
-
-#mentoria h2 {
-    margin-top: 80px;
-    font-size: 1em;
-    text-transform: uppercase;
-    text-align: center;
-}
-
 #mentoria ul {
     margin: auto;
     list-style: none;
 }
 
-#mentoria ul li {
-    display: flex;
-    align-items: center;
-    gap: 30px;
-    margin: 40px 0px;
-    padding-bottom: 40px;
-    border-bottom: 2px solid rgba(0, 0, 0, 0.199);
-}
 
-#mentoria ul li i {
-    font-size: 2em;
-}
 
-#mentoria ul li h3 {
-    font-size: 1em;
-    margin-bottom: 5px;
-}
-
-#mentoria .orientacao {
+/* POSTER */
+#poster {
     display: flex;
     align-items: center;
     justify-content: center;
     width: 100%;
-    height: 250px;
+    height: 300px;
     padding: 30px;
     text-align: center;
     background-color: #ccbebe;
 }
 
-#mentoria .orientacao h3 {
+#poster h3 {
     font-size: 1.2em;
     text-transform: uppercase;
 }
 
-#mentoria .orientacao p {
-    margin: 20px 0px;
+#poster p {
+    margin: 30px 0px;
 }
 
-#mentoria .orientacao button {
-    padding: 10px 15px;
-    border-radius: 5px;
-    background-color: #A66363;
-    border: none;
-    cursor: pointer;
-}
 
-#mentoria .orientacao button:hover {
-    opacity: 0.8;
-}
-
-#mentoria .orientacao button a {
-    text-decoration: none;
-    text-transform: uppercase;
-    color: white;
-}
 
 /* PERGUNTAS FREQUENTES */
-section#faq img {
+#faq img {
     width: 100%;
 }
 
@@ -495,7 +439,7 @@ section#faq img {
 }
 
 #faq ul li .question {
-    border-bottom: 2px solid #7a67562f;
+    border-bottom: 1px solid #7a67562f;
     cursor: pointer;
 }
 
@@ -530,14 +474,16 @@ section#faq img {
     text-decoration: none;
 }
 
+
+
 /* SOBRE */
-section#sobre .flex {
-    margin-top: 30px;
+#sobre .flex {
     flex-direction: column-reverse;
+    margin-top: 40px;
     text-align: center;
 }
 
-section#sobre .imagem img {
+#sobre .imagem img {
     margin-bottom: 15px;
     width: 250px;
     height: 250px;
@@ -545,11 +491,11 @@ section#sobre .imagem img {
     filter: brightness(0.7);
 }
 
-section#sobre .imagem h2 {
+#sobre .imagem h2 {
     font-size: 1.3em;
 }
 
-section#sobre .imagem h3 {
+#sobre .imagem h3 {
     margin-top: 5px;
     font-size: 0.9em;
     letter-spacing: 1px;
@@ -557,16 +503,17 @@ section#sobre .imagem h3 {
     color: var(--rosa);
 }
 
-section#sobre .txt {
+#sobre .txt {
     margin-top: 30px;
     font-size: 15px;
 }
 
-section#sobre .txt p {
+#sobre .txt p {
     margin-bottom: 20px;
+    line-height: 1.5;
 }
 
-.btn-ler {
+#sobre .btn-show {
     border: 1px solid #A66363;
     border-radius: 60px;
     padding: 5px 10px;
@@ -576,25 +523,20 @@ section#sobre .txt p {
     transition: all .3s;
 }
 
-.btn-ler:hover {
+#sobre .btn-show:hover {
     background-color: var(--branco);
     color: black;
 }
 
-.escondido {
+#sobre .txt-hidden {
     display: none;
 }
 
-/* BLOG */
-section#blog .interface {
-    padding-bottom: 10px;
-}
 
-section#blog h2 {
-    margin-top: 20px;
-    font-size: 1em;
-    text-transform: uppercase;
-    text-align: center;
+
+/* BLOG */
+#blog .interface {
+    padding: 80px 0px;
 }
 
 #blog .content {
@@ -626,17 +568,17 @@ section#blog h2 {
     display: none;
 }
 
-#blog .slides {
+#blog .artigos {
     display: flex;
     width: 500%;
     height: 100%;
 }
 
-#blog .slides a {
+#blog .artigo a {
     text-decoration: none;
 }
 
-#blog .slides .slide {
+#blog .artigos .artigo {
     width: 20%;
     padding: 30px;
     text-align: center;
@@ -644,25 +586,26 @@ section#blog h2 {
     cursor: pointer;
 }
 
-#blog .slides .slide img {
+#blog .artigos .artigo img {
     margin-bottom: 20px;
     width: 100%;
     border-radius: 5px;
     filter: brightness(0.9);
 }
 
-#blog .slides .slide h3 {
+#blog .artigos .artigo h3 {
     font-size: 1.1em;
     text-transform: uppercase;
     color: rgba(0, 0, 0, 0.7);
 }
 
-#blog #radio1:checked ~ .s1 {margin-left: 0;}
-#blog #radio2:checked ~ .s1 {margin-left: -20%;}
-#blog #radio3:checked ~ .s1 {margin-left: -40%;}
-#blog #radio4:checked ~ .s1 {margin-left: -60%;}
-#blog #radio5:checked ~ .s1 {margin-left: -80%;}
+#blog #radio1:checked ~ .a1 {margin-left: 0;}
+#blog #radio2:checked ~ .a1 {margin-left: -20%;}
+#blog #radio3:checked ~ .a1 {margin-left: -40%;}
+#blog #radio4:checked ~ .a1 {margin-left: -60%;}
+#blog #radio5:checked ~ .a1 {margin-left: -80%;}
 
+/* youtube */
 #blog .content-video {
     display: flex;
     justify-content: center;
@@ -674,48 +617,70 @@ section#blog h2 {
     border-radius: 10px;
 }
 
+
+
 /* CONTATO */
-section#contato {
+#contato {
     height: 100vh;
     display: flex;
     align-items: center;
 }
 
-section#contato .flex {
+#contato .flex {
     margin-top: 50px;
     flex-direction: column;
     text-align: center;
 }
 
-section#contato .informacoes {
-    border-bottom: 1px solid #ccbebe;
+#contato .informacoes {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 
-section#contato .informacoes ul {
+#contato .informacoes ul {
     list-style: none;
 }
 
-section#contato .informacoes ul li {
+#contato .informacoes ul li {
     margin-bottom: 50px;
     font-size: 1.1em;
 }
 
-section#contato .informacoes ul li a {
+#contato .informacoes ul li a {
     text-decoration: none;
     color: black;
 }
 
-section#contato .informacoes ul li a:hover {
+#contato .informacoes ul li a:hover {
     text-decoration: underline;
 }
 
-section#contato p {
+#contato p {
     margin-top: 50px;
 }
 
-section#contato .social {
+#contato .box-social {
     margin-top: 15px;
 }
+
+#contato .box-social .btn-social {
+    padding: 10px 15px;
+    border: none;
+    background-color: transparent;
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+#contato .box-social .btn-social a {
+    text-decoration: none;
+    color: black;
+    transition: all .3s;
+}
+
+#contato .box-social .btn-social:hover a {
+    color: var(--rosa);
+}
+
+
 
 /* RODAPÉ */
 footer .interface {
