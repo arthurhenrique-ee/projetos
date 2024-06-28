@@ -1,24 +1,33 @@
 function clickMenu()  {
-    menu = document.querySelector('.menu-mobile')
+    let menu = document.querySelector('.menu-mobile')
+    let header = document.querySelector('#header')
     if (menu.style.left == '0px') {
-        menu.style.left = '-300px'
+        menu.style.left = '-200px'
+        menu.style.backgroundColor = 'transparent'
+        if (window.scrollY < 50) {
+            header.classList.remove('scrolled')
+        }
     } else {
         menu.style.left = '0px'
+        menu.style.backgroundColor = 'white'
+        if (window.scrollY < 50) {
+            header.classList.add('scrolled')
+        }
     }
 }
 
 function clicou() {
-    menu = document.querySelector('.menu-mobile')
+    let menu = document.querySelector('.menu-mobile')
     if (menu.style.left == '0px') {
-        menu.style.left = '-300px'
+        menu.style.left = '-200px'
     } else {
         menu.style.left = '0px'
     }
 }
 
 function lerMais() {
-    botao = document.querySelector('.btn-ler')
-    texto = document.querySelector('.escondido')
+    let botao = document.querySelector('.btn-ler')
+    let texto = document.querySelector('.escondido')
     if (botao.innerHTML == 'Ler mais') {
         botao.innerHTML = 'Ler menos'
         botao.style.backgroundColor = '#EBE6E4'
@@ -72,13 +81,4 @@ function proximaImg() {
     }
 
     document.getElementById('radio' + cont).checked = true
-}
-
-function abrirDrop() {
-    let drop = document.querySelector('.drop')
-    if (drop.style.height == '100px') {
-        drop.style.height = '0px'
-    } else {
-        drop.style.height = '100px'
-    }
 }

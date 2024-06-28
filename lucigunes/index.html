@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Luciléia Gunes</title>
+    <title>Lucigunes</title>
 
     <!-- ICONS INSTALL -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
@@ -28,15 +28,14 @@
             <a href="#contato">Contato</a>
         </nav>
 
+        <a href="#inicio" style="text-decoration: none; color: black;">
+            <p class="logo">Luci<span>gunes</span></p>
+        </a>
+
         <!-- MENU MOBILE -->
         <nav class="menu-mobile">
             <a href="#inicio" onclick="clicou()">Início</a>
-            <a href="#servicos" class="link-drop" onclick="abrirDrop()">Serviços <i class="bi bi-caret-down-fill"></i></a>
-            <div class="drop">
-                <a href="#consultoria-financeira">Consultoria Financeira</a>
-                <a href="#consultoria-online">Consultoria Online</a>
-                <a href="#mentoria">Mentoria Online</a>
-            </div>
+            <a href="#servicos" onclick="clicou()">Serviços</a>
             <a href="#faq" onclick="clicou()">FAQ</a>
             <a href="#sobre" onclick="clicou()">Sobre</a>
             <a href="#blog" onclick="clicou()">Blog</a>
@@ -440,8 +439,10 @@
                     <input type="radio" name="radio" id="radio5">
 
                     <div class="slide s1">
-                        <img src="imagens/consultoria.jpg" alt="Consultoria">
-                        <h3>Guia Completo de Planejamento Financeiro Pessoal</h3>
+                        <a href="artigos/artigo01.html">
+                            <img src="imagens/consultoria.jpg" alt="Consultoria">
+                            <h3>Guia Completo de Planejamento Financeiro Pessoal</h3>
+                        </a>
                     </div>
                     <div class="slide s2">
                         <img src="imagens/inovacao.jpg" alt="Inovação">
@@ -472,7 +473,9 @@
             <div class="interface">
                 <h2>Youtube</h2>
             </div>
-            <iframe class="video-yt" width="560" height="315" src="https://www.youtube.com/embed/x4GjlfW0foY?si=-I2LdUGWVFAI_Xe1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <div class="content-video">
+                <iframe class="video-yt" width="560" height="315" src="https://www.youtube.com/embed/x4GjlfW0foY?si=-I2LdUGWVFAI_Xe1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
         </section>
 
         <!-- CONTATO -->

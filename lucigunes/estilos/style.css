@@ -71,7 +71,7 @@ h1#titulo-principal::after {
     cursor: pointer;
 }
 
-a, button {
+a, button, i {
     outline: none;
     -webkit-tap-highlight-color: transparent;
     user-select: none;
@@ -90,8 +90,11 @@ a, button {
 /* CABEÇALHO */
 header {
     position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     width: 100%;
-    padding: 10px 20px;
+    padding: 15px 30px;
     text-align: right;
     background-color: transparent;
     z-index: 999;
@@ -99,11 +102,20 @@ header {
 }
 
 header.scrolled {
-   background-color: rgba(255, 255, 255, 0.9);
+   background-color: white;
 }
 
 header nav.menu-desktop {
     display: none;
+}
+
+header p.logo {
+    font-size: 1.2em;
+    font-family: cursive;
+}
+
+header p.logo span {
+    color: #A66363;
 }
 
 header #icone-menu {
@@ -113,13 +125,13 @@ header #icone-menu {
 
 header nav.menu-mobile {
     position: fixed;
-    top: 0;
-    left: -250px;
-    width: 250px;
+    top: 69px;
+    left: -200px;
+    width: 200px;
     height: 100%;
     text-align: center;
-    padding-top: 50px;
-    background-color: rgba(255, 255, 255, 0.95);
+    padding-top: 20px;
+    background-color: white;
     overflow: hidden;
     transition: all .5s;
 }
@@ -135,17 +147,6 @@ header nav.menu-mobile a {
 
 header nav.menu-mobile a:hover, .menu-mobile a:focus-within {
     color: #A66363;
-}
-
-header nav.menu-mobile .drop {
-    height: 0;
-    overflow: hidden;
-    transition: all .3s;
-}
-
-header nav.menu-mobile .drop a {
-    font-size: 0.8em;
-    text-transform: uppercase;
 }
 
 header nav.menu-mobile .social {
@@ -449,17 +450,17 @@ section#mentoria p.intro {
 }
 
 #mentoria .orientacao h3 {
-    font-size: 1.3em;
+    font-size: 1.2em;
     text-transform: uppercase;
 }
 
 #mentoria .orientacao p {
-    margin: 15px 0px;
+    margin: 20px 0px;
 }
 
 #mentoria .orientacao button {
     padding: 10px 15px;
-    border-radius: 10px;
+    border-radius: 5px;
     background-color: #A66363;
     border: none;
     cursor: pointer;
@@ -539,6 +540,7 @@ section#sobre .flex {
 section#sobre .imagem img {
     margin-bottom: 15px;
     width: 250px;
+    height: 250px;
     border-radius: 50%;
     filter: brightness(0.7);
 }
@@ -630,6 +632,10 @@ section#blog h2 {
     height: 100%;
 }
 
+#blog .slides a {
+    text-decoration: none;
+}
+
 #blog .slides .slide {
     width: 20%;
     padding: 30px;
@@ -657,9 +663,15 @@ section#blog h2 {
 #blog #radio4:checked ~ .s1 {margin-left: -60%;}
 #blog #radio5:checked ~ .s1 {margin-left: -80%;}
 
+#blog .content-video {
+    display: flex;
+    justify-content: center;
+}
+
 #blog .video-yt {
     margin-top: 30px;
-    width: 100%;
+    max-width: 450px;
+    border-radius: 10px;
 }
 
 /* CONTATO */
@@ -718,10 +730,9 @@ footer p {
 }
 
 footer p a {
-    text-decoration: none;
     color: black;
 }
 
 footer p a:hover {
-    text-decoration: underline;
+    text-decoration: none;
 }
