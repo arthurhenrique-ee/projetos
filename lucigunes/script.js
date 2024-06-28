@@ -1,7 +1,7 @@
 function clickMenu()  {
     menu = document.querySelector('.menu-mobile')
     if (menu.style.left == '0px') {
-        menu.style.left = '-200px'
+        menu.style.left = '-300px'
     } else {
         menu.style.left = '0px'
     }
@@ -10,7 +10,7 @@ function clickMenu()  {
 function clicou() {
     menu = document.querySelector('.menu-mobile')
     if (menu.style.left == '0px') {
-        menu.style.left = '-200px'
+        menu.style.left = '-300px'
     } else {
         menu.style.left = '0px'
     }
@@ -56,5 +56,29 @@ function toggleAnswer(question) {
         answer.style.height = answer.scrollHeight + 'px'; // Define a altura para a altura total da resposta
     } else {
         answer.style.height = '0'; // Define a altura de volta para zero
+    }
+}
+
+var cont = 1
+setInterval(() => {
+    proximaImg()
+}, 5000)
+
+function proximaImg() {
+    cont ++
+
+    if (cont > 5) {
+        cont = 1
+    }
+
+    document.getElementById('radio' + cont).checked = true
+}
+
+function abrirDrop() {
+    let drop = document.querySelector('.drop')
+    if (drop.style.height == '100px') {
+        drop.style.height = '0px'
+    } else {
+        drop.style.height = '100px'
     }
 }

@@ -11,35 +11,47 @@
     <!-- LINKS CSS -->
     <link rel="stylesheet" href="estilos/style.css">
     <link rel="stylesheet" href="estilos/media-queries.css">
+
+    <!-- SCROLL REVEAL -->
+    <script src="https://unpkg.com/scrollreveal"></script>
 </head>
 <body>
     <!-- CABEÇALHO -->
     <header id="header">
         <!-- MENU DESKTOP -->
         <nav class="menu-desktop">
-            <a href="#">Início</a>
-            <a href="#">Sobre</a>
-            <a href="#">Serviços</a>
-            <a href="#">Contato</a>
+            <a href="#inicio">Início</a>
+            <a href="#servicos">Serviços</a>
+            <a href="#faq">FAQ</a>
+            <a href="#sobre">Sobre</a>
+            <a href="#blog">Blog</a>
+            <a href="#contato">Contato</a>
         </nav>
 
         <!-- MENU MOBILE -->
         <nav class="menu-mobile">
             <a href="#inicio" onclick="clicou()">Início</a>
+            <a href="#servicos" class="link-drop" onclick="abrirDrop()">Serviços <i class="bi bi-caret-down-fill"></i></a>
+            <div class="drop">
+                <a href="#consultoria-financeira">Consultoria Financeira</a>
+                <a href="#consultoria-online">Consultoria Online</a>
+                <a href="#mentoria">Mentoria Online</a>
+            </div>
+            <a href="#faq" onclick="clicou()">FAQ</a>
             <a href="#sobre" onclick="clicou()">Sobre</a>
-            <a href="#servicos" onclick="clicou()">Serviços</a>
+            <a href="#blog" onclick="clicou()">Blog</a>
             <a href="#contato" onclick="clicou()">Contato</a>
 
             <!-- REDES SOCIAIS -->
             <div class="social">
                 <button class="btn-social">
-                    <a href="#"><i class="bi bi-whatsapp"></i></a>
+                    <a href="https://wa.me/5531989285119" target="_blank"><i class="bi bi-whatsapp"></i></a>
                 </button>
                 <button class="btn-social">
                     <a href="#"><i class="bi bi-linkedin"></i></a>
                 </button>
                 <button class="btn-social">
-                    <a href="#"><i class="bi bi-instagram"></i></a>
+                    <a href="https://instagram.com/lucigunes" target="_blank"><i class="bi bi-instagram"></i></a>
                 </button>
             </div>
         </nav>
@@ -51,13 +63,13 @@
         <section id="inicio">
             <div class="container">
                 <!-- TÍTULO PRINCIPAL -->
-                <div class="txt">
+                <div class="txt efeito-titulo">
                     <h1 id="titulo-principal">Luciléia Gunes<br><span class="destaque">Consultora Financeira</span></h1>
                     <p>Transforme sua visão financeira com orientação especializada e personalizada.</p>
                 </div>
                 <!-- CURRÍCULO -->
-                <div class="botao">
-                    <button class="btn-contato"><a href="#">Contato</a></button>
+                <div class="botao efeito-btn">
+                    <button class="btn-contato"><a href="https://wa.me/5531989285119" target="_blank">Contato</a></button>
                 </div>
                 <!-- REDES SOCIAIS -->
                 <div class="social">
@@ -80,34 +92,34 @@
                 <h1>Meus Serviços</h1>
 
                 <div class="flex">
-                    <div class="box">
+                    <div class="box efeito-box">
                         <div class="container">
                             <div class="icone"><i class="bi bi-coin"></i></div>
                             <div class="txt">
                                 <h2>Consultoria Financeira</h2>
                                 <p>Diagnóstico e sugestões de melhorias para que, rapidamente, a empresa consiga controlar as suas finanças.</p>
                             </div>
-                            <button class="btn"><a href="#">Saiba Mais</a></button>
+                            <button class="btn"><a href="#consultoria-financeira">Saiba Mais</a></button>
                         </div>
                     </div>
-                    <div class="box">
+                    <div class="box efeito-box">
                         <div class="container">
                             <div class="icone"><i class="bi bi-laptop"></i></div>
                             <div class="txt">
                                 <h2>Consultoria Online</h2>
                                 <p>Diagnóstico e sugestões de melhorias para que, rapidamente, a empresa consiga controlar as suas finanças.</p>
                             </div>
-                            <button class="btn"><a href="#">Saiba Mais</a></button>
+                            <button class="btn"><a href="#consultoria-online">Saiba Mais</a></button>
                         </div>
                     </div>
-                    <div class="box">
+                    <div class="box efeito-box">
                         <div class="container">
                             <div class="icone"><i class="bi bi-chat-fill"></i></div>
                             <div class="txt">
                                 <h2>Mentoria Online</h2>
                                 <p>Diagnóstico e sugestões de melhorias para que, rapidamente, a empresa consiga controlar as suas finanças.</p>
                             </div>
-                            <button class="btn"><a href="#">Saiba Mais</a></button>
+                            <button class="btn"><a href="#mentoria">Saiba Mais</a></button>
                         </div>
                     </div>
                 </div>
@@ -123,35 +135,35 @@
                 <h2><i class="bi bi-person-fill"></i> Pessoal</h2>
 
                 <div class="flex">
-                    <div class="box">
+                    <div class="box efeito-boxflash">
                         <div class="txt">
                             <i class="bi bi-check-circle"></i>
                             <h3>Planejamento Financeiro</h3>
                             <p>Desenvolva um plano financeiro detalhado que abrange metas de curto, médio e longo prazo, garantindo uma vida financeira mais segura e estável.</p>
                         </div>
                     </div>
-                    <div class="box">
+                    <div class="box efeito-boxflash">
                         <div class="txt">
                             <i class="bi bi-check-circle"></i>
                             <h3>Gestão de Investimentos</h3>
                             <p>Obtenha orientação especializada na escolha e gestão de investimentos, maximizando os retornos e minimizando os riscos.</p>
                         </div>
                     </div>
-                    <div class="box">
+                    <div class="box efeito-boxflash">
                         <div class="txt">
                             <i class="bi bi-check-circle"></i>
                             <h3>Redução de Dívidas</h3>
                             <p>Crie estratégias eficazes para quitar dívidas, reduzindo os encargos financeiros e melhorando a saúde financeira.</p>
                         </div>
                     </div>
-                    <div class="box">
+                    <div class="box efeito-boxflash">
                         <div class="txt">
                             <i class="bi bi-check-circle"></i>
                             <h3>Aposentadoria</h3>
                             <p>Planeje e acumule recursos suficientes para garantir uma aposentadoria confortável e segura.</p>
                         </div>
                     </div>
-                    <div class="box">
+                    <div class="box efeito-boxflash">
                         <div class="txt">
                             <i class="bi bi-check-circle"></i>
                             <h3>Educação Financeira</h3>
@@ -162,35 +174,35 @@
 
                 <h2><i class="bi bi-buildings-fill"></i> Para Empresas</h2>
                 <div class="flex">
-                    <div class="box">
+                    <div class="box efeito-boxflash">
                         <div class="txt">
                             <i class="bi bi-check-circle"></i>
                             <h3>Equilíbrio Financeiro</h3>
                             <p>Melhore a gestão do fluxo de caixa, garantindo que a empresa tenha sempre recursos disponíveis para operar eficientemente.</p>
                         </div>
                     </div>
-                    <div class="box">
+                    <div class="box efeito-boxflash">
                         <div class="txt">
                             <i class="bi bi-check-circle"></i>
                             <h3>Redução de Custos</h3>
                             <p>Identifique e elimine desperdícios, otimizando recursos e aumentando a lucratividade da empresa.</p>
                         </div>
                     </div>
-                    <div class="box">
+                    <div class="box efeito-boxflash">
                         <div class="txt">
                             <i class="bi bi-check-circle"></i>
                             <h3>Maximização de Lucros</h3>
                             <p>Desenvolva estratégias para aumentar a margem de lucro através de uma gestão financeira eficiente e investimento em áreas estratégicas.</p>
                         </div>
                     </div>
-                    <div class="box">
+                    <div class="box efeito-boxflash">
                         <div class="txt">
                             <i class="bi bi-check-circle"></i>
                             <h3>Gestão de Riscos</h3>
                             <p>Identifique, avalie e gerencie os riscos financeiros, protegendo a empresa contra potenciais perdas.</p>
                         </div>
                     </div>
-                    <div class="box">
+                    <div class="box efeito-boxflash">
                         <div class="txt">
                             <i class="bi bi-check-circle"></i>
                             <h3>Compliance</h3>
@@ -210,21 +222,21 @@
                 <!-- BENEFÍCIOS -->
                 <h2>Benefícios</h2>
                 <ul>
-                    <li>
+                    <li class="efeito-li">
                         <i class="bi bi-clock-fill"></i>
                         <div class="txt">
                             <h3>Flexibilidade de Horários</h3>
                             <p>Agende sessões de consultoria financeira em horários convenientes para você, sem interferir em sua rotina diária.</p>
                         </div>
                     </li>
-                    <li>
+                    <li class="efeito-li">
                         <i class="bi bi-laptop-fill"></i>
                         <div class="txt">
                             <h3>Acessibilidade</h3>
                             <p>Receba orientação financeira de qualquer lugar, usando seu computador, tablet ou smartphone.</p>
                         </div>
                     </li>
-                    <li>
+                    <li class="efeito-li">
                         <i class="bi bi-cash-coin"></i>
                         <div class="txt">
                             <h3>Economia de Tempo e Custos</h3>
@@ -236,28 +248,28 @@
                 <!-- COMO FUNCIONA -->
                 <h2>Como Funciona?</h2>
                 <div class="flex">
-                    <div class="box">
+                    <div class="box efeito-box">
                         <div class="txt">
                             <i class="bi bi-calendar-check"></i>
                             <h3>Agende sua sessão</h3>
                             <p>Escolha o melhor horário pelo site ou aplicativo.</p>
                         </div>
                     </div>
-                    <div class="box">
+                    <div class="box efeito-box">
                         <div class="txt">
                             <i class="bi bi-camera-video"></i>
                             <h3>Conecte-se Online</h3>
                             <p>Participe da sessão via videoconferência segura.</p>
                         </div>
                     </div>
-                    <div class="box">
+                    <div class="box efeito-box">
                         <div class="txt">
                             <i class="bi bi-chat-square-text"></i>
                             <h3>Receba Consultoria</h3>
                             <p>Obtenha orientação financeira personalizada.</p>
                         </div>
                     </div>
-                    <div class="box">
+                    <div class="box efeito-box">
                         <div class="txt">
                             <i class="bi bi-bar-chart"></i>
                             <h3>Acompanhe seu Progresso</h3>
@@ -274,28 +286,28 @@
                 <p class="intro">Explore nossos pacotes de encontros online para mentoria financeira, onde você pode receber orientação personalizada e estratégica para suas finanças. Diferente da consultoria, que foca em soluções técnicas específicas, a mentoria visa o desenvolvimento pessoal e profissional, proporcionando uma abordagem holística para melhorar sua gestão financeira e alcançar seus objetivos.</p>
                 <h2>Como Funciona?</h2>
                 <ul>
-                    <li>
+                    <li class="efeito-li">
                         <i class="bi bi-chat-dots-fill"></i>
                         <div class="txt">
                             <h3>Consulta Inicial</h3>
                             <p>Agendamos uma consulta inicial gratuita para discutir suas metas financeiras e entender suas necessidades específicas.</p>
                         </div>
                     </li>
-                    <li>
+                    <li class="efeito-li">
                         <i class="bi bi-ui-checks"></i>
                         <div class="txt">
                             <h3>Planejamento</h3>
                             <p>Desenvolvemos um plano de mentoria personalizado com base nas suas metas e desafios financeiros.</p>
                         </div>
                     </li>
-                    <li>
+                    <li class="efeito-li">
                         <i class="bi bi-clock-history"></i>
                         <div class="txt">
                             <h3>Sessões de Mentoria</h3>
                             <p>Realizamos sessões regulares de mentoria, onde discutimos estratégias, oferecemos feedback e monitoramos seu progresso.</p>
                         </div>
                     </li>
-                    <li>
+                    <li class="efeito-li">
                         <i class="bi bi-card-checklist"></i>
                         <div class="txt">
                             <h3>Acompanhamento</h3>
@@ -303,7 +315,7 @@
                             </p>
                         </div>
                     </li>
-                    <li>
+                    <li class="efeito-li">
                         <i class="bi bi-star-fill"></i>
                         <div class="txt">
                             <h3>Avaliação e Ajustes</h3>
@@ -317,7 +329,7 @@
                 <div class="container">
                     <h3>Precisando melhorar sua gestão financeira?</h3>
                     <p>Explore uma orientação especializada para desenvolver suas habilidades e fortalecer seu futuro financeiro.</p>
-                    <button><a href="https://wa.me/5531989285119">Contato</a></button>
+                    <button><a href="https://wa.me/5531989285119" target="_blank">Contato</a></button>
                 </div>
             </div>
         </section>
@@ -404,13 +416,63 @@
                         <button class="btn-ler" onclick="lerMais()">Ler mais</button>
                     </div>
 
-                    <div class="imagem">
+                    <div class="imagem efeito-img">
                         <img src="imagens/img-about.jpg" alt="Luciléia Gunes Coelho">
                         <h2>Luciléia Gunes Coelho</h2>
                         <h3>Gestora Financeira</h3>
                     </div>
                 </div>
             </div>
+        </section>
+
+        <section id="blog">
+            <div class="interface">
+                <h1>Blog</h1>
+                <h2>Artigos</h2>
+            </div>
+
+            <div class="content">
+                <div class="slides">
+                    <input type="radio" name="radio" id="radio1" checked>
+                    <input type="radio" name="radio" id="radio2">
+                    <input type="radio" name="radio" id="radio3">
+                    <input type="radio" name="radio" id="radio4">
+                    <input type="radio" name="radio" id="radio5">
+
+                    <div class="slide s1">
+                        <img src="imagens/consultoria.jpg" alt="Consultoria">
+                        <h3>Guia Completo de Planejamento Financeiro Pessoal</h3>
+                    </div>
+                    <div class="slide s2">
+                        <img src="imagens/inovacao.jpg" alt="Inovação">
+                        <h3>Como Começar a Investir com Segurança?</h3>
+                    </div>
+                    <div class="slide s3">
+                        <img src="imagens/investimentos.jpeg" alt="Investimentos">
+                        <h3>Redução de Dívidas e Liberdade Financeira</h3>
+                    </div>
+                    <div class="slide s4">
+                        <img src="imagens/riscos.jpg" alt="Riscos">
+                        <h3>Planejamento de Aposentadoria: Construindo um Futuro Seguro</h3>
+                    </div>
+                    <div class="slide s5">
+                        <img src="imagens/tributário.jpg" alt="Tributário">
+                        <h3>Gestão Financeira para Pequenas Empresas</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="navigation">
+                <label for="radio1" class="bar"></label>
+                <label for="radio2" class="bar"></label>
+                <label for="radio3" class="bar"></label>
+                <label for="radio4" class="bar"></label>
+                <label for="radio5" class="bar"></label>
+            </div>
+
+            <div class="interface">
+                <h2>Youtube</h2>
+            </div>
+            <iframe class="video-yt" width="560" height="315" src="https://www.youtube.com/embed/x4GjlfW0foY?si=-I2LdUGWVFAI_Xe1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         </section>
 
         <!-- CONTATO -->
@@ -429,9 +491,9 @@
 
                     <p>Ou você pode me seguir aqui</p>
                     <div class="social">
-                        <button class="btn-social"><a href="#"><i class="bi bi-whatsapp"></i></a></button>
+                        <button class="btn-social"><a href="https://wa.me/5531989285119" target="_blank"><i class="bi bi-whatsapp"></i></a></button>
                         <button class="btn-social"><a href="#"><i class="bi bi-linkedin"></i></a></button>
-                        <button class="btn-social"><a href="#"><i class="bi bi-instagram"></i></a></button>
+                        <button class="btn-social"><a href="https://instagram.com/lucigunes" target="_blank"><i class="bi bi-instagram"></i></a></button>
                     </div>
                 </div>
             </div>
@@ -441,11 +503,12 @@
         <footer>
             <div class="interface">
                 <p>Luciléia Gunes <strong>Consultora Financeira</strong> © 2024</p>
-                <p>Desenvolvido por <a href="#">Arthur Henrique</a></p>
+                <p>Desenvolvido por <a href="https://wa.me/5531996386653" target="_blank">Arthur Henrique</a></p>
             </div>
         </footer>
     </main>
 
+    <script src="reveal.js"></script>
     <script src="script.js"></script>
 </body>
 </html>

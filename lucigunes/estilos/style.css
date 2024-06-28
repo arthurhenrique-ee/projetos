@@ -18,6 +18,10 @@
     margin: 0;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background-color: var(--branco);
 }
@@ -74,6 +78,14 @@ a, button {
     touch-action: manipulation;
 }
 
+.efeito-titulo,
+.efeito-btn,
+.efeito-box,
+.efeito-boxflash,
+.efeito-li,
+.efeito-img {
+    visibility: hidden;
+}
 
 /* CABEÇALHO */
 header {
@@ -102,19 +114,20 @@ header #icone-menu {
 header nav.menu-mobile {
     position: fixed;
     top: 0;
-    left: -200px;
-    width: 200px;
+    left: -250px;
+    width: 250px;
     height: 100%;
     text-align: center;
     padding-top: 50px;
-    background-color: rgba(255, 255, 255, 0.9);
+    background-color: rgba(255, 255, 255, 0.95);
     overflow: hidden;
     transition: all .5s;
 }
 
 header nav.menu-mobile a {
     display: block;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
+    font-size: 1.1em;
     text-decoration: none;
     color: black;
     transition: .3s;
@@ -122,6 +135,17 @@ header nav.menu-mobile a {
 
 header nav.menu-mobile a:hover, .menu-mobile a:focus-within {
     color: #A66363;
+}
+
+header nav.menu-mobile .drop {
+    height: 0;
+    overflow: hidden;
+    transition: all .3s;
+}
+
+header nav.menu-mobile .drop a {
+    font-size: 0.8em;
+    text-transform: uppercase;
 }
 
 header nav.menu-mobile .social {
@@ -557,6 +581,85 @@ section#sobre .txt p {
 
 .escondido {
     display: none;
+}
+
+/* BLOG */
+section#blog .interface {
+    padding-bottom: 10px;
+}
+
+section#blog h2 {
+    margin-top: 20px;
+    font-size: 1em;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+#blog .content {
+    width: 100%;
+    overflow: hidden;
+}
+
+#blog .navigation {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 10px;
+}
+
+#blog .navigation .bar {
+    margin: 5px;
+    padding: 5px;
+    border-radius: 50%;
+    border: 2px solid #A66363;
+    cursor: pointer;
+    transition: .3s;
+}
+
+#blog .navigation .bar:hover {
+    background-color: #A66363;
+}
+
+#blog input {
+    display: none;
+}
+
+#blog .slides {
+    display: flex;
+    width: 500%;
+    height: 100%;
+}
+
+#blog .slides .slide {
+    width: 20%;
+    padding: 30px;
+    text-align: center;
+    transition: all .5s;
+    cursor: pointer;
+}
+
+#blog .slides .slide img {
+    margin-bottom: 20px;
+    width: 100%;
+    border-radius: 5px;
+    filter: brightness(0.9);
+}
+
+#blog .slides .slide h3 {
+    font-size: 1.1em;
+    text-transform: uppercase;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+#blog #radio1:checked ~ .s1 {margin-left: 0;}
+#blog #radio2:checked ~ .s1 {margin-left: -20%;}
+#blog #radio3:checked ~ .s1 {margin-left: -40%;}
+#blog #radio4:checked ~ .s1 {margin-left: -60%;}
+#blog #radio5:checked ~ .s1 {margin-left: -80%;}
+
+#blog .video-yt {
+    margin-top: 30px;
+    width: 100%;
 }
 
 /* CONTATO */
