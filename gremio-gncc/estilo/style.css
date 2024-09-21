@@ -4,5 +4,111 @@
 :root {
     --branco: #F2F2F2;
     --darkred: #8C0303;
-    --red: #F21628;
+    --red: #D00000;
+}
+
+
+/* GERAL */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+section {
+    padding: 50px 8%;
+}
+
+.interface {
+    max-width: 1280px;
+    margin: auto;
+}
+
+.flex {
+    display: flex;
+}
+
+h1 {
+    color: #bb0000;
+    font-size: 18px;
+}
+
+
+/* CABEÇALHO */
+header {
+    padding: 10px;
+}
+
+header .flex {
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo {
+    width: 50px;    
+}
+
+header .menu-desktop {
+    display: none;
+}
+
+header .menu-mobile {
+    display: none;
+}
+
+header .icone-menu {
+    font-size: 30px;
+}
+
+
+/* INÍCIO */
+.inicio .flex {
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    gap: 30px;
+    width: 80%;
+}
+
+.inicio .logo {
+    width: 70%;
+}
+
+.inicio .txt {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 100%;
+}
+
+.inicio .txt .main-title {
+    font-size: 30px;
+    letter-spacing: 1px;
+    line-height: 1.2;
+}
+
+.inicio .txt p {
+    font-size: 18px;
+    font-weight: 200;
+}
+
+
+.inicio .txt a {
+    border: 1px solid #bb0000;
+    border-radius: 60px;
+    width: 150px;
+    padding: 5px;
+    color: black;
+    font-size: 15px;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 400;
+    transition: .3s;
+}
+
+.inicio .txt a:hover {
+    background-color: #bb0000;
+    color: white;
 }
