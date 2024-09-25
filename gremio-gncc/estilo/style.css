@@ -2,9 +2,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 :root {
-    --branco: #F2F2F2;
-    --darkred: #8C0303;
-    --red: #D00000;
+    --branco: #FEF6E9;
+    --creme: #E8DCD0;
+    --red: #821A19;
+    --rosa: #9A2E2E;
+    --preto: #10161d;
 }
 
 
@@ -14,6 +16,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
+    background-color: #E8DCD0;
 }
 
 section {
@@ -30,19 +33,23 @@ section {
 }
 
 h1 {
-    color: #bb0000;
+    color: #821A19;
     font-size: 18px;
 }
 
 
 /* CABEÇALHO */
 header {
-    padding: 10px;
+    padding: 15px 25px;
 }
 
 header .flex {
     justify-content: space-between;
     align-items: center;
+}
+
+header .flex div {
+    display: flex;
 }
 
 header .logo {
@@ -84,7 +91,6 @@ header .icone-menu {
 
 .inicio .txt .main-title {
     font-size: 30px;
-    letter-spacing: 1px;
     line-height: 1.2;
 }
 
@@ -95,7 +101,7 @@ header .icone-menu {
 
 
 .inicio .txt a {
-    border: 1px solid #bb0000;
+    border: 1px solid #821A19;
     border-radius: 60px;
     width: 150px;
     padding: 5px;
@@ -109,6 +115,6 @@ header .icone-menu {
 }
 
 .inicio .txt a:hover {
-    background-color: #bb0000;
+    background-color: #821A19;
     color: white;
 }
