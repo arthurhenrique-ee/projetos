@@ -18,7 +18,6 @@
     <!-- CABEÇALHO -->
     <header>
         <div class="flex">
-
             <!-- MENUS -->
             <nav class="menu-desktop">
                 <a href="#">Início</a>
@@ -27,19 +26,22 @@
             </nav><!-- desktop -->
 
             <nav class="menu-mobile">
+                <i class="bi bi-x-lg icone-close" onclick="closeMenu()"></i>
                 <a href="#">Início</a>
                 <a href="#">Diretorias</a>
                 <a href="#">Integrantes</a>
+                <a href="#">Estatuto</a>
+                <a href="#">Planilhas</a>
             </nav><!-- mobile -->
 
             <!-- BOTÕES -->
             <div class="botoes">
-                <i class="bi bi-list icone-menu"></i><!-- menu -->
-                
-                <a href="https://instagram.com/gremio_nildacc" class="btn-social" target="_blank"><i class="bi bi-instagram"></i>
-                </a><!-- instagram -->
                 <a href="https://youtube.com" class="btn-social" target="_blank"><i class="bi bi-youtube"></i>
                 </a><!-- youtube -->
+                <a href="https://instagram.com/gremio_nildacc" class="btn-social" target="_blank"><i class="bi bi-instagram"></i>
+                </a><!-- instagram -->
+
+                <i class="bi bi-list icone-menu" onclick="openMenu()"></i><!-- menu -->
             </div>
         </div>
     </header>
@@ -48,9 +50,7 @@
     <main>
         <!-- INÍCIO -->
         <section id="home" class="home">
-            <div class="banner">
-                <img src="imagens/banner-home-melhorado.png" alt="">
-            </div>
+            <div class="banner"></div>
         </section>
 
         <section class="noticias" id="noticias">
@@ -105,5 +105,7 @@
             </div>
         </section>
     </main>
+
+    <script src="script/script.js"></script>
 </body>
 </html>
