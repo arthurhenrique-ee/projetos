@@ -143,25 +143,21 @@ section.sobre .content {
     margin-top: 50px;
 }
 
-.sobre .content .linha {
-    background-color: #1f2326d7;
-    width: 3px;
-    height: 60px;
-    margin: 30px auto;
-}
-
 .sobre .content .box-sobre {
+    border: 1px solid black;
+    border-radius: 10px;
     text-align: center;
+    margin: 50px 0px;
 }
 
 .sobre .content .box-sobre .flex {
-    flex-direction: column-reverse;
+    flex-direction: column;
     align-items: center;
     gap: 30px;
 }
 
 .sobre .content .box-sobre .imagem img {
-    max-width: 250px;
+    max-width: 300px;
 }
 
 .sobre .content .box-sobre .txt h2 { 
