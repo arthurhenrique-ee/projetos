@@ -43,17 +43,6 @@ h1 {
     margin-bottom: 30px;
 }
 
-h1::after {
-    content: "";
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    bottom: -20px; /* Distância entre o título e a linha */
-    width: 20%; /* A linha terá 70% da largura do título */
-    height: 2px; /* Espessura da linha */
-    background-color: #1F2326
-}
-
 
 /* CABEÇALHO */
 header {
@@ -149,6 +138,43 @@ section.home {
 }
 
 
+/* QUEM SOMOS */
+section.sobre .content {
+    margin-top: 50px;
+}
+
+.sobre .content .linha {
+    background-color: #1f2326d7;
+    width: 3px;
+    height: 60px;
+    margin: 30px auto;
+}
+
+.sobre .content .box-sobre {
+    text-align: center;
+}
+
+.sobre .content .box-sobre .flex {
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 30px;
+}
+
+.sobre .content .box-sobre .imagem img {
+    max-width: 250px;
+}
+
+.sobre .content .box-sobre .txt h2 { 
+    text-transform: uppercase;
+    font-size: 24px;
+    margin-bottom: 12px;
+}
+
+.sobre .content .box-sobre .txt p {
+    line-height: 1.6;
+    font-size: 17px;
+}
+
 /* NOTÍCIAS */
 section.noticias .container .box-news {
     display: flex;
@@ -174,19 +200,4 @@ section.noticias .container .box-news {
 .noticias .container .box-news .data {
     font-size: 14px;
     color: #1f232673;
-}
-
-
-/* SOBRE */
-.sobre .txt {
-    background-color: transparent;
-}
-
-.sobre .txt p {
-    background-color: transparent;
-    text-align: center;
-    font-size: 18px;
-    line-height: 1.6;
-    margin: 20px 0px;
-    font-weight: lighter;
 }
