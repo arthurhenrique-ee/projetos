@@ -139,39 +139,66 @@ section.home {
 
 
 /* QUEM SOMOS */
-section.sobre .content {
-    margin-top: 50px;
-}
-
-.sobre .content .box-sobre {
-    padding: 30px;
-    border: 1px solid black;
-    border-radius: 10px;
-    text-align: center;
-    margin: 50px 0px;
-    overflow: hidden;
-}
-
-.sobre .content .box-sobre .flex {
+section.sobre .textos .flex {
     flex-direction: column;
-    align-items: center;
     gap: 30px;
 }
 
-.sobre .content .box-sobre .imagem img {
-    max-width: 200px;
+section.sobre .box-sobre {
+    padding: 40px 30px;
+    border-radius: 10px;
+    text-align: center;
+    overflow: hidden;
+    transition: .3s;
 }
 
-.sobre .content .box-sobre .txt h2 { 
+.sobre .box-sobre:hover {
+    box-shadow: 0px 0px 10px #1f23267a;
+    transform: scale(1.020);
+}
+
+.sobre .box-sobre .icone {
+    margin-bottom: 20px;
+}
+
+.sobre .box-sobre .icone i {
+    font-size: 48px;
+}
+
+.sobre .box-sobre .txt h2 { 
     text-transform: uppercase;
-    font-size: 24px;
-    margin-bottom: 12px;
+    font-size: 23px;
 }
 
-.sobre .content .box-sobre .txt p {
+.sobre .box-sobre .txt p {
+    margin-top: 15px;
+    margin-bottom: 35px;
     line-height: 1.6;
     font-size: 17px;
+    font-weight: lighter;
 }
+
+.sobre .box-sobre .txt a {
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    background-color: #BA3B38;
+    border: 2px solid #BA3B38;
+    color: #E2DDD3;
+    text-transform: uppercase;
+    font-size: 15px;
+    transition: .3s;
+    display: inline-block;
+}
+
+.sobre .box-sobre .txt a:hover {
+    background-color: transparent;
+    color: #1F2326;
+    transform: scale(1.050);
+}
+
+/* DIRETORIAS */
+
 
 /* NOTÍCIAS */
 section.noticias .container .box-news {
