@@ -198,7 +198,41 @@ section.sobre .box-sobre {
 }
 
 /* DIRETORIAS */
+.sobre .diretorias .slider {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    width: max-content;
+    overflow: hidden;
+}
 
+.sobre .diretorias .slider .box-diretoria {
+    width: 55vw;
+    height: 400px;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    background-color: #BA3B38;
+}
+
+.sobre .diretorias .slider .box-diretoria .icone {
+    width: 100px;
+    height: 100px;
+    background-color: #1F2326;
+    border-radius: 50%;
+    margin: auto;
+}
+
+.sobre .diretorias .slider .box-diretoria h2 {
+    margin: 20px 0px;
+    text-transform: uppercase;
+    font-size: 23px;
+    background-color: #BA3B38;
+}
+
+.sobre .diretorias .slider .box-diretoria p {
+    background-color: #BA3B38;
+}
 
 /* NOTÍCIAS */
 section.noticias .container .box-news {
