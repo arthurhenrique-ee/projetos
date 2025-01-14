@@ -20,7 +20,7 @@ body {
     margin: 0 auto;
 }
 
-header .btn-contato button, .home button {
+header .btn-contato button, .home button, .hoteis button {
     font-size: 18px;
     background-color: transparent;
     border: 1px solid #fff;
@@ -28,6 +28,12 @@ header .btn-contato button, .home button {
     cursor: pointer;
     transition: .5s;
 }
+
+header .btn-contato button:hover, .home button:hover, .hoteis button:hover {
+    background-color: #fff;
+    color: #000;
+}
+
 
 /* CABEÇALHO */
 
@@ -72,11 +78,6 @@ header .menu-desktop nav ul li a:hover {
 header .btn-contato button {
     width: 140px;
     height: 50px;
-}
-
-header .btn-contato button:hover, .home button:hover {
-    background-color: #fff;
-    color: #000;
 }
 
 
@@ -211,4 +212,60 @@ section.contato {
 .contato .icons-contato button:hover i, 
 .contato .icons-contato button:hover p {
     color: #fff;
+}
+
+
+/* HOTÉIS */
+
+section.hoteis {
+    position: relative;
+    height: 600px;
+    background: #e3e3e3 url("../imagens/hotel-bg.jpg") no-repeat center;
+    background-size: no-repeat;
+    background-attachment: fixed;
+    color: #fff;
+    text-align: center;
+}
+
+.hoteis > .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #000;
+    width: 100%;
+    height: 100%;
+    opacity: 0.8;
+    z-index: 1;
+}
+
+.hoteis > .interface {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+    z-index: 2;
+    position: relative;
+}
+
+.hoteis h3 {
+    font-size: 3em;
+    line-height: 50px;
+    font-weight: 200;
+}
+
+.hoteis h3 span {
+    display: block;
+    font-weight: 600;
+}
+
+.hoteis p {
+    margin: 20px 0px;
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.hoteis button {
+    width: 220px;
+    height: 60px;
 }
