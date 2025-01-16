@@ -179,10 +179,9 @@ section.quem-somos {
 
 /* DIRETORIAS */
 section.diretorias {
+    position: relative;
     background-color: #fff;
     padding: 80px 0;
-
-    overflow: hidden;
 }
 
 .diretorias .txt-diretorias {
@@ -196,22 +195,31 @@ section.diretorias {
     font-weight: 300;
 }
 
-.diretorias .container-diretorias {
-    width: 1000%;
+.diretorias .scroll-wrapper {
+    overflow-x: auto;
+    padding: 10px;
+    scrollbar-width: none;
+}
+
+.scroll-wrapper::-webkit-scrollbar {
+    display: none;
+}
+
+.diretorias .container {
     display: flex;
     gap: 30px;
-
-    overflow-x: auto;
 }
+
 
 .diretorias .box-diret {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    box-shadow: 0 0 10px #00000080;
+    box-shadow: 0 0 10px #00000050;
     border-radius: 10px;
     padding: 0 25px;
     margin-bottom: 50px;
+    min-width: 250px;
     max-width: 250px;
     height: 350px;
     text-align: center;
