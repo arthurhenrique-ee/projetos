@@ -182,9 +182,7 @@ section.diretorias {
     background-color: #fff;
     padding: 80px 0;
 
-    overflow: hidden; /* Esconde qualquer barra de rolagem visível */
-    width: 100%; /* Ocupa a largura total da página */
-    position: relative; /* Garante que o layout fique correto */
+    overflow: hidden;
 }
 
 .diretorias .txt-diretorias {
@@ -203,30 +201,20 @@ section.diretorias {
     display: flex;
     gap: 30px;
 
-    overflow-x: auto; /* Habilita a rolagem horizontal */
-    scroll-behavior: smooth; /* Faz a rolagem ser suave */
-    padding-bottom: 10px; /* Evita corte no conteúdo */
-    -webkit-overflow-scrolling: touch; /* Melhora o scroll em dispositivos móveis */
-}
-
-.diretorias .container-diretorias::-webkit-scrollbar {
-    display: none; /* Esconde a barra de rolagem */
+    overflow-x: auto;
 }
 
 .diretorias .box-diret {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    box-shadow: 2px 2px 10px #00000080;
+    box-shadow: 0 0 10px #00000080;
     border-radius: 10px;
     padding: 0 25px;
     margin-bottom: 50px;
     max-width: 250px;
     height: 350px;
     text-align: center;
-
-    scroll-snap-align: start;
-    flex: 0 0 auto;
 }
 
 .diretorias .box-diret img {
