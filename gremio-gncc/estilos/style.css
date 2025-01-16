@@ -38,6 +38,7 @@ header {
     padding: 40px 10px;
     background-color: transparent;
     z-index: 999;
+    transition: .5s;
 }
 
 header .interface {
@@ -70,6 +71,20 @@ header .btn-menu .line2 {
 
 header .menu-mobile {
     display: none;
+}
+
+
+
+
+/* HEADER DINÂMICO */
+header.scroll {
+    padding: 20px 10px;
+    background-color: #fff;
+    box-shadow: 0 0 10px #0000008a;
+}
+
+header.scroll .btn-menu div {
+    background-color: #000;
 }
 
 
@@ -197,7 +212,7 @@ section.diretorias {
 
 .diretorias .scroll-wrapper {
     overflow-x: auto;
-    padding: 10px;
+    padding: 20px;
     scrollbar-width: none;
 }
 
@@ -215,7 +230,7 @@ section.diretorias {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    box-shadow: 0 0 10px #00000050;
+    box-shadow: 0 0 10px #00000030;
     border-radius: 10px;
     padding: 0 25px;
     margin-bottom: 50px;
@@ -247,4 +262,43 @@ section.diretorias {
 
 .diretorias .box-diret button:hover {
     opacity: 0.8;
+}
+
+
+
+
+/* INTEGRANTES */
+section.integrantes {
+    padding: 80px 0;
+}
+
+.integrantes .content-integ {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+    margin: 50px 0;
+}
+
+.integrantes .box-integ {
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.integrantes .box-integ img {
+    margin-bottom: 5px;
+    width: 150px;
+}
+
+.integrantes .box-integ .funcao {
+    margin-top: 5px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.integrantes .box-integ .funcao span {
+    display: block;
+    font-weight: 300;
+    font-style: italic;
+    line-height: 15px;
 }
