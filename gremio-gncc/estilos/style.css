@@ -11,6 +11,10 @@
     font-family: "Poppins", sans-serif;
 }
 
+body.no-overflow {
+    overflow: hidden;
+}
+
 .interface {
     max-width: 1280px;
     margin: 0 auto;
@@ -53,24 +57,65 @@ header .logo img {
 
 header .btn-menu {
     cursor: pointer;
+    z-index: 9999;
 }
 
 header .btn-menu div {
+    position: relative;
     margin: 10px 0;
     height: 3px;
     background-color: #fff;
+    transition: .2s;
 }
 
 header .btn-menu .line1 {
     width: 30px;
 }
 
+header .btn-menu .line1.ativo1 {
+    transform: rotate(45deg) translate(30%);
+}
+
 header .btn-menu .line2 {
     width: 20px;
 }
 
+header .btn-menu .line2.ativo2 {
+    width: 30px;
+    transform: rotate(-45deg) translate(30%);
+}
+
 header .menu-mobile {
-    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+    height: 0;
+    width: 100%;
+    overflow: hidden;
+    transition: .5s;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header .menu-mobile.abrir {
+    height: 100%;
+}
+
+header .menu-mobile nav a {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    color: #000;
+    margin: 15px 0;
+    font-size: 20px;
+    transition: .3s;
+}
+
+header .menu-mobile nav a:hover {
+    transform: scale(1.1);
 }
 
 
