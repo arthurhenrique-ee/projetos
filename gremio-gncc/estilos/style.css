@@ -313,35 +313,86 @@ section.diretorias {
 
 
 /* INTEGRANTES */
-section.integrantes .content-integ {
+section.integrantes .container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
-    gap: 20px;
+    width: 100%;
     margin: 50px 0;
 }
 
-.integrantes .box-integ {
-    margin-bottom: 40px;
+.integrantes .perfil {
+    position: relative;
+    width: 33.333%;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.integrantes .perfil .foto {
+    width: 100%;
+    height: 100%;
+}
+
+.integrantes .perfil .info {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 10;
+    color: #fff;
     text-align: center;
+    transition: .5s;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.integrantes .box-integ img {
-    margin-bottom: 5px;
-    width: 160px;
+.integrantes .perfil:hover .info {
+    top: 0;
 }
 
-.integrantes .box-integ .funcao {
-    margin-top: 5px;
+.integrantes .perfil .nome {
     font-size: 14px;
+    line-height: 20px;
+}
+
+.integrantes .perfil .funcao-p {
+    font-size: 12px;
     font-weight: 500;
 }
 
-.integrantes .box-integ .funcao span {
-    display: block;
-    font-weight: 300;
-    font-style: italic;
+.integrantes .perfil .funcao {
+    margin-top: 5px;
     line-height: 15px;
+    font-size: 12px;
+    font-weight: 300;
+}
+
+.integrantes .perfil .funcao span {
+    display: block;
+    font-style: italic;
+    font-weight: 100;
+}
+
+.integrantes .perfil .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 15px;
+    background-color: #000;
+    opacity: 0;
+    z-index: 1;
+    transition: .5s;
+
+    display: flex;
+    align-items: end;
+}
+
+.integrantes .perfil:hover .overlay {
+    opacity: 0.6;
 }
 
 
