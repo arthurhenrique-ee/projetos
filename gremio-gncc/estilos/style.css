@@ -11,14 +11,14 @@
     font-family: "Poppins", sans-serif;
 }
 
-body.no-overflow {
-    overflow: hidden;
-}
-
 .interface {
     max-width: 1280px;
     margin: 0 auto;
     padding: 0 6%;
+}
+
+section {
+    padding: 120px 0;
 }
 
 h2 {
@@ -74,6 +74,7 @@ header .btn-menu .line1 {
 
 header .btn-menu .line1.ativo1 {
     transform: rotate(45deg) translate(30%);
+    background-color: #000;
 }
 
 header .btn-menu .line2 {
@@ -83,6 +84,7 @@ header .btn-menu .line2 {
 header .btn-menu .line2.ativo2 {
     width: 30px;
     transform: rotate(-45deg) translate(30%);
+    background-color: #000;
 }
 
 header .menu-mobile {
@@ -125,7 +127,7 @@ header .menu-mobile nav a:hover {
 header.scroll {
     padding: 20px 10px;
     background-color: #fff;
-    box-shadow: 0 0 10px #0000008a;
+    box-shadow: 0 0 10px #00000040;
 }
 
 header.scroll .btn-menu div {
@@ -187,7 +189,6 @@ section.home {
 
 /* QUEM SOMOS */
 section.quem-somos {
-    padding: 80px 0;
     background-color: #F8F9FA;
 }
 
@@ -241,7 +242,6 @@ section.quem-somos {
 section.diretorias {
     position: relative;
     background-color: #fff;
-    padding: 80px 0;
 }
 
 .diretorias .txt-diretorias {
@@ -313,11 +313,7 @@ section.diretorias {
 
 
 /* INTEGRANTES */
-section.integrantes {
-    padding: 80px 0;
-}
-
-.integrantes .content-integ {
+section.integrantes .content-integ {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -353,9 +349,7 @@ section.integrantes {
 
 /* EVENTOS */
 section.eventos {
-    padding: 80px 0;
-    background-color: #000;
-    color: #fff;
+    background-color: #F8F9FA;
 }
 
 .eventos .txt-eventos {
@@ -400,7 +394,6 @@ section.eventos {
     background-color: transparent;
     border: none;
     font-size: 16px;
-    color: #fff;
     cursor: pointer;
 }
 

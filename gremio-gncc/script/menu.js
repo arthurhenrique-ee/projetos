@@ -1,4 +1,3 @@
-let body = document.querySelector('body')
 let header = document.querySelector('header')
 let menuMobile = document.querySelector('.menu-mobile')
 let btnMenu = document.querySelector('.btn-menu')
@@ -19,12 +18,10 @@ btnMenu.addEventListener('click', ()=> {
     menuMobile.classList.toggle('abrir')
     line1.classList.toggle('ativo1')
     line2.classList.toggle('ativo2')
-    body.classList.toggle('no-overflow')
 })
 
 function linkMenu() {
     menuMobile.classList.toggle('abrir')
     line1.classList.toggle('ativo1')
     line2.classList.toggle('ativo2')
-    body.classList.toggle('no-overflow')
 }
