@@ -33,8 +33,7 @@
                     <a href="#diretorias" onclick="linkMenu()">Diretorias</a>
                     <a href="#integrantes" onclick="linkMenu()">Integrantes</a>
                     <a href="#eventos" onclick="linkMenu()">Eventos</a>
-                    <a href="#" onclick="linkMenu()">Projetos</a>
-                    <a href="#" onclick="linkMenu()">Fale Conosco</a>
+                    <a href="#fale-conosco" onclick="linkMenu()">Fale Conosco</a>
                 </nav>
             </div><!-- MENU MOBILE -->
         </div>
@@ -275,7 +274,7 @@
 
             <div class="intro-section">
                 <h2>Nossos <span>Integrantes</span></h2>
-                <p>Essa é a equipe que move o grêmio! Cada um com seu papel, mas todos com o mesmo objetivo: representar os alunos e tornar a escola um lugar ainda melhor. Conheça quem tá por trás das ideias, eventos e projetos!</p>
+                <p>Essa é a equipe que move o grêmio! Cada um com seu papel, mas todos com o mesmo objetivo: representar os alunos e tornar a escola um lugar ainda melhor. Conheça quem tá por trás das ideias, eventos e projetos!<br><br>Dica: Clique no nome de cada integrante para ver sua função dentro do Grêmio e saber mais sobre o que eles fazem!</p>
             </div>
 
         </div>
@@ -536,45 +535,104 @@
                 <p>Fique por dentro das próximas atividades do nosso grêmio! Aqui você encontra eventos, projetos e ações que estão por vir. Participe e faça a diferença! </p>
             </div>
 
-            <div class="content-eventos">
-                <div class="box-eventos">
-                    <div class="capa" style="background-image: url('imagens/eventos/festival-pastel.jpg');"></div>
-    
-                    <div class="txt-box-eventos">
-                        <h3>Festival de Pastel</h3>
-                        <p class="data">10/02/2025</p>
-                        <a href="#">
-                            <button>Saber mais ></button>
-                        </a>
+            <div class="container">
+                
+                <div class="box-evento">
+                    <div class="capa">
+                        <img src="imagens/eventos/evento01.jpeg" alt="">
                     </div>
-                </div>
 
-                <div class="box-eventos">
-                    <div class="capa" style="background-image: url('imagens/eventos/campeonato-truco.png');"></div>
-    
-                    <div class="txt-box-eventos">
+                    <div class="info">
                         <h3>Campeonato de Truco</h3>
-                        <p class="data">06/03/2025</p>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. At voluptas libero dicta iure dignissimos tempore hic quisquam rem eligendi, qui quibusdam laudantium quo ipsum exercitationem voluptates dolorum id corrupti commodi.</p>
                         <a href="#">
-                            <button>Saber mais ></button>
+                            <button>Mais informações ></button>
                         </a>
                     </div>
-                </div>
+                </div><!-- CAMPEONATO DE TRUCO -->
+                
+                <div class="box-evento">
+                    <div class="capa">
+                        <img src="imagens/eventos/evento02.jpg" alt="">
+                    </div>
 
-                <div class="box-eventos">
-                    <div class="capa" style="background-image: url('imagens/eventos/festival-sorvete.jpg');"></div>
-    
-                    <div class="txt-box-eventos">
-                        <h3>Festival de Sorvete</h3>
-                        <p class="data">02/04/2025</p>
+                    <div class="info">
+                        <h3>Festival de Pastel</h3>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. At voluptas libero dicta iure dignissimos tempore hic quisquam rem eligendi, qui quibusdam laudantium quo ipsum exercitationem voluptates dolorum id corrupti commodi.</p>
                         <a href="#">
-                            <button>Saber mais ></button>
+                            <button>Mais informações ></button>
                         </a>
                     </div>
-                </div>
+                </div><!-- FESTIVAL DE PASTEL -->
+
+                <div class="box-evento">
+                    <div class="capa">
+                        <img src="imagens/eventos/evento03.jpg" alt="">
+                    </div>
+
+                    <div class="info">
+                        <h3>Jogos Interclasse 2025</h3>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. At voluptas libero dicta iure dignissimos tempore hic quisquam rem eligendi, qui quibusdam laudantium quo ipsum exercitationem voluptates dolorum id corrupti commodi.</p>
+                        <a href="#">
+                            <button>Mais informações ></button>
+                        </a>
+                    </div>
+                </div><!-- JOGOS INTERCLASSE 2025 -->
+
             </div>
         </div>
     </section><!-- EVENTOS -->
+
+    <section class="fale-conosco" id="fale-conosco">
+        <div class="interface">
+            <div class="intro-section">
+                <h2>Fale <span>Conosco</span></h2>
+                <p>Quer falar com a gente? 📢 Manda um e-mail, deixa sua sugestão ou faça uma denúncia anônima. Sua voz importa!</p>
+            </div>
+
+            <div class="container">
+
+                <div class="box-contato">
+                    <div class="icone">
+                        <i class="bi bi-envelope-fill"></i>
+                    </div>
+                    <div class="info">
+                        <h3>E-mail</h3>
+                        <p>Precisa tirar dúvidas ou falar com o Grêmio? Envie um e-mail e responderemos o mais rápido possível.</p>
+                        <a href="#">
+                            <button>Enviar E-mail ></button>
+                        </a>
+                    </div>
+                </div><!-- EMAIL -->
+
+                <div class="box-contato">
+                    <div class="icone">
+                        <i class="bi bi-lightbulb-fill"></i>
+                    </div>
+                    <div class="info">
+                        <h3>Sugestão</h3>
+                        <p>Tem uma ideia para melhorar a escola? Preencha o formulário e compartilhe sua sugestão com a gente!</p>
+                        <a href="#">
+                            <button>Formulário ></button>
+                        </a>
+                    </div>
+                </div><!-- SUGESTÃO -->
+
+                <div class="box-contato">
+                    <div class="icone">
+                        <i class="bi bi-exclamation-circle-fill"></i>
+                    </div>
+                    <div class="info">
+                        <h3>Denúncia</h3>
+                        <p>Presenciou alguma situação de violência ou discriminação? Faça uma denúncia anônima e segura pelo formulário.</p>
+                        <a href="#">
+                            <button>Denunciar ></button>
+                        </a>
+                    </div>
+                </div><!-- DENÚNCIA -->
+            </div>
+        </div>
+    </section><!-- FALE CONOSCO -->
 
     <footer>
         <p class="copyright">Grêmio <span style="font-weight: bold;">Nilda Carvalho Cunha</span> 2025 &copy; Todos os direitos reservados.</p>
