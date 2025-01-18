@@ -11,7 +11,7 @@
     font-family: "Poppins", sans-serif;
 }
 
-button, a {
+button, div, a {
     -webkit-tap-highlight-color: transparent;
     outline: none;
 }
@@ -507,4 +507,108 @@ footer .copyright {
     font-size: 16px;
     font-weight: 400;
     margin-bottom: 10px;
+}
+
+
+
+
+/* MODAIS */
+.fundo-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #000000a8;
+    height: 100vh;
+    width: 100vw;
+    transition: .5s;
+    z-index: 99999;
+    overflow: hidden;
+    backdrop-filter: blur(5px);
+    
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.fundo-modal .modal {
+    position: relative;
+    background-color: #fff;
+    box-shadow: 0 0 10px #00000065;
+    padding: 80px 50px 80px 50px;
+    width: 350px;
+    height: 550px;
+    border-radius: 20px;
+    overflow: hidden;
+    overflow-y: scroll;
+    scrollbar-width: none;
+}
+
+.modal h4 {
+    text-transform: uppercase;
+    line-height: 20px;
+    margin-bottom: 15px;
+}
+
+.fundo-modal .modal .fechar-modal {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+    background-color: #000;
+    color: #fff;
+    font-weight: 300;
+    font-size: 1.8em;
+    cursor: pointer;
+    border: none;
+    transition: .3s;
+}
+
+.fundo-modal .modal .fechar-modal:hover {
+    opacity: 0.7;
+}
+
+.modal .header-modal .logo-modal img {
+    max-width: 100px;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 5px;
+}
+
+.modal .header-modal h3 {
+    text-align: center;
+    font-size: 1.4em;
+    font-weight: bolder;
+    margin-bottom: 20px;
+}
+
+.modal .header-modal .desc {
+    font-weight: 300;
+    font-size: 16px;
+}
+
+.modal .atividades {
+    margin: 50px 0;
+}
+
+.modal .atividades ul {
+    list-style: none;
+}
+
+.modal .atividades ul li i {
+    font-size: 20px;
+}
+
+.modal .links a {
+    display: block;
+    text-decoration: none;
+    margin: 10px 0;
+}
+
+.modal .links button {
+    border: none;
+    background-color: transparent;
+    font-weight: 600;
+    border-bottom: 2px solid #000;
 }
