@@ -530,11 +530,11 @@ footer .copyright {
     justify-content: center;
 }
 
-.fundo-modal .modal {
+.modal {
     position: relative;
     background-color: #fff;
-    box-shadow: 0 0 10px #00000065;
-    padding: 80px 50px 80px 50px;
+    box-shadow: 0 0 10px #00000075;
+    padding: 80px 40px 80px 40px;
     width: 350px;
     height: 550px;
     border-radius: 20px;
@@ -544,71 +544,123 @@ footer .copyright {
 }
 
 .modal h4 {
-    text-transform: uppercase;
-    line-height: 20px;
-    margin-bottom: 15px;
+    font-size: 1.2em;
+    font-weight: 300;
+    margin-bottom: 10px;
 }
 
-.fundo-modal .modal .fechar-modal {
+.modal h4 span {
+    font-weight: 700;
+}
+
+.modal .fechar-modal {
     position: absolute;
-    top: 20px;
-    right: 20px;
-    width: 40px;
-    height: 40px;
-    border-radius: 50px;
-    background-color: #000;
-    color: #fff;
-    font-weight: 300;
-    font-size: 1.8em;
+    top: 10px;
+    right: 25px;
+    background-color: transparent;
+    font-weight: 200;
+    font-size: 3em;
     cursor: pointer;
     border: none;
     transition: .3s;
 }
 
-.fundo-modal .modal .fechar-modal:hover {
+.modal .fechar-modal:hover {
     opacity: 0.7;
 }
 
-.modal .header-modal .logo-modal img {
-    max-width: 100px;
-    display: block;
-    margin: 0 auto;
-    margin-bottom: 5px;
-}
-
-.modal .header-modal h3 {
+.modal .intro-modal {
     text-align: center;
-    font-size: 1.4em;
-    font-weight: bolder;
-    margin-bottom: 20px;
+    margin-bottom: 50px;
 }
 
-.modal .header-modal .desc {
+.modal .intro-modal .logo img {
+    display: block;
+    max-width: 100px;
+    margin: 0 auto;
+}
+
+.modal .intro-modal h3 {
+    font-size: 1.3em;
+    margin: 15px 0;
+}
+
+.modal .intro-modal p {
     font-weight: 300;
-    font-size: 16px;
 }
 
-.modal .atividades {
-    margin: 50px 0;
+.modal .integ {
+    margin-bottom: 60px;
 }
 
-.modal .atividades ul {
-    list-style: none;
+.modal .integ .perfil {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+    padding: 20px 0;
+    border-bottom: 1px solid #000;
 }
 
-.modal .atividades ul li i {
-    font-size: 20px;
+.modal .integ .perfil .foto img {
+    width: 100px;
+    border-radius: 100px;
+}
+
+.modal .integ .perfil .info .nome {
+    font-weight: 600;
+    line-height: 25px;
+}
+
+.modal .integ .perfil .info .funcao {
+    font-weight: 300;
+    line-height: 15px;
+}
+
+.modal .atuacao ul {
+    list-style-type: none;
+}
+
+.modal .atuacao ul li {
+    font-weight: 300;
+    margin: 5px 0;
+}
+
+.modal .atuacao ul li i {
+    font-size: 1.5em;
+}
+
+.modal .links {
+    margin-top: 60px;
 }
 
 .modal .links a {
-    display: block;
     text-decoration: none;
-    margin: 10px 0;
 }
 
 .modal .links button {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    border-radius: 10px;
+    margin-bottom: 10px;
+    padding: 10px 15px;
+    width: 100%;
+
+    font-size: 16px;
+    background-color: #202020;
+    color: #fff;
     border: none;
-    background-color: transparent;
-    font-weight: 600;
-    border-bottom: 2px solid #000;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.modal .links button:hover {
+    opacity: 0.8;
+    gap: 15px;
+}
+
+.modal .links button i {
+    font-size: 1.5em;
 }
