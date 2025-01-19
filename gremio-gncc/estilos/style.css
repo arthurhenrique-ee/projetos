@@ -664,3 +664,72 @@ footer .copyright {
 .modal .links button i {
     font-size: 1.5em;
 }
+
+
+
+
+/* PÁGINAS EVENTOS */
+.header-evento {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 0;
+
+    background-color: #fff;
+    box-shadow: 0 0 10px #00000030;
+}
+
+.header-evento .btn-voltar a {
+    text-decoration: none;
+}
+
+.header-evento .btn-voltar button {
+    display: flex;
+    gap: 10px;
+    padding: 5px 15px;
+
+    font-size: 16px;
+    border: 1px solid #000;
+    border-radius: 5px;
+    background-color: transparent;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.header-evento .btn-voltar button:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+section.hero-evento {
+    background-color: #F8F9FA;
+}
+
+section.hero-evento .interface {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.hero-evento .info-evento {
+    padding: 40px 30px;
+    border-radius: 20px;
+    box-shadow: 0 0 5px #00000030;
+    background-color: #fff;
+}
+
+.hero-evento .info-evento .title-evento {
+    font-weight: 600;
+    font-size: 1.5em;
+}
+
+.hero-evento .info-evento .desc {
+    font-weight: 300;
+    margin: 20px 0;
+}
+
+.hero-evento .capa-evento img {
+    border-radius: 20px;
+    max-width: 100%;
+}
