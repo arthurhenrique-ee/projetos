@@ -103,6 +103,22 @@ header .btn-menu .line2.ativo2 {
     background-color: #000;
 }
 
+header .menu-desktop {
+    display: none;
+}
+
+header .menu-desktop nav a {
+    display: inline-block;
+    margin: 0 20px;
+    text-decoration: none;
+    color: #fff;
+    transition: .3s;
+}
+
+header .menu-desktop nav a:hover {
+    transform: scale(1.05);
+}
+
 header .menu-mobile {
     position: fixed;
     top: 0;
@@ -148,6 +164,10 @@ header.scroll {
 
 header.scroll .btn-menu div {
     background-color: #000;
+}
+
+header.scroll .menu-desktop nav a {
+    color: #000;
 }
 
 
@@ -217,7 +237,7 @@ section.quem-somos {
     height: 250px;
     background-color: #fff;
     border-radius: 5px;
-    box-shadow: 2px 2px 8px #00000030 ;
+    box-shadow: 0 0 8px #00000020 ;
 }
 
 .quem-somos .box-about i {
