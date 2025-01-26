@@ -694,12 +694,11 @@ footer .copyright {
     border-radius: 5px;
     background-color: transparent;
     cursor: pointer;
-    transition: .5s;
+    transition: .3s;
 }
 
 .header-evento .btn-voltar button:hover {
-    background-color: #000;
-    color: #fff;
+    background-color: #00000020;
 }
 
 section.hero-evento {
@@ -713,9 +712,9 @@ section.hero-evento .interface {
 }
 
 .hero-evento .info-evento {
-    padding: 40px 30px;
+    padding: 40px;
     border-radius: 20px;
-    box-shadow: 0 0 5px #00000030;
+    box-shadow: 0 0 5px #00000020;
     background-color: #fff;
 }
 
@@ -727,9 +726,77 @@ section.hero-evento .interface {
 .hero-evento .info-evento .desc {
     font-weight: 300;
     margin: 20px 0;
+    font-size: 14px;
+}
+
+.hero-evento .info-evento .subinfo {
+    margin: 5px 0;
+    display: flex;
+    gap: 10px;
+
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.hero-evento .info-evento button {
+    border-radius: 5px;
+    margin-top: 20px;
+    padding: 10px 15px;
+
+    background-color: #000;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.hero-evento .info-evento button:hover {
+    opacity: 0.8;
 }
 
 .hero-evento .capa-evento img {
     border-radius: 20px;
     max-width: 100%;
+}
+
+.descricao h3 {
+    font-size: 1.4em;
+    font-weight: 700;
+}
+
+.descricao h3 span {
+    font-weight: 300;
+}
+
+.descricao p {
+    margin: 10px 0;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.descricao .title-inscricao {
+    margin-top: 50px;
+}
+
+.descricao p.valor {
+    font-size: 1em;
+    font-weight: 600;
+    line-height: 20px;
+}
+
+.descricao p.valor .gratis {
+    color: darkgreen;
+    font-weight: 300;
+}
+
+.descricao .btn-inscricao {
+    padding: 5px 10px;
+    border: 1px solid #000;
+    background-color: transparent;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.descricao .btn-inscricao:hover {
+    background-color: #00000020;
 }
