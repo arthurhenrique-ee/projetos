@@ -1,0 +1,114 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Orbitron:wght@400..900&display=swap');
+
+:root {
+    --azul: #111A26;
+    --cinza: #B8BcBf;
+    --verde: #14261c;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Exo 2", sans-serif;
+    color: #fff;
+}
+
+body {
+    background-color: #111A26;
+}
+
+.interface {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 6%;
+}
+
+
+
+
+/* HEADER */
+
+header {
+    position: fixed;
+    width: 100%;
+    padding: 35px 0;
+}
+
+header .interface {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo img {
+    max-width: 70px;
+}
+
+header .menu-desktop {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+header .menu-desktop nav a {
+    display: inline-block;
+    text-decoration: none;
+    margin: 0 20px;
+    font-size: 17px;
+    transition: .3s;
+}
+
+header .menu-desktop nav a:hover {
+    transform: scale(1.05);
+}
+
+header .menu-desktop .btn-contato {
+    border-radius: 100px;
+    padding: 10px 30px;
+
+    background-color: #f2f2f2;
+    border: 1px solid #fff;
+    color: #000;
+    cursor: pointer;
+    font-size: 18px;
+    transition: .5s;
+}
+
+header .menu-desktop .btn-contato:hover {
+    background-color: transparent;
+    color: #fff;
+}
+
+
+
+
+
+/* HOME */
+.home {
+    display: flex;
+    align-items: center;
+    height: 100dvh;
+}
+
+.home .title h1 {
+    font-size: 4em;
+    font-weight: bolder;
+}
+
+.home .title h1 span {
+    display: block;
+    font-weight: 300;
+    font-size: 25px;
+}
+
+.home .title h2 {
+    font-weight: 500;
+}
+
+.home .text p {
+    margin: 40px 0;
+    font-size: 1.3em;
+    font-weight: 200;
+}
