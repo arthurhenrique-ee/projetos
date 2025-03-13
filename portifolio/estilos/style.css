@@ -16,7 +16,7 @@
 }
 
 body {
-    background-color: #111A26;
+    background-image: linear-gradient(to top left, #000, #101010, #151515, #161616, #181818, #202020);
 }
 
 .interface {
@@ -43,7 +43,7 @@ header .interface {
 }
 
 header .logo img {
-    max-width: 70px;
+    max-width: 250px;
 }
 
 header .menu-desktop {
