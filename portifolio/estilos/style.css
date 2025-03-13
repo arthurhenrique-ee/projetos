@@ -13,10 +13,39 @@ body {
     color: #fff;
 }
 
+section {
+    padding: 100px 0;
+}
+
 .interface {
     max-width: 1280px;
     padding: 0 6%;
     margin: 0 auto;
+}
+
+.title-section {
+    position: relative;
+    font-weight: 300;
+    margin-bottom: 80px;
+    padding-bottom: 10px;
+}
+
+.title-section span {
+    display: block;
+    font-size: 1.8em;
+    font-weight: 800;
+    color: #3A6EA5;
+    line-height: 45px;
+}
+
+.title-section ::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #3A6EA5;
+    height: 3px;
+    width: 8%;
 }
 
 
@@ -133,4 +162,87 @@ header .menu-desktop nav a:hover {
 .home .home-text .btn-sobre-mim:hover {
     background-color: #3A6EA5;
     color: #fff;
+}
+
+
+
+
+
+/* SOBRE MIM */
+.sobre .interface {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.sobre .foto-sobre img {
+    max-width: 400px;
+    border-radius: 10px;
+}
+
+.sobre .txt-sobre {
+    width: 55%;
+}
+
+.sobre .txt-sobre h2 {
+    font-weight: 400;
+    font-size: 1.3em;
+    color: #3A6EA5;
+}
+
+.sobre .txt-sobre h2 span {
+    display: block;
+    font-size: 1.8em;
+    font-weight: 600;
+    color: #fff
+}
+
+.sobre .txt-sobre h3 {
+    font-weight: 300;
+    margin-bottom: 20px;
+    font-size: 1.3em;
+}
+
+.sobre .txt-sobre p {
+    font-weight: 300;
+    margin: 10px 0;
+}
+
+
+
+
+
+/* SERVIÇOS */
+.servicos .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.servicos .box-servico {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+    width: 320px;
+    height: 320px;
+    padding: 30px;
+
+    border-radius: 5px;
+    background-color: #1f1f1f;
+    box-shadow: 0 0 30px #000;
+}
+
+.servicos .box-servico .icone i {
+    font-size: 3em;
+    color: #3A6EA5;
+}
+
+.servicos .box-servico .box-title {
+    margin: 15px 0;
+    font-size: 1.2em;
+}
+
+.servicos .box-servico .desc {
+    font-weight: 300;
 }
