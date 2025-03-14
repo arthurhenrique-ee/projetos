@@ -54,7 +54,17 @@ section {
 
 /* HEADER */
 header {
+    position: fixed;
+    width: 100%;
     padding: 40px 0;
+    transition: 0.5s;
+    z-index: 999;
+}
+
+header.ativo {
+    padding: 30px 0;
+    background-color: #101010;
+    box-shadow: 0 0 10px #101010ab;
 }
 
 header .interface {
@@ -75,17 +85,32 @@ header .logotipo p span {
 }
 
 header .menu-desktop nav a {
+    position: relative;
     text-decoration: none;
     color: #fff;
     margin: 0 20px;
     font-size: 17px;
     font-weight: 500;
-    transition: color 0.3s;
+    transition: 0.3s;
+}
+
+header .menu-desktop nav a::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 0;
+    height: 3px;
+    background-color: #3A6EA5;
+    transition: 0.3s;
 }
 
 header .menu-desktop nav a:hover {
-    border-bottom: 2px solid #3A6EA5;
     color: #3A6EA5;
+}
+
+header .menu-desktop nav a:hover::after {
+    width: 100%;
 }
 
 
@@ -93,9 +118,14 @@ header .menu-desktop nav a:hover {
 
 
 /* HOME */
+.home {
+    height: 110dvh;
+}
+
 .home .interface {
     display: flex;
     align-items: center;
+    height: 100%;
     gap: 100px;
 }
 
@@ -146,6 +176,7 @@ header .menu-desktop nav a:hover {
 }
 
 .home .home-text .btn-sobre-mim {
+    position: relative;
     margin-top: 30px;
     padding: 10px 20px;
     border-radius: 100px;
@@ -157,11 +188,34 @@ header .menu-desktop nav a:hover {
     letter-spacing: 2px;
     cursor: pointer;
     transition: 0.5s;
+    overflow: hidden;
 }
 
-.home .home-text .btn-sobre-mim:hover {
-    background-color: #3A6EA5;
+.home .home-text .btn-sobre-mim span {
+    position: relative;
+    transition: .6s;
+}
+
+.home .home-text .btn-sobre-mim:hover span {
     color: #fff;
+}
+
+.home .home-text .btn-sobre-mim::before {
+    position: absolute;
+    top: var(--eixoY);
+    left: var(--eixoX);
+    content: "";
+    background-color: #3A6EA5;
+    border-radius: 100px;
+    width: 0;
+    height: 0;
+    transform: translate(-50%, -50%);
+    transition: width .5s, height .5s;
+}
+
+.home .home-text .btn-sobre-mim:hover::before {
+    width: 500px;
+    height: 500px;
 }
 
 
