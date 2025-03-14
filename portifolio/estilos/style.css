@@ -300,3 +300,66 @@ header .menu-desktop nav a:hover::after {
 .servicos .box-servico .desc {
     font-weight: 300;
 }
+
+
+
+
+
+/* PROJETOS */
+.projetos .container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 colunas */
+    gap: 50px;
+    justify-content: center;
+}
+
+.projetos .box-projeto {
+    border-radius: 10px;
+    background-color: #1F1F1F;
+    overflow: hidden;
+}
+
+.projetos .box-projeto .capa {
+    height: 250px;
+
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor: pointer;
+    transition: 15s;
+}
+
+.projetos .box-projeto .capa:hover {
+    background-position: 0% 100%;
+}
+
+.projetos .box-projeto .info-projeto {
+    padding: 40px;
+}
+
+.projetos .box-projeto .info-projeto h3 {
+    font-size: 1.3em;
+    font-weight: 600;
+}
+
+.projetos .box-projeto .info-projeto p {
+    margin: 25px 0;
+    font-weight: 300;
+    font-size: 15px;
+}
+
+.projetos .box-projeto .info-projeto .botoes button {
+    background-color: transparent;
+    border: 1px solid #3A6EA5;
+    border-radius: 100px;
+    padding: 10px 25px;
+    margin-right: 15px;
+    color: #3A6EA5;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.projetos .box-projeto .info-projeto .botoes button:hover {
+    background-color: #3A6EA5;
+    color: #fff;
+}

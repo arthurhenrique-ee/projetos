@@ -22,11 +22,11 @@
 
             <div class="menu-desktop">
                 <nav>
-                    <a href="#">Início</a>
-                    <a href="#">Sobre Mim</a>
-                    <a href="#">Serviços</a>
-                    <a href="#">Projetos</a>
-                    <a href="#">Contato</a>
+                    <a href="#home">Início</a>
+                    <a href="#sobre">Sobre Mim</a>
+                    <a href="#servicos">Serviços</a>
+                    <a href="#projetos">Projetos</a>
+                    <a href="#contato">Contato</a>
                 </nav>
             </div><!-- MENU DESKTOP -->
 
@@ -36,7 +36,7 @@
 
     <main>
 
-        <section class="home">
+        <section class="home" id="home">
 
             <div class="interface">
 
@@ -65,7 +65,7 @@
 
         </section><!-- HOME -->
 
-        <section class="sobre">
+        <section class="sobre" id="sobre">
             <div class="interface">
                 
                 <div class="foto-sobre">
@@ -82,7 +82,7 @@
             </div>
         </section><!-- SOBRE MIM -->
 
-        <section class="servicos">
+        <section class="servicos" id="servicos">
             <div class="interface">
 
                 <h2 class="title-section">Meus <span>Serviços</span></h2>
@@ -112,10 +112,56 @@
             </div>
         </section><!-- SERVIÇOS -->
 
-        <section class="projetos">
+        <section class="projetos" id="projetos">
             <div class="interface">
 
                 <h2 class="title-section">Meus <span>Projetos</span></h2>
+
+                <div class="container">
+
+                    <div class="box-projeto">
+                        <div class="capa" style="background-image: url('imagens/projeto-gremio.png');"></div>
+
+                        <div class="info-projeto">
+                            <h3>Grêmio Nilda Carvalho Cunha</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing vehicula id nulla dignissim dapibus ultrices.</p>
+                            
+                            <div class="botoes">
+                                <button class="btn-preview" onclick="window.open('https://gremioncc.com', '_blank')">Ver Projeto</button>
+                                <button class="btn-codigo">Código</button>
+                            </div>
+                        </div>
+                    </div><!-- GNCC -->
+
+                    <div class="box-projeto">
+                        <div class="capa" style="background-image: url('imagens/projeto-metodista-betel.png');"></div>
+
+                        <div class="info-projeto">
+                            <h3>Igreja Metodista Betel</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing vehicula id nulla dignissim dapibus ultrices.</p>
+                            
+                            <div class="botoes">
+                                <button class="btn-preview">Ver Projeto</button>
+                                <button class="btn-codigo">Código</button>
+                            </div>
+                        </div>
+                    </div><!-- IGREJA METODISTA BETEL -->
+
+                    <div class="box-projeto">
+                        <div class="capa" style="background-image: url('imagens/projeto-website-responsivo.png');"></div>
+
+                        <div class="info-projeto">
+                            <h3>Website Responsivo</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing vehicula id nulla dignissim dapibus ultrices.</p>
+                            
+                            <div class="botoes">
+                                <button class="btn-preview">Ver Projeto</button>
+                                <button class="btn-codigo">Código</button>
+                            </div>
+                        </div>
+                    </div><!-- WEBSITE RESPONSIVO -->
+
+                </div>
                 
             </div>
         </section><!-- PROJETOS -->
