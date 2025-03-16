@@ -84,7 +84,7 @@ header .redes-sociais .btn-social {
     left: 0;
     height: 100%;
     width: 100%;
-    background-color: #10101062;
+    background-color: #10101073;
 }
 
 .home .interface {
@@ -125,6 +125,5 @@ header .redes-sociais .btn-social {
     background-color: #fff;
     border: none;
     font-size: 1em;
-    padding: 15px 20px;
-    border-radius: 2px;
+    padding: 15px 25px;
 }
