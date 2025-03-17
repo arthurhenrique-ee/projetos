@@ -9,6 +9,7 @@
 }
 
 body {
+    background-color: #151515;
     color: #fff;
 }
 
@@ -36,7 +37,7 @@ section {
 .title-section span {
     font-family: "Oswald", sans-serif;
     display: block;
-    font-size: 42px;
+    font-size: 34px;
     font-weight: 900;
 }
 
@@ -69,10 +70,26 @@ header .logo p span {
 }
 
 header .menu-desktop nav a {
+    position: relative;
     text-decoration: none;
     color: #fff;
     margin: 0 15px;
     text-transform: uppercase;
+}
+
+header .menu-desktop nav a::after {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    content: "";
+    background-color: #fff;
+    height: 2px;
+    width: 0;
+    transition: .2s;
+}
+
+header .menu-desktop nav a:hover::after {
+    width: 70%;
 }
 
 header .redes-sociais a {
@@ -117,6 +134,10 @@ header.ativo {
 
 header.ativo .menu-desktop nav a {
     color: #000;
+}
+
+header.ativo .menu-desktop nav a::after {
+    background-color: #000;
 }
 
 header.ativo .redes-sociais .btn-social {
@@ -183,7 +204,8 @@ header.ativo .btn-menu div {
     text-transform: uppercase;
     letter-spacing: 1px;
     font-weight: 600;
-    background-color: #fff;
+    background-color: transparent;
+    color: #fff;
     border: 1px solid #fff;
     font-size: 1em;
     padding: 15px 25px;
@@ -192,8 +214,8 @@ header.ativo .btn-menu div {
 }
 
 .home .txt-home .btn-action:hover {
-    background: transparent;
-    color: #fff;
+    background-color: #fff;
+    color: #000;
 }
 
 
@@ -201,10 +223,6 @@ header.ativo .btn-menu div {
 
 
 /* SOBRE NÓS */
-.sobre {
-    background-color: #151515;
-}
-
 .sobre .container {
     display: flex;
     justify-content: center;
@@ -245,4 +263,37 @@ header.ativo .btn-menu div {
     font-size: 14px;
     font-size: 400;
     color: #999999;
+}
+
+
+
+
+
+/* NOSSAS AULAS */
+.aulas .container { 
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: center;
+}
+
+.aulas .box-aula .capa img {
+    max-width: 300px;
+}
+
+.aulas .box-aula .info {
+    padding: 25px 15px;
+}
+
+.aulas .box-aula .info .categoria {
+    font-family: "Mulish", sans-serif;
+    text-transform: uppercase;
+    font-size: 12px;
+    margin-bottom: 5px;
+    color: #999;
+}
+
+.aulas .box-aula .info .nome {
+    font-size: 20px;
+    text-transform: uppercase;
 }
