@@ -12,10 +12,32 @@ body {
     color: #fff;
 }
 
+section {
+    padding: 100px 0;
+}
+
 .interface {
     max-width: 1280px;
     padding: 0 6%;
     margin: 0 auto;
+}
+
+.title-section {
+    font-family: "Mulish", sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 80px;
+    font-size: 16px;
+    letter-spacing: 1px;
+    line-height: 40px;
+    font-weight: 500;
+}
+
+.title-section span {
+    font-family: "Oswald", sans-serif;
+    display: block;
+    font-size: 42px;
+    font-weight: 900;
 }
 
 
@@ -24,11 +46,11 @@ body {
 
 /* HEADER */
 header {
-    background-image: linear-gradient(to bottom, #000, #000000b9, #00000079, transparent);
     position: fixed;
     width: 100%;
     padding: 35px 0;
     z-index: 999;
+    transition: .5s;
 }
 
 header .interface {
@@ -66,6 +88,45 @@ header .redes-sociais .btn-social {
     cursor: pointer;
 }
 
+header .menu-mobile {
+    display: none;
+}
+
+header .btn-menu {
+    display: none;
+    cursor: pointer;
+}
+
+header .btn-menu div {
+    background-color: #fff;
+    height: 3px;
+    width: 30px;
+    margin: 5px 0;
+}
+
+
+
+
+/* HEADER ATIVO */
+header.ativo {
+    padding: 25px 0;
+    background-color: #fff;
+    background-image: none;
+    color: #000;
+}
+
+header.ativo .menu-desktop nav a {
+    color: #000;
+}
+
+header.ativo .redes-sociais .btn-social {
+    color: #000;
+}
+
+header.ativo .btn-menu div {
+    background-color: #000;
+}
+
 
 
 
@@ -95,7 +156,7 @@ header .redes-sociais .btn-social {
 
 .home .txt-home {
     position: relative;
-    z-index: 999;
+    z-index: 99;
     text-transform: uppercase;
 }
 
@@ -123,7 +184,65 @@ header .redes-sociais .btn-social {
     letter-spacing: 1px;
     font-weight: 600;
     background-color: #fff;
-    border: none;
+    border: 1px solid #fff;
     font-size: 1em;
     padding: 15px 25px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.home .txt-home .btn-action:hover {
+    background: transparent;
+    color: #fff;
+}
+
+
+
+
+
+/* SOBRE NÓS */
+.sobre {
+    background-color: #151515;
+}
+
+.sobre .container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.sobre .box-sobre {
+    text-align: center;
+    width: 400px;
+}
+
+.sobre .box-sobre .icone {
+    background-color: #232323;
+    padding: 10px;
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
+    margin: 0 auto;
+    font-size: 3em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .3s;
+}
+
+.sobre .box-sobre:hover .icone {
+    background-color: #fff;
+    color: #000;
+}
+
+.sobre .box-sobre h3 {
+    font-size: 22px;
+    margin: 15px 0;
+}
+
+.sobre .box-sobre p {
+    font-family: "Mulish", sans-serif;
+    font-size: 14px;
+    font-size: 400;
+    color: #999999;
 }

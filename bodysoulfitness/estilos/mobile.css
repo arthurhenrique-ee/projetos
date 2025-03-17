@@ -1,0 +1,80 @@
+@charset "UTF-8";
+
+@media screen and (max-width: 1000px) {
+
+    /* HEADER */
+    header .redes-sociais {
+        display: none;
+    }
+
+    header .menu-desktop {
+        display: none;
+    }
+
+    header .btn-menu {
+        display: block;
+    }
+
+
+
+
+
+    /* HOME */
+    .home .txt-home h1 {
+        font-size: 3.5em;
+        line-height: 65px;
+    }
+    
+    .home .txt-home h2 {
+        font-family: "Milish", sans-serif;
+        margin: 30px 0;
+        font-size: 1em;
+        letter-spacing: 3px;
+    }
+
+
+
+
+
+    /* SOBRE NÓS */
+    .sobre .container {
+        flex-wrap: wrap;
+        gap: 60px;
+    }
+    
+    .sobre .box-sobre {
+        text-align: center;
+        width: 300px;
+    }
+    
+    .sobre .box-sobre .icone {
+        background-color: #232323;
+        padding: 10px;
+        width: 100px;
+        height: 100px;
+        border-radius: 100px;
+        margin: 0 auto;
+        font-size: 3em;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: .3s;
+    }
+    
+    .sobre .box-sobre:hover .icone {
+        background-color: #fff;
+        color: #000;
+    }
+    
+    .sobre .box-sobre h3 {
+        font-size: 22px;
+        margin: 15px 0;
+    }
+    
+    .sobre .box-sobre p {
+        font-family: "Mulish", sans-serif;
+        font-size: 14px;
+        font-size: 400;
+        color: #999999;
+    }
+}
