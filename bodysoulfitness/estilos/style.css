@@ -130,6 +130,7 @@ header.ativo {
     background-color: #fff;
     background-image: none;
     color: #000;
+    box-shadow: 0 0 20px #0000002a;
 }
 
 header.ativo .menu-desktop nav a {
@@ -270,30 +271,165 @@ header.ativo .btn-menu div {
 
 
 /* NOSSAS AULAS */
-.aulas .container { 
+.aulas {
+    background-color: #fff;
+    color: #000;
+}
+
+.box-aula {
     display: flex;
-    flex-wrap: wrap;
-    gap: 40px;
-    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin: 30px 0;
+    box-shadow: 0 0 10px #00000036;
+    color: #000;
+    overflow: hidden;
+    cursor: pointer;
+    transition: .3s;
 }
 
-.aulas .box-aula .capa img {
-    max-width: 300px;
+.box-aula:hover {
+    background-color: #000;
+    color: #fff;
 }
 
-.aulas .box-aula .info {
-    padding: 25px 15px;
-}
-
-.aulas .box-aula .info .categoria {
-    font-family: "Mulish", sans-serif;
-    text-transform: uppercase;
-    font-size: 12px;
-    margin-bottom: 5px;
+.box-aula:hover .info .data,
+.box-aula:hover .info .desc {
     color: #999;
 }
 
-.aulas .box-aula .info .nome {
+.box-aula .capa {
+    display: flex;
+    width: 100px;
+}
+
+.box-aula img {
+    width: 100%;
+}
+
+.box-aula .info .data {
+    font-family: "Mulish", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #00000080;
+    transition: .3s;
+}
+
+.box-aula .info .nome {
+    font-family: "Mulish", sans-serif;
     font-size: 20px;
+    font-weight: 700;
+    margin: 5px 0;
+}
+
+.box-aula .info .desc {
+    font-family: "Mulish", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #00000080;
+    transition: .3s;
+}
+
+
+
+
+
+/* SEÇÃO CALL TO ACTION */
+.call-action {
+    position: relative;
+    background: url('../imagens/banner-call-action.jpg') no-repeat center fixed;
+    background-size: cover;
+    text-align: center;
+}
+
+.call-action .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000000b2;
+}
+
+.call-action .txt-call-action {
+    position: relative;
+    z-index: 99;
+}
+
+.call-action h2 {
+    font-size: 3em;
     text-transform: uppercase;
+    font-weight: 300;
+}
+
+.call-action h2 span {
+    font-weight: 800;
+}
+
+.call-action p {
+    font-family: "Mulish", sans-serif;
+    margin: 30px auto;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 2;
+    max-width: 800px;
+}
+
+.call-action p span {
+    font-family: "Mulish", sans-serif;
+    font-weight: 800;
+}
+
+.call-action .btn-action {
+    font-family: "Mulish", sans-serif;
+    background-color: transparent;
+    border: 1px solid #fff;
+    padding: 15px 25px;
+    font-size: 1em;
+    text-transform: uppercase;
+    color: #fff;
+    cursor: pointer;
+    transition: .4s;
+}
+
+.call-action .btn-action:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+
+
+
+
+/* CRONOGRAMA */
+.cronograma {
+    background-color: #fff;
+    color: #000;
+}
+
+.cronograma .week-bar {
+    display: flex;
+    align-items: center;
+
+    margin-bottom: 80px;
+
+    font-family: "Mulish", sans-serif;
+    background-color: #d1d1d1;
+    color: #000;
+}
+
+.cronograma .week-bar .day {
+    flex: auto;
+    padding: 15px 0;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 18px;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.cronograma .week-bar .day:hover,
+.cronograma .week-bar .day.checked {
+    background-color: #000;
+    color: #fff;
 }
