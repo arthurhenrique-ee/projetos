@@ -433,3 +433,13 @@ header.ativo .btn-menu div {
     background-color: #000;
     color: #fff;
 }
+
+.cronograma .week-bar .day.dom {
+    cursor: not-allowed;
+    opacity: 0.3;
+}
+
+.cronograma .week-bar .day.dom:hover {
+    background: #d1d1d1;
+    color: #000;
+}
