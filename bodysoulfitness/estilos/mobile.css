@@ -3,11 +3,11 @@
 @media screen and (max-width: 1000px) {
 
     /* HEADER */
-    header .redes-sociais {
+    header .menu-desktop {
         display: none;
     }
 
-    header .menu-desktop {
+    header .redes-sociais {
         display: none;
     }
 
@@ -21,15 +21,15 @@
 
     /* HOME */
     .home .txt-home h1 {
-        font-size: 3.5em;
-        line-height: 65px;
+        font-size: 3em;
+        line-height: 60px;
+        font-weight: 300;
     }
-    
+
     .home .txt-home h2 {
-        font-family: "Milish", sans-serif;
-        margin: 30px 0;
         font-size: 1em;
-        letter-spacing: 3px;
+        letter-spacing: 1px;
+        line-height: 25px;
     }
 
 
@@ -38,43 +38,65 @@
 
     /* SOBRE NÓS */
     .sobre .container {
-        flex-wrap: wrap;
-        gap: 60px;
+        flex-direction: column;
     }
-    
-    .sobre .box-sobre {
-        text-align: center;
-        width: 300px;
+
+
+
+
+
+    /* SEÇÃO CALL TO ACTION */
+    .call-action h2 {
+        font-size: 2em;
+        line-height: 45px;
     }
-    
-    .sobre .box-sobre .icone {
-        background-color: #232323;
-        padding: 10px;
-        width: 100px;
-        height: 100px;
-        border-radius: 100px;
-        margin: 0 auto;
-        font-size: 3em;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        transition: .3s;
+
+    .call-action h2 span {
+        font-weight: 500;
     }
-    
-    .sobre .box-sobre:hover .icone {
+
+    .call-action p {
+        font-size: 18px;
+        line-height: 1.6;
+    }
+
+    .call-action .btn-action {
+        font-size: 14px;
+    }
+
+    .call-action .btn-action:hover {
         background-color: #fff;
         color: #000;
     }
-    
-    .sobre .box-sobre h3 {
-        font-size: 22px;
-        margin: 15px 0;
+
+
+
+
+
+    /* NOSSA EQUIPE */
+    .equipe .container {
+        flex-direction: column;
+        gap: 80px;
     }
-    
-    .sobre .box-sobre p {
-        font-family: "Mulish", sans-serif;
-        font-size: 14px;
-        font-size: 400;
-        color: #999999;
+
+    .equipe .box-person .info .desc {
+        line-height: 1.5;
+        font-weight: 100;
+    }
+
+
+
+
+
+    /* CONTATO */
+    .contato .container {
+        flex-direction: column;
+        align-items: start;
+        gap: 40px;
+    }
+
+    .contato .info .icone {
+        min-width: 50px;
+        min-height: 50px;
     }
 }

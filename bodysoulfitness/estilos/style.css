@@ -271,18 +271,24 @@ header .btn-menu div {
 
 .home .txt-home h1 span {
     display: block;
-    font-weight: 900;
+    font-weight: 800;
 }
 
 .home .txt-home h2 {
-    font-family: "Milish", sans-serif;
+    font-family: "Mulish", sans-serif;
     margin: 30px 0;
     font-size: 1.1em;
     letter-spacing: 3px;
+    font-weight: 300;
+}
+
+.home .txt-home h2 span {
+    font-family: "Mulish", sans-serif;
+    font-weight: 800;
 }
 
 .home .txt-home .btn-action {
-    font-family: "Milish", sans-serif;
+    font-family: "Mulish", sans-serif;
     text-transform: uppercase;
     letter-spacing: 1px;
     font-weight: 600;
@@ -308,12 +314,13 @@ header .btn-menu div {
 .sobre .container {
     display: flex;
     justify-content: center;
-    gap: 30px;
+    align-items: center;
+    gap: 50px;
 }
 
 .sobre .box-sobre {
     text-align: center;
-    width: 400px;
+    max-width: 300px;
 }
 
 .sobre .box-sobre .icone {
@@ -362,7 +369,7 @@ header .btn-menu div {
     align-items: center;
     gap: 30px;
     margin: 30px 0;
-    box-shadow: 0 0 10px #00000036;
+    box-shadow: 0 0 10px #0000002a;
     color: #000;
     overflow: hidden;
     cursor: pointer;
@@ -384,7 +391,7 @@ header .btn-menu div {
     width: 100px;
 }
 
-.box-aula img {
+.box-aula .capa img {
     width: 100%;
 }
 
@@ -465,8 +472,10 @@ header .btn-menu div {
     font-family: "Mulish", sans-serif;
     background-color: transparent;
     border: 1px solid #fff;
+    border-radius: 5px;
     padding: 15px 25px;
     font-size: 1em;
+    font-weight: 600;
     text-transform: uppercase;
     color: #fff;
     cursor: pointer;
@@ -534,7 +543,7 @@ header .btn-menu div {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 30px;
+    gap: 50px;
     text-align: center;
 }
 
@@ -575,6 +584,10 @@ header .btn-menu div {
 
 
 /* CONTATO */
+.contato {
+    padding: 80px 0 40px 0;
+}
+
 .contato .container {
     display: flex;
     justify-content: space-between;
@@ -586,6 +599,11 @@ header .btn-menu div {
     align-items: center;
     gap: 15px;
     max-width: 350px;
+}
+
+.contato .info p {
+    font-family: "Mulish", sans-serif;
+    font-weight: 300;
 }
 
 .contato .info .icone {
@@ -610,7 +628,7 @@ footer .top-footer {
 }
 
 footer .top-footer .logo img {
-    max-width: 120px;
+    max-width: 130px;
 }
 
 footer .bottom-footer {
@@ -618,7 +636,7 @@ footer .bottom-footer {
     justify-content: center;
     align-items: center;
 
-    padding: 40px 0;
+    padding: 30px 0 40px 0;
 }
 
 footer .bottom-footer p {
