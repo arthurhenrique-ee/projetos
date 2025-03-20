@@ -82,6 +82,8 @@
     .equipe .box-person .info .desc {
         line-height: 1.5;
         font-weight: 100;
+        max-width: 280px;
+        margin: auto;
     }
 
 
