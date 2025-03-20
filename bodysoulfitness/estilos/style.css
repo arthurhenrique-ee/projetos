@@ -569,3 +569,75 @@ header .btn-menu div {
     font-family: "Mulish", sans-serif;  
     font-weight: 300;
 }
+
+
+
+
+
+/* CONTATO */
+.contato .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contato .info {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    max-width: 350px;
+}
+
+.contato .info .icone {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    color: #000;
+    min-width: 60px;
+    min-height: 60px;
+    border-radius: 50%;
+    font-size: 1.3em;
+}
+
+
+
+
+
+/* RODAPÉ */
+footer .top-footer {
+    text-align: center;
+}
+
+footer .top-footer .logo img {
+    max-width: 120px;
+}
+
+footer .bottom-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 40px 0;
+}
+
+footer .bottom-footer p {
+    font-family: "Mulish", sans-serif;
+    font-size: 14px;
+    color: #838383;
+    text-align: center;
+}
+
+footer .bottom-footer p span {
+    font-weight: 500;
+}
+
+footer .bottom-footer p a {
+    font-family: "Mulish", sans-serif;
+    font-weight: 700;
+    color: #3a6ea5a9;
+}
+
+footer .bottom-footer p a:hover {
+    text-decoration: none;
+}

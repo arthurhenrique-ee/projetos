@@ -15,7 +15,12 @@ window.addEventListener('scroll', () => {
 
 btnMenuMobile.addEventListener('click', () => {
     menuMobile.classList.toggle('active')
-    body.classList.toggle('no-scroll')
+    
+    if (body.classList.contains('no-scroll')) {
+        body.classList.remove('no-scroll')
+    } else {
+        body.classList.add('no-scroll')
+    }
 })
 
 btnCloseMenu.addEventListener('click', () => {
@@ -26,5 +31,6 @@ btnCloseMenu.addEventListener('click', () => {
 linksMenuMobile.forEach(link => {
     link.addEventListener('click', () => {
         menuMobile.classList.remove('active')
+        body.classList.remove('no-scroll')
     })
 })
