@@ -1,43 +1,111 @@
 @charset "UTF-8";
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400..700;1,400..700&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Parisienne&display=swap');
+
+:root {
+    --cor1: #760264;
+    --cor2: #DB0C42;
+    --cor3: #A90953;
+    --cor4: #fdf1f9;
+}
+
 
 /* ESTILIZAÇÃO GERAL */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Poppins", sans-serif;
+    font-family: "Nunito Sans", sans-serif;
 }
+
+h1 {
+    font-family: "Parisienne", cursive;
+}
+
 
 /* CABEÇALHO */
 header {
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    padding: 30px 50px;
-    background-color: #DE968D;
-    color: #fff;
+    justify-content: space-between;
+    padding: 20px 50px;
 }
 
-header .logo p {
-    font-weight: bold;
-    font-size: 20px;
+header .logo img {
+    width: 60px;
 }
 
 header .menu-desktop nav a {
-    display: inline-block;
     text-decoration: none;
-    color: #fff;
-    margin: 0 15px;
-    transition: .3s;
+    color: #89868D;
+    font-size: 15px;
+    letter-spacing: 1.4px;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin: 0 20px;
 }
 
-header .menu-desktop nav a:hover {
-    transform: scale(1.05);
+header .botoes {
+    display: flex;
+    gap: 25px;
+    font-size: 1.5em;
+    color: #000;
 }
 
 
 /* HOME */
 .home {
-    background: url('../imagens/banner-home');
+    position: relative;
+    background: url('../imagens/banner-home.png') no-repeat center center;
+    background-size: cover;
+    height: 80dvh;
+}
+
+.home .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    opacity: 0.5;
+    z-index: 0;
+}
+
+.home .txt-home {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 999;
+    text-align: center;
+    width: 100%;
+}
+
+.home .txt-home .logo-home img {
+    width: 120px;
+}
+
+.home .txt-home .title-home {
+    font-size: 7em;
+    color: #fff;
+    font-weight: 100;
+}
+
+.home .txt-home .btn-home {
+    background-color: transparent;
+    border: 1px solid #fff;
+    box-shadow: 0 0 8px #00000036;
+    color: #fff;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 2.4px;
+    font-weight: 800;
+    padding: 20px 70px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.home .txt-home .btn-home:hover {
+    background-color: #fff;
+    color: #000;
 }
